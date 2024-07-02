@@ -16,8 +16,14 @@ calculate it!
    ages.
 -----------------------------------------------------------------------------*/
 
-function calculateDogAge(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function calculateDogAge(normalYearsAge) {
+  const dogYearsAge = normalYearsAge * 7;
+  const sentence = `Your doggie is ${dogYearsAge} years old in dog years!`;
+
+  return sentence;
+  /* for readability and ...
+  is it better to return a variable or to directly return the value itself?
+  return `Your doggie is ${dogYearsAge} years old in dog years!` */
 }
 
 function main() {
