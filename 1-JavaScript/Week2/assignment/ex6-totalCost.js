@@ -26,25 +26,25 @@ const cartForParty = {
   candy: 0.99,
   juice: 1.30,
   beers: 3.15
-  // TODO complete this object
-};
+ 
+}
 
 
 function calculateTotalPrice(numberCart) {
   let amount = 0;
 
-  for(let number in numberCart){
-    amount += numberCart[number];
+  for(const item of Object.keys(numberCart)){
+    amount += numberCart[item];
   }
   return `Total: €${amount}`;
-  // TODO replace this comment with your code
+ 
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   console.assert(calculateTotalPrice.length === 1);
-  // TODO replace this comment with your code
+  
 }
 
 function test2() {
@@ -52,7 +52,7 @@ function test2() {
   const expected = "Total: €9.79";
   const result = calculateTotalPrice(cartForParty);
   console.assert(result === expected);
-  // TODO replace this comment with your code
+  
 }
 
 function test() {

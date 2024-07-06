@@ -26,9 +26,9 @@ const shoppingCart = ['bananas', 'milk'];
 
 
 
-function addToShoppingCart(item) {
+function addToShoppingCart(item){
 
-   if (!item) {
+   if(!item){
     return `You bought ${shoppingCart.join(', ')}!`;
    }
   shoppingCart.push(item);
@@ -37,20 +37,14 @@ function addToShoppingCart(item) {
     shoppingCart.shift();
   }
 
-  return `You bought ${shoppingCart.join(', ')}!`;
-
-   
-  
-
-
-  
-};
+  return `You bought ${shoppingCart.join(', ')}!`; 
+}
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
     'Test 1: addShoppingCart() called without an argument should leave the shopping cart unchanged'
-  );
+  )
   const expected = 'You bought bananas, milk!';
   const actual = addToShoppingCart();
   console.assert(actual === expected);

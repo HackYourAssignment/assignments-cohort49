@@ -36,9 +36,7 @@ body, this code is now written once only in a separated function.
 function selectRandomly(array) {
 
   const randomIndex = Math.floor(Math.random() * array.length);
-  return array[randomIndex];
-
-  // TODO complete this function
+  return array[randomIndex]; 
 }
   
 
@@ -49,31 +47,18 @@ function tellFortune(numKids, partnerNames, locations, jobTitles) {
     const selectedLocations = selectRandomly(locations);
     const selectedJobTitles = selectRandomly(jobTitles);
    
-  return `You will be a ${selectedJobTitles} in ${selectedLocations}, 
-    married to ${selectedPartnerNames} with ${selectedNumKids} kids.`
-  // TODO complete this function
+  return `You will be a ${selectedJobTitles} in ${selectedLocations}, married to ${selectedPartnerNames} with ${selectedNumKids} kids.`
+  
 }
 
 function main() {
-  const numKids = [
-    1, 2, 3, 4, 5
-   
-  ];
+  const numKids = [1, 2, 3, 4, 5];
 
-  const partnerNames = [
-    'Zoe', 'Dex', 'Flores', 'Emir', 'Ahmet'
-    
-  ];
+  const partnerNames = ['Zoe', 'Dex', 'Flores', 'Emir', 'John'];
 
-  const locations = [
-    'Leiden', 'Maastricht', 'Amsterdam', 'Rotterdam','Utrecht'
-   
-  ];
+  const locations = ['Leiden', 'Maastricht', 'Amsterdam', 'Rotterdam','Utrecht'];
 
-  const jobTitles = [
-    'Teacher', 'Police', 'Doctor', 'Nurse', 'Gardener'
-    
-  ];
+  const jobTitles = ['Teacher', 'Police', 'Doctor', 'Nurse', 'Gardener'];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));

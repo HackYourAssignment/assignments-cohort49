@@ -27,7 +27,7 @@ const employeeRecords = [
     email: 'jane.eyre@somewhere.net',
     salary: 60000,
   },
-];
+]
 
   
 // ! Function under test
@@ -42,10 +42,10 @@ function filterPrivateData(employees) {
 
   filteredEmployees.push(publicData);
     
-   };
+   }
    return filteredEmployees;
-  // TODO complete this function
-};
+  
+}
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
