@@ -30,12 +30,12 @@ function addToShoppingCart(item) {
 
    if (!item) {
     return `You bought ${shoppingCart.join(', ')}!`;
-   };
+   }
   shoppingCart.push(item);
 
   if(shoppingCart.length > 3){
     shoppingCart.shift();
-  };
+  }
 
   return `You bought ${shoppingCart.join(', ')}!`;
 
@@ -43,7 +43,7 @@ function addToShoppingCart(item) {
   
 
 
-  // TODO complete this function
+  
 };
 
 // ! Test functions (plain vanilla JavaScript)

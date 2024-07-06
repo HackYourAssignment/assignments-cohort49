@@ -1,0 +1,140 @@
+2024-07-06 12:17:28 info: ----------------------------------------------
+2024-07-06 12:17:28 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-06 12:17:28 info: ----------------------------------------------
+2024-07-06 12:17:30 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/assignments-cohort49/test-runner/CustomReporter.js"
+2024-07-06 12:18:06 info: Disclaimer turned off
+2024-07-06 12:18:26 info: ----------------------------------------------
+2024-07-06 12:18:26 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-06 12:18:26 info: ----------------------------------------------
+2024-07-06 12:18:27 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/assignments-cohort49/test-runner/CustomReporter.js"
+2024-07-06 12:19:22 info: ----------------------------------------
+2024-07-06 12:19:22 info: >>> Running Unit Test `ex2-dogYears` <<<
+2024-07-06 12:19:22 info: ----------------------------------------
+2024-07-06 12:19:24 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should have all TODO comments removed
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/Users/hackyourfuture/Desktop/assignments-cohort49/test-runner/CustomReporter.js"
+2024-07-06 12:20:23 info: -------------------------------------------
+2024-07-06 12:20:23 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-06 12:20:23 info: -------------------------------------------
+2024-07-06 12:20:25 error: *** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Teacher in Leiden, married to Zoe with 1 kids.
+  Received: You will be a Teacher in Leiden, 
+    married to Zoe with 1 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Desktop/assignments-cohort49/test-runner/CustomReporter.js"
+2024-07-06 12:20:27 error: *** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:64:38 - Unknown word (Mercan)
+/Users/hackyourfuture/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:69:16 - Unknown word (Lahey)
+
+2024-07-06 12:21:45 info: -------------------------------------------
+2024-07-06 12:21:45 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-06 12:21:45 info: -------------------------------------------
+2024-07-06 12:21:46 error: *** Unit Test Error Report ***
+
+✕ tellFortune should exist and be executable
+✕ tellFortune should take four parameters
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune `numKids` should be an array initialized with 5 elements
+✕ tellFortune `locations` should be an array initialized with 5 elements
+✕ tellFortune `partnerNames` should be an array initialized with 5 elements
+✕ tellFortune `jobTitles` should be an array initialized with 5 elements
+✕ tellFortune should tell the fortune by randomly selecting array values
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Desktop/assignments-cohort49/test-runner/CustomReporter.js"
+2024-07-06 12:21:47 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  88:1  error  Parsing error: Unexpected token
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-07-06 12:21:49 error: *** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:63:38 - Unknown word (Mercan)
+/Users/hackyourfuture/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:68:16 - Unknown word (Lahey)
+
+2024-07-06 12:22:42 info: -------------------------------------------
+2024-07-06 12:22:42 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-06 12:22:42 info: -------------------------------------------
+2024-07-06 12:22:43 error: *** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Teacher in Leiden, married to Zoe with 1 kids.
+  Received: You will be a Teacher in Leiden, 
+    married to Zoe with 1 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Desktop/assignments-cohort49/test-runner/CustomReporter.js"
+2024-07-06 12:22:46 error: *** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:64:38 - Unknown word (Mercan)
+/Users/hackyourfuture/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:69:16 - Unknown word (Lahey)
+
+2024-07-06 12:24:07 info: --------------------------------------------
+2024-07-06 12:24:07 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-06 12:24:07 info: --------------------------------------------
+2024-07-06 12:24:07 warn: A unit test file was not provided.
+2024-07-06 12:24:08 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  33:5  error  Unnecessary semicolon  no-extra-semi
+  38:4  error  Unnecessary semicolon  no-extra-semi
+  47:2  error  Unnecessary semicolon  no-extra-semi
+
+✖ 3 problems (3 errors, 0 warnings)
+  3 errors and 0 warnings potentially fixable with the `--fix` option.
+
+
+2024-07-06 12:24:42 info: ------------------------------------------------
+2024-07-06 12:24:42 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-06 12:24:42 info: ------------------------------------------------
+2024-07-06 12:24:42 warn: A unit test file was not provided.
+2024-07-06 12:24:45 info: All steps were completed successfully
+2024-07-06 12:25:03 info: -----------------------------------------
+2024-07-06 12:25:03 info: >>> Running Unit Test `ex6-totalCost` <<<
+2024-07-06 12:25:03 info: -----------------------------------------
+2024-07-06 12:25:03 warn: A unit test file was not provided.
+2024-07-06 12:25:04 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  36:3   warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  36:11  warning  'number' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2024-07-06 12:25:54 info: -------------------------------------------
+2024-07-06 12:25:54 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2024-07-06 12:25:54 info: -------------------------------------------
+2024-07-06 12:25:54 warn: A unit test file was not provided.
+2024-07-06 12:25:55 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  45:5  error  Unnecessary semicolon  no-extra-semi
+  48:2  error  Unnecessary semicolon  no-extra-semi
+
+✖ 2 problems (2 errors, 0 warnings)
+  2 errors and 0 warnings potentially fixable with the `--fix` option.
+
+

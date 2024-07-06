@@ -57,22 +57,22 @@ function tellFortune(numKids, partnerNames, locations, jobTitles) {
 function main() {
   const numKids = [
     1, 2, 3, 4, 5
-    // TODO add elements here
+   
   ];
 
   const partnerNames = [
-    'Zoe', 'Dex', 'Flores', 'Emir', 'Mercan'
-    // TODO add elements here
+    'Zoe', 'Dex', 'Flores', 'Emir', 'Ahmet'
+    
   ];
 
   const locations = [
-    'Leiden', 'Lahey', 'Amsterdam', 'Rotterdam','Utrecht'
-    // TODO add elements here
+    'Leiden', 'Maastricht', 'Amsterdam', 'Rotterdam','Utrecht'
+   
   ];
 
   const jobTitles = [
     'Teacher', 'Police', 'Doctor', 'Nurse', 'Gardener'
-    // TODO add elements here
+    
   ];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));

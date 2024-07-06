@@ -1,0 +1,10 @@
+
+*** ESLint Report ***
+
+ex7-mindPrivacy.js
+  45:5  error  Unnecessary semicolon  no-extra-semi
+  48:2  error  Unnecessary semicolon  no-extra-semi
+
+✖ 2 problems (2 errors, 0 warnings)
+  2 errors and 0 warnings potentially fixable with the `--fix` option.
+
