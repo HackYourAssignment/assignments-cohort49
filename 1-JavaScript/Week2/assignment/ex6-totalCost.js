@@ -31,8 +31,9 @@ const cartForParty = {
 
 function calculateTotalPrice(obj) {
   let total = 0;
-  for (let item in obj) {
-    total += obj[item];
+  const prices = Object.values(obj);
+  for (const price of prices) {
+    total += price;
   }
   return `Total: €${total}`;
 }
@@ -45,7 +46,7 @@ function test1() {
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  const expected = "Total: €30.43";
+  const expected = 'Total: €30.43';
   const actual = calculateTotalPrice(cartForParty);
   console.assert(actual === expected);
 }

@@ -31,11 +31,9 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(obj) {
-  // TODO complete this function
-
   const result = [];
-  for (let employee in obj) {
-    const { name, occupation, email } = obj[employee];
+  for (const employee of obj) {
+    const { name, occupation, email } = employee;
     result.push({ name, occupation, email });
   }
 

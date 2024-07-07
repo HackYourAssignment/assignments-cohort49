@@ -1,0 +1,5 @@
+
+*** Spell Checker Report ***
+
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:52:23 - Unknown word (Sāngli)
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:52:33 - Unknown word (Biên)

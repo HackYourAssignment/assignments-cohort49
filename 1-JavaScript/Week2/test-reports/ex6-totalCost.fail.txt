@@ -1,0 +1,6 @@
+
+*** Spell Checker Report ***
+
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex6-totalCost.js:27:3 - Unknown word (bitterballen)
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex6-totalCost.js:28:3 - Unknown word (mosterd)
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex6-totalCost.js:29:3 - Unknown word (frietjes)

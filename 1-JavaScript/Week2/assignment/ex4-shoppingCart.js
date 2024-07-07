@@ -24,9 +24,7 @@ const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
 function addToShoppingCart(item) {
-  // TODO complete this function
-  
-    if (item) {
+  if (item) {
     shoppingCart.push(item);
   }
 
@@ -34,7 +32,7 @@ function addToShoppingCart(item) {
     shoppingCart.shift();
   }
 
-  return `You bought ${shoppingCart.join(", ")}!`;
+  return `You bought ${shoppingCart.join(', ')}!`;
 }
 
 // ! Test functions (plain vanilla JavaScript)

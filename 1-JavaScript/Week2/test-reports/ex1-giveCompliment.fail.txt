@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:41:19 - Unknown word (Sofiia)
