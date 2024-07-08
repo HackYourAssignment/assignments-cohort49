@@ -36,7 +36,6 @@ function filterPrivateData(employeeRecords) {
     return { name, occupation, email };
   });
 }
-console.log(filterPrivateData(employeeRecords));
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
