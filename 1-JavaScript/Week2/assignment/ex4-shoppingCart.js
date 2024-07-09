@@ -23,7 +23,7 @@ you have more than 3 items in your shopping cart the first item gets taken out.
 const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
-function addToShoppingCart(/* parameters go here */item) {
+function addToShoppingCart(item) {
   // TODO complete this function
 
   shoppingCart.push(item);
