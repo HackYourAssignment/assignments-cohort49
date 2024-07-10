@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:31:19 - Unknown word (Alia)
