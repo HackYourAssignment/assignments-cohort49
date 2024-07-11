@@ -21,22 +21,70 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+  juice: 1.75,
+chips: 0.99,
+soda: 1.5,
+pizza: 7.99,
+iceCream: 3.49,
+  
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+function calculateTotalPrice(price) {
+  let total = 0;
+  for (let item in price) {
+    if (price.hasOwnProperty(item)) {
+      total += price[item];
+    }
+  }
+  return `Total: €${total}`;
 }
+console.log(calculateTotalPrice(cartForParty));
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+  const cartForParty = {
+    juice: 1.75,
+  chips: 0.99,
+  soda: 1.5,
+  pizza: 7.99,
+  iceCream: 3.49,
+    
+  };
+  
+  function calculateTotalPrice(price) {
+    let total = 0;
+    for (let item in price) {
+      if (price.hasOwnProperty(item)) {
+        total += price[item];
+      }
+    }
+    return `Total: €${total}`;
+  }
+  console.log(calculateTotalPrice(cartForParty));
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+  const cartForParty = {
+    juice: 1.75,
+  chips: 0.99,
+  soda: 1.5,
+  pizza: 7.99,
+  iceCream: 3.49,
+    
+  };
+  
+  function calculateTotalPrice(price) {
+    let total = 0;
+    for (let item in price) {
+      if (price.hasOwnProperty(item)) {
+        total += price[item];
+      }
+    }
+    return `Total: €${total}`;
+  }
+  console.log(calculateTotalPrice(cartForParty));
 }
 
 function test() {

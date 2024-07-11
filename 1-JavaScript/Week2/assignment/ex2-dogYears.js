@@ -16,8 +16,9 @@ calculate it!
    ages.
 -----------------------------------------------------------------------------*/
 
-function calculateDogAge(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function calculateDogAge(humanYearAge) {
+  let dogYearAge = humanYearAge * 7;
+  return `your doggie is ${dogYearAge} years old in dog years`;
 }
 
 function main() {
