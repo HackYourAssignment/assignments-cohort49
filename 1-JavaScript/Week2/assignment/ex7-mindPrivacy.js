@@ -29,7 +29,6 @@ const employeeRecords = [
   },
 ]
 
-  
 // ! Function under test
 function filterPrivateData(employees) {
   const filteredEmployees =[];
@@ -38,7 +37,7 @@ function filterPrivateData(employees) {
 
     const{ name, occupation, email } = employee;
 
-    const publicData = { name, occupation,  email};
+    const publicData = {name, occupation, email};
 
   filteredEmployees.push(publicData);
     

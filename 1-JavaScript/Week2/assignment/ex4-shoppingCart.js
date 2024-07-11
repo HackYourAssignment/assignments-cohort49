@@ -28,18 +28,15 @@ const shoppingCart = ['bananas', 'milk'];
 
 function addToShoppingCart(item){
 
-   if(!item){
-    return `You bought ${shoppingCart.join(', ')}!`;
-   }
-  shoppingCart.push(item);
-
-  if(shoppingCart.length > 3){
-    shoppingCart.shift();
-  }
-
-  return `You bought ${shoppingCart.join(', ')}!`; 
+    if(item) {
+        shoppingCart.push(item);
+    
+    if(shoppingCart.length > 3) {
+        shoppingCart.shift()
+    } 
 }
-
+     return `You bought ${shoppingCart.join(', ')}!`
+}
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
