@@ -8,11 +8,6 @@
   }
 
 
-console.log(giveCompliment("Fatemeh"));
-console.log(giveCompliment("Fatemeh"));
-console.log(giveCompliment("Fatemeh"));
-
-
 function main() {
  
   const myName = 'Fatemeh';
