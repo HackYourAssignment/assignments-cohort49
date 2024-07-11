@@ -1,7 +1,7 @@
 'use strict';
 
 function giveCompliment(name) {
-  // TODO complete this function
+  
   const compliments = [
     "great",
     "excellent",
@@ -18,7 +18,7 @@ function giveCompliment(name) {
   const random = Math.floor(Math.random() * compliments.length);
   const adj = compliments[random];
 
-  return `You are ${adj}, ${name}`;
+  return `You are ${adj}, ${name}!`;
 }
 
 function main() {

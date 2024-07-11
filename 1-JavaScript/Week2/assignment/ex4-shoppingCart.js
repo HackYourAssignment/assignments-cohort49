@@ -5,17 +5,17 @@ const shoppingCart = ['bananas', 'milk'];
 // ! Function to be tested
 function addToShoppingCart(item) {
   
-
-  shoppingCart.push(item);
-
-  if (shoppingCart.length > 3) {
-    shoppingCart.shift();
+  if (item) {
+    shoppingCart.push(item);
+    if (shoppingCart.length > 3) {
+      shoppingCart.shift();
+    }
   }
-
   return `You bought ${shoppingCart.join(', ')}!` ;
 }
 
-// ! Test functions (plain vanilla JavaScript)
+
+// !  Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
     'Test 1: addShoppingCart() called without an argument should leave the shopping cart unchanged'
@@ -62,3 +62,5 @@ function test() {
 }
 
 test();
+
+

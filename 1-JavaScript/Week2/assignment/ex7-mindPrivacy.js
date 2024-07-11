@@ -11,7 +11,7 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/1-J
   employee record with just the non-private parts (name, occupation and email).
 4. Return the new array as the return value of the function.
 5. Run the exercise and verify that it passes all the unit tests.
-------------------------------------------------------------------------------*/
+-----------------------------------------------------------------------------*/
 const employeeRecords = [
   {
     name: 'John',
