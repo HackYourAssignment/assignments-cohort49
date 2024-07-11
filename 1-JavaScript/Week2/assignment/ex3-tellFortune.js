@@ -33,35 +33,50 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
-
-function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
-}
 
 function main() {
-  const numKids = [
-    // TODO add elements here
+
+  const numKids = [1,2,3,4,5
+    
   ];
 
-  const partnerNames = [
-    // TODO add elements here
+  const partnerNames = [ 'Bryana', 'Diana', 'Maria', 'Peter', 'Juan',
+    
   ];
 
-  const locations = [
-    // TODO add elements here
+  const locations = [ 'Maastricht', 'Zwolle', 'Tokyo', 'Caracas', 'Paris'
+  
   ];
 
-  const jobTitles = [
-    // TODO add elements here
+  const jobTitles = [ 'Software security', 'Sign specialist', 'Doctor', 'Nurse', 'Engineer'
+   
   ];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
 }
+
+function selectRandomly(arr) {
+
+  // Random selected in based of the length of the array
+
+   return arr[Math.floor(Math.random() * arr.length)];
+}
+// Function with four parameters.
+function tellFortune(numKids, partnerNames, locations, jobTitles) {
+  
+  // Random selector passing parameters
+
+  const numKid = selectRandomly(numKids);
+  const partnerName = selectRandomly(partnerNames);
+  const location = selectRandomly(locations);
+  const jobTitle = selectRandomly(jobTitles);
+   
+   return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numKid} kids.`;
+}
+
+ 
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {

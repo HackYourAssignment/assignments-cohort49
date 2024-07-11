@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:53:19 - Unknown word (Dorelys)

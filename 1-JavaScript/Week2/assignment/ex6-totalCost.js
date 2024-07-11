@@ -20,26 +20,43 @@ instead!
 
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
+
+
 const cartForParty = {
-  // TODO complete this object
+  chips : 1.75,
+  pizza : 0.99,
+  beers : 5.65,
+  pepsi : 0.99,
+  doritos : 1.88
+
+  
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+function calculateTotalPrice(cart) {
+  let total = 0;
+  const items = Object.keys(cart);
+   for (const item of items ) {
+   total += cart[item];
+  }
+  return `Total: €${total.toFixed(2)}`;
 }
+
+const totalCost = calculateTotalPrice(cartForParty);
+console.log(totalCost);
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+  console.assert(calculateTotalPrice.length  === 1)
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
-}
-
-function test() {
+  const expectedOutput = "Total: €11.26";
+  const actualOutput = calculateTotalPrice(cartForParty);
+  console.assert(actualOutput === expectedOutput, `Expected ${expectedOutput} but got ${actualOutput}`);
+  }
+    function test() {
   test1();
   test2();
 }
