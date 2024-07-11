@@ -1,4 +1,0 @@
-
-*** Spell Checker Report ***
-
-/Applications/MAMP/htdocs/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:23:19 - Unknown word (Oleksandr)

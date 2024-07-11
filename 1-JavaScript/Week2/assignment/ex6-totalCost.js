@@ -9,8 +9,8 @@ const cartForParty = {
 
 function calculateTotalPrice(cart) {
   let total = 0;
-  for (const item of Object.keys(cart)) {
-    total += cart[item];
+  for (const item of Object.values(cart)) {
+    total += item;
   }
   return `Total: €${total.toFixed(2)}`;
 }

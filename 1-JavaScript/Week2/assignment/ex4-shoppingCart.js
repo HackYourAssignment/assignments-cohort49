@@ -1,7 +1,6 @@
 'use strict';
 const shoppingCart = ['bananas', 'milk'];
 
-// ! Function to be tested
 function addToShoppingCart(item) {
   if (item) {
     shoppingCart.push(item);
@@ -9,10 +8,10 @@ function addToShoppingCart(item) {
       shoppingCart.shift();
     }
   }
-  return `You bought ${shoppingCart.join(', ')}!`;
+  const listItems = shoppingCart.join(', ');
+  return `You bought ${listItems}!`;
 }
 
-// ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
     'Test 1: addShoppingCart() called without an argument should leave the shopping cart unchanged'
