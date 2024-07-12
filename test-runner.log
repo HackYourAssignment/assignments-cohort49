@@ -158,3 +158,103 @@ Ran all test suites matching /ex3-lemonAllergy.test.js/i.
 2024-07-11 08:35:15 info: -------------------------------------------------
 2024-07-11 08:35:17 info: All unit tests passed.
 2024-07-11 08:35:21 info: All steps were completed successfully
+2024-07-12 05:33:02 info: ------------------------------------------
+2024-07-12 05:33:02 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-12 05:33:02 info: ------------------------------------------
+2024-07-12 05:33:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (1 ms)
+    √ should return an object with `subscribe` and a `notify` function properties
+    × should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        4.541 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-12 05:34:40 info: ------------------------------------------
+2024-07-12 05:34:40 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-12 05:34:40 info: ------------------------------------------
+2024-07-12 05:34:42 error: *** Unit Test Error Report ***
+
+console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:41)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:41)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (1 ms)
+    √ should return an object with `subscribe` and a `notify` function properties
+    × should notify all subscribers of any notification (18 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.617 s, estimated 4 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-12 05:44:59 info: ------------------------------------------
+2024-07-12 05:44:59 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-12 05:44:59 info: ------------------------------------------
+2024-07-12 05:45:01 info: All unit tests passed.
+2024-07-12 05:45:05 info: All steps were completed successfully
+2024-07-12 06:57:52 info: --------------------------------------
+2024-07-12 06:57:52 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-12 06:57:52 info: --------------------------------------
+2024-07-12 06:57:55 info: All unit tests passed.
+2024-07-12 06:57:59 info: All steps were completed successfully
