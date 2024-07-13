@@ -29,28 +29,18 @@ const cartForParty = {
 };
 
 function calculateTotalPrice(cart) {
-  const result = [];
-  for (const priceList in cart) {
-    cart[priceList];
-    result.push(cart[priceList]);
+  let total = 0;
+  for (const price in cart) {
+    total += cart[price];
   }
 
-  const totalPrice = () => {
-    let total = 0;
-    for (let i = 0; i < result.length; i++) {
-      total += result[i];
-    }
-    return total;
-  };
-  return `Total: € ${totalPrice()}`;
- 
+  return `Total: € ${total}`;
 }
 
-console.log(calculateTotalPrice(cartForParty));
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  console.assert(calculateTotalPrice.length === 1 );
+  console.assert(calculateTotalPrice.length === 1);
 }
 
 function test2() {
@@ -58,7 +48,6 @@ function test2() {
   const expected = 'Total: € 55.8';
   const actual = calculateTotalPrice(cartForParty);
   console.assert(actual === expected);
-  
 }
 
 function test() {

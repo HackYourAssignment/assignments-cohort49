@@ -17,24 +17,14 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 
-const shoppingCart = ['banana', 'milk'];
-
 function addToShoppingCart(shoppingCart, item) {
-  if (typeof item === 'string') {
-    let newCart = [...shoppingCart, item];
+  let newCart = [...shoppingCart, item];
 
-    if (newCart.length > 3) {
-      newCart = newCart.slice(-3);
-    }
-    return newCart;
+  if (newCart.length > 3) {
+    newCart = newCart.slice(-3);
   }
-
-  
+  return newCart;
 }
-console.log(shoppingCart);
-console.log(addToShoppingCart(shoppingCart, 'chocolate'));
-console.log(addToShoppingCart(shoppingCart, 'waffles'));
-
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

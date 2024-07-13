@@ -31,14 +31,14 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(data) {
-  const filteredData =[];
+  const filteredData = [];
 
-  for (const {name, occupation, email} of data){
-    filteredData.push({name, occupation, email});
+  for (const { name, occupation, email } of data) {
+    filteredData.push({ name, occupation, email });
   }
   return filteredData;
 }
-console.log(filterPrivateData(employeeRecords));
+
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: filterPrivateData should take one parameters');
