@@ -1,7 +1,6 @@
 'use strict';
 
 function giveCompliment(name) {
-  
   const compliments = [
     "great",
     "excellent",
@@ -22,13 +21,11 @@ function giveCompliment(name) {
 }
 
 function main() {
-  
-  const myName = 'Nima';
+  const myName = 'Nina';
 
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));
-
 
   const yourName = 'HackYourFuture';
 

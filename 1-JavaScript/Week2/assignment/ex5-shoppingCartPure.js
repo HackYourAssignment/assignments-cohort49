@@ -2,14 +2,7 @@
 
 // ! Function under test
 function addToShoppingCart(shoppingCart, rice) {
-  
-  const newShoppingCart = [...shoppingCart, rice];
-
-  if (newShoppingCart.length > 3) {
-    newShoppingCart.shift();
-  }
-
-  return newShoppingCart;
+  return [...shoppingCart, rice].slice(-3);
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -20,8 +13,7 @@ function test1() {
 
 function test2() {
   console.log('Test 2: addToShoppingCart should be a pure function');
-  // A pure function should return the same result when called with
-  // Identical arguments. It should also have no side effects (not tested here).
+
   const initialCart = ['bananas', 'milk'];
   const result1 = addToShoppingCart(initialCart, 'chocolate');
   const result2 = addToShoppingCart(initialCart, 'chocolate');

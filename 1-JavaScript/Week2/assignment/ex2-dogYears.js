@@ -1,7 +1,6 @@
 'use strict';
 
 function calculateDogAge(humanAge) {
-  
   const puppyAge = humanAge * 7 ;
 
   return `Your doggie is ${puppyAge} years old in dog years!`

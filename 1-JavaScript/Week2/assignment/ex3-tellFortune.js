@@ -1,20 +1,17 @@
 'use strict';
 
-
 function selectRandomly(array) {
-  
   const randomIndex = Math.floor(Math.random() * array.length);
   return array [randomIndex];
 }
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
-  
   const numKid = selectRandomly(numKids);
   const partnerName = selectRandomly(partnerNames);
   const location = selectRandomly(locations);
   const jobTitle = selectRandomly(jobTitles);
 
-  return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numKid} kids. `;
+  return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numKid} kids.`;
 }
 
 function main() {
@@ -23,11 +20,11 @@ function main() {
   ];
 
   const partnerNames = [
-    "Alexa", "Tatiana", "Sabrina", "Sara","Marina"
+    "Rosita", "Tatiana", "Sabrina", "Sara","Marina"
   ];
 
   const locations = [
-    "Amsterdam", "Tokyo", "Newyork", "Berlin", "Lisbon"
+    "Amsterdam", "Tokyo", "New york", "Berlin", "Lisbon"
   ];
 
   const jobTitles = [

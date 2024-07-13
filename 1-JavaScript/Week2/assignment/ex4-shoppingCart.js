@@ -11,7 +11,7 @@ function addToShoppingCart(item) {
       shoppingCart.shift();
     }
   }
-  return `You bought ${shoppingCart.join(', ')}!` ;
+  return `You bought ${shoppingCart.join(', ')}!`;
 }
 
 
