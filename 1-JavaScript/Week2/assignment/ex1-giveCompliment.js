@@ -1,8 +1,7 @@
 'use strict';
 
   function giveCompliment(name) {
-
-    const compliments = ["great","nice","amazing","very good","strong","perfect","very cool","fantastic","brilliant","awesome"];
+    const compliments = ["great", "nice", "amazing", "very good", "strong", "perfect", "very cool", "fantastic", "brilliant", "awesome"];
     let random = compliments[Math.floor(Math.random() * compliments.length)];
     return `You are ${random} ${name}!`
   }
