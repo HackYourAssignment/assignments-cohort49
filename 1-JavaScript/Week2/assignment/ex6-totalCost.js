@@ -21,11 +21,22 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+  pizza: 3.99,
+  beers: 4.76,
+  doritos: 1.89,
+  soda: 0.99,
+  chips:1.87
+
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+function calculateTotalPrice(Cart) {
+  let total = 0;
+  for (let item in cart){
+    if(cart.hasOwnProperty(item)) {
+      total += this.items[item];
+    }
+  }
+  return `Total: €${total.toFixed(2)}`;
 }
 
 // ! Test functions (plain vanilla JavaScript)

@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:57:6 - Unknown word (Bryana)
