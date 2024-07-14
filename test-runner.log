@@ -258,3 +258,13 @@ Ran all test suites matching /ex4-observable.test.js/i.
 2024-07-12 06:57:52 info: --------------------------------------
 2024-07-12 06:57:55 info: All unit tests passed.
 2024-07-12 06:57:59 info: All steps were completed successfully
+2024-07-14 02:31:00 info: ------------------------------------------------------
+2024-07-14 02:31:00 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2024-07-14 02:31:00 info: ------------------------------------------------------
+2024-07-14 02:31:11 info: All unit tests passed.
+2024-07-14 02:31:22 info: All steps were completed successfully
+2024-07-14 02:36:45 info: -------------------------------------------------
+2024-07-14 02:36:45 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-14 02:36:45 info: -------------------------------------------------
+2024-07-14 02:36:47 info: All unit tests passed.
+2024-07-14 02:36:51 info: All steps were completed successfully

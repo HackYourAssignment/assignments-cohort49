@@ -27,8 +27,7 @@ const fruitBasket = [
 
 // ! Function under test
 function sanitizeFruitBasket(basket, allergen) {
-  const newBasket = basket.filter((fruit) => fruit !== allergen);
-  return newBasket;
+  return basket.filter((fruit) => fruit !== allergen);
 }
 
 // ! Unit tests (using Jest)
