@@ -1,33 +1,38 @@
 'use strict';
 
 const cartForParty = {
-  beer: 15.50,
-  chocolate: 4.20,
-  cracker: 2.90,
-  soda: 3.90,
-  cheese: 7.39
+  beer: 15.5,
+  chocolate: 4.2,
+  cracker: 2.9,
+  soda: 3.9,
+  cheese: 7.39,
 };
 
 function calculateTotalPrice(cart) {
   let totalPrice = 0;
 
   for (let value of Object.values(cart)) {
-      totalPrice += value;
+    totalPrice += value;
   }
   return `Total: €${totalPrice.toFixed(2)}`;
 }
 
-
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  console.assert(typeof calculateTotalPrice === 'function' && calculateTotalPrice.length === 1)
+  console.assert(
+    typeof calculateTotalPrice === 'function' &&
+      calculateTotalPrice.length === 1
+  );
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   const expected = 'Total: €34.89';
   const result = calculateTotalPrice(cartForParty);
-  console.assert(result === expected, `this was expected: "${expected}", but got this: "${result}"`);
+  console.assert(
+    result === expected,
+    `this was expected: "${expected}", but got this: "${result}"`
+  );
 }
 
 function test() {

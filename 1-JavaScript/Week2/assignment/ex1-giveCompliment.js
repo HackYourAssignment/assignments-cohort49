@@ -1,15 +1,27 @@
 'use strict';
 
-  function giveCompliment(name) {
+function giveCompliment(name) {
+  const compliments = [
+    'great',
+    'nice',
+    'amazing',
+    'very good',
+    'strong',
+    'perfect',
+    'very cool',
+    'fantastic',
+    'brilliant',
+    'awesome',
+  ];
 
-    const compliments = ["great","nice","amazing","very good","strong","perfect","very cool","fantastic","brilliant","awesome"];
-    let random = compliments[Math.floor(Math.random() * compliments.length)];
-    return `You are ${random} ${name}!`
-  }
+  let randomIndex = Math.floor(Math.random() * compliments.length);
 
+  let random = compliments[randomIndex];
+
+  return `You are ${random} ${name}!`;
+}
 
 function main() {
- 
   const myName = 'Fatemeh';
 
   console.log(giveCompliment(myName));
@@ -22,7 +34,6 @@ function main() {
   console.log(giveCompliment(yourName));
   console.log(giveCompliment(yourName));
 }
-
 
 if (process.env.NODE_ENV !== 'test') {
   main();
