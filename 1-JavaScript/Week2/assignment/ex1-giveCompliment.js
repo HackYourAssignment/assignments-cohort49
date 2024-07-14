@@ -31,17 +31,16 @@ function giveCompliment(name) {
     'superstar',
     'super',
   ];
+
   const selectRandomly = Math.floor(Math.random() * goodWords.length);
-  let randomWord = goodWords[selectRandomly];
-  return `you are ${randomWord} , ${name}`;
-  
+
+  return `you are ${selectRandomly} , ${name}`;
 }
 
 function main() {
   console.log(giveCompliment('fadysaadeddin'));
   console.log(giveCompliment('fadysaadeddin'));
   console.log(giveCompliment('fadysaadeddin'));
-  
   const myName = 'HackYourFuture';
 
   console.log(giveCompliment(myName));

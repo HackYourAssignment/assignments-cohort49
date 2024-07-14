@@ -30,51 +30,49 @@ Note: The DRY principle is put into practice here: instead of repeating the code
 randomly select array elements four times inside the `tellFortune` function 
 body, this code is now written once only in a separated function.
 -----------------------------------------------------------------------------*/
-let numKids = [2, 1, 4, 5, 0];
-let partnerNames = ['Manal', 'Rama', 'Rihab', 'Zozo', 'Mareike'];
-let locations = [
-  'fijnaart',
-  'maastricht',
-  'denHaag',
-  'Rotterdam',
-  'Florianopolis',
-];
-let jobTitles = ['programmer', 'pizzabakker', 'bezorger', 'teacher', 'chef'];
+
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
 function selectRandomly(children) {
-  let randomIndex = Math.ceil(Math.random() * numKids.length);
+  const randomIndex = Math.floor(Math.random() * children.length);
 
-  return numKids[randomIndex];
+  return children[randomIndex];
 }
-selectRandomly();
 
-function tellFortune(kids, wifes, places, work) {
-  return `You will be a ${work} in ${places}, 
-  married to ${wifes} with ${kids} kids`;
+function tellFortune(numkids, partnerNames, locations, jobTitles) {
+  return `You will be a ${selectRandomly(jobTitles)} in ${selectRandomly(
+    locations
+  )}
+  
+  married to ${selectRandomly(partnerNames)} with ${selectRandomly(numkids)}`;
 }
 
 function main() {
-  const numKids = [
-    [numkids.selectRandomly()];
-  ];
+  const numKids = [2, 1, 4, 5, 0];
 
-  const partnerNames = [
-    [partnerNames.selectRandomly()];
-  ];
+  const partnerNames = ['Manal', 'Rama', 'Rihab', 'Zozo', 'Mareike'];
 
   const locations = [
-    [locations.selectRandomly()];
+    'fijnaart',
+    'maastricht',
+    'denHaag',
+    'Rotterdam',
+    'Florianopolis',
   ];
 
   const jobTitles = [
-    [jobTitles.selectRandomly()];
+    'programmer',
+    'pizzabakker',
+    'bezorger',
+    'teacher',
+    'chef',
   ];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
 }
+main();
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {

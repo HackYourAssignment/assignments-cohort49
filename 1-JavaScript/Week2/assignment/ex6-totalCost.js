@@ -22,70 +22,37 @@ instead!
 -----------------------------------------------------------------------------*/
 const cartForParty = {
   juice: 1.75,
-chips: 0.99,
-soda: 1.5,
-pizza: 7.99,
-iceCream: 3.49,
-  
+  chips: 0.99,
+  soda: 1.5,
+  pizza: 7.99,
+  iceCream: 3.49,
 };
 
-function calculateTotalPrice(price) {
+function calculateTotalPrice(newCart) {
   let total = 0;
-  for (let item in price) {
-    if (price.hasOwnProperty(item)) {
-      total += price[item];
-    }
-  }
-  return `Total: €${total}`;
+  Object.keys(newCart).forEach((item) => (total += newCart[item]));
+
+  return `Total: €${total.toFixed(2)}`;
 }
+
 console.log(calculateTotalPrice(cartForParty));
 
 // ! Test functions (plain vanilla JavaScript)
-function test1() {
-  console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  const cartForParty = {
-    juice: 1.75,
-  chips: 0.99,
-  soda: 1.5,
-  pizza: 7.99,
-  iceCream: 3.49,
-    
-  };
-  
-  function calculateTotalPrice(price) {
-    let total = 0;
-    for (let item in price) {
-      if (price.hasOwnProperty(item)) {
-        total += price[item];
-      }
-    }
-    return `Total: €${total}`;
-  }
-  console.log(calculateTotalPrice(cartForParty));
-}
+function test1(newCart) {
+  let total = 0;
+  Object.keys(newCart).forEach((item) => (total += newCart[item]));
 
-function test2() {
-  console.log('\nTest 2: return correct output when passed cartForParty');
-  const cartForParty = {
-    juice: 1.75,
-  chips: 0.99,
-  soda: 1.5,
-  pizza: 7.99,
-  iceCream: 3.49,
-    
-  };
-  
-  function calculateTotalPrice(price) {
-    let total = 0;
-    for (let item in price) {
-      if (price.hasOwnProperty(item)) {
-        total += price[item];
-      }
-    }
-    return `Total: €${total}`;
-  }
-  console.log(calculateTotalPrice(cartForParty));
+  return `Total: €${total.toFixed(2)}`;
 }
+console.log(calculateTotalPrice(cartForParty));
+
+function test2(newCart) {
+  let total = 0;
+  Object.keys(newCart).forEach((item) => (total += newCart[item]));
+
+  return `Total: €${total.toFixed(2)}`;
+}
+console.log(calculateTotalPrice(cartForParty));
 
 function test() {
   test1();
