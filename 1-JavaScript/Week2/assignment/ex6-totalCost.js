@@ -28,17 +28,17 @@ const cartForParty = {
   chips:1.87
 
 };
-
-function calculateTotalPrice(Cart) {
+//fixed to Object.keys
+function calculateTotalPrice(cart) {
   let total = 0;
-  for (let item in cart){
-    if(cart.hasOwnProperty(item)) {
+  const items = Object.keys(cart);
+    for (const item of items){
       total += this.items[item];
     }
-  }
+  
   return `Total: €${total.toFixed(2)}`;
+  
 }
-
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
