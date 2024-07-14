@@ -11,11 +11,11 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 ------------------------------------------------------------------------------*/
 // ! Function to be tested
 function doubleEvenNumbers(numbers) {
-  return numbers 
+  return numbers
   .filter(number => number % 2 === 0)
-  .map(number => number * 2)
+  .map(number => number * 2);
   
-}
+ }
 
 // // ! Unit test (using Jest)
 test('doubleEvenNumbers should take the even numbers and double them', () => {
