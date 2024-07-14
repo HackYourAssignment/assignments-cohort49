@@ -33,7 +33,7 @@ function calculateTotalPrice(cart) {
   let total = 0;
   const items = Object.keys(cart);
     for (const item of items){
-      total += this.items[item];
+      total += cart[item];
     }
   
   return `Total: €${total.toFixed(2)}`;
