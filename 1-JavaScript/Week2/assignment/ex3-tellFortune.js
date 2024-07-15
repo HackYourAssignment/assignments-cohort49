@@ -42,37 +42,24 @@ function selectRandomly(children) {
 function tellFortune(numkids, partnerNames, locations, jobTitles) {
   return `You will be a ${selectRandomly(jobTitles)} in ${selectRandomly(
     locations
-  )}
-  
-  married to ${selectRandomly(partnerNames)} with ${selectRandomly(numkids)}`;
+  )}, married to ${selectRandomly(partnerNames)} with ${selectRandomly(
+    numkids
+  )} kids.`;
 }
 
 function main() {
   const numKids = [2, 1, 4, 5, 0];
 
-  const partnerNames = ['Manal', 'Rama', 'Rihab', 'Zozo', 'Mareike'];
+  const partnerNames = ['Sandra', 'Rama', 'Luisa', 'Sara', 'Diana'];
 
-  const locations = [
-    'fijnaart',
-    'maastricht',
-    'denHaag',
-    'Rotterdam',
-    'Florianopolis',
-  ];
+  const locations = ['Paris', 'maastricht', 'Berlin', 'Rotterdam', 'london'];
 
-  const jobTitles = [
-    'programmer',
-    'pizzabakker',
-    'bezorger',
-    'teacher',
-    'chef',
-  ];
+  const jobTitles = ['programmer', 'engineer', 'doctor', 'teacher', 'chef'];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
 }
-main();
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
