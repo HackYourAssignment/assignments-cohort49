@@ -14,7 +14,6 @@ function addToShoppingCart(item) {
   return `You bought ${shoppingCart.join(', ')}!`;
 }
 
-
 // !  Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
