@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+c:/Users/Jordi/OneDrive/Bureaublad/HYF/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:4:53 - Unknown word (Saskia)
