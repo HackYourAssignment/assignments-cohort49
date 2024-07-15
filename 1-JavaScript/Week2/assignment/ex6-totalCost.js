@@ -11,7 +11,7 @@ const cartForParty = {
 function calculateTotalPrice(cart) {
   let totalPrice = 0;
 
-  for (let value of Object.values(cart)) {
+  for (const value of Object.values(cart)) {
     totalPrice += value;
   }
   return `Total: €${totalPrice.toFixed(2)}`;

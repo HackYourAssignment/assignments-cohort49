@@ -14,15 +14,15 @@ function giveCompliment(name) {
     'awesome',
   ];
 
-  let randomIndex = Math.floor(Math.random() * compliments.length);
+  const randomIndex = Math.floor(Math.random() * compliments.length);
 
-  let random = compliments[randomIndex];
+  const random = compliments[randomIndex];
 
-  return `You are ${random} ${name}!`;
+  return `You are ${random}, ${name}!`;
 }
 
 function main() {
-  const myName = 'Fatemeh';
+  const myName = 'HackYourFuture!';
 
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));
