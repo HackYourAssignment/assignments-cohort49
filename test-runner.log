@@ -1,0 +1,81 @@
+2024-07-07 05:32:42 info: ----------------------------------------------
+2024-07-07 05:32:42 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-07 05:32:42 info: ----------------------------------------------
+2024-07-07 05:32:46 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-07 05:32:49 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  44:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-07 05:32:52 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:25:6 - Unknown word (exellent)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:31:6 - Unknown word (welldone)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:33:6 - Unknown word (awsome)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:45:19 - Unknown word (Nima)
+
+2024-07-07 05:35:44 info: Disclaimer turned off
+2024-07-07 05:36:33 info: ----------------------------------------------
+2024-07-07 05:36:33 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-07 05:36:33 info: ----------------------------------------------
+2024-07-07 05:36:36 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-07 05:36:39 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  44:3  warning  Remove commented-out code  hyf/no-commented-out-code
+  51:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2024-07-07 05:36:42 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:25:6 - Unknown word (exellent)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:31:6 - Unknown word (welldone)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:33:6 - Unknown word (awsome)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:45:19 - Unknown word (Nima)
+
+2024-07-07 05:46:58 info: ----------------------------------------------
+2024-07-07 05:46:58 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-07 05:46:58 info: ----------------------------------------------
+2024-07-07 05:47:02 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-07 05:47:08 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:26:19 - Unknown word (Nima)
+
