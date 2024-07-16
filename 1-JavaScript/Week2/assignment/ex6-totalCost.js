@@ -35,23 +35,11 @@ function calculateTotalPrice(newCart) {
   return `Total: €${total.toFixed(2)}`;
 }
 
-console.log(calculateTotalPrice(cartForParty));
-
 // ! Test functions (plain vanilla JavaScript)
-function test1(newCart) {
-  let total = 0;
-  Object.keys(newCart).forEach((item) => (total += newCart[item]));
-
-  return `Total: €${total.toFixed(2)}`;
-}
+function test1() {}
 console.log(calculateTotalPrice(cartForParty));
 
-function test2(newCart) {
-  let total = 0;
-  Object.keys(newCart).forEach((item) => (total += newCart[item]));
-
-  return `Total: €${total.toFixed(2)}`;
-}
+function test2() {}
 console.log(calculateTotalPrice(cartForParty));
 
 function test() {

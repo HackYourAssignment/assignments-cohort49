@@ -24,7 +24,6 @@ function addToShoppingCart(shopCart, items) {
 
   return newCart;
 }
-console.log(addToShoppingCart(['tomato'], 'banana'));
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
