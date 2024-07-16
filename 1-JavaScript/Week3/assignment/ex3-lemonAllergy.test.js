@@ -1,7 +1,5 @@
 'use strict';
 
-const { clear } = require('winston');
-
 const fruitBasket = [
   'apple',
   'lemon',
