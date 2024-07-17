@@ -265,3 +265,210 @@ ex3-lemonAllergy.test.js
 2024-07-17 11:21:26 info: ------------------------------------------
 2024-07-17 11:21:28 info: All unit tests passed.
 2024-07-17 11:21:32 info: All steps were completed successfully
+2024-07-17 12:05:04 info: --------------------------------------
+2024-07-17 12:05:04 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:05:04 info: --------------------------------------
+2024-07-17 12:05:07 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:05:31 info: --------------------------------------
+2024-07-17 12:05:31 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:05:31 info: --------------------------------------
+2024-07-17 12:05:33 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:06:22 info: --------------------------------------
+2024-07-17 12:06:22 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:06:22 info: --------------------------------------
+2024-07-17 12:06:25 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:10:57 info: --------------------------------------
+2024-07-17 12:10:57 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:10:57 info: --------------------------------------
+2024-07-17 12:10:59 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:12:01 info: --------------------------------------
+2024-07-17 12:12:01 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:12:01 info: --------------------------------------
+2024-07-17 12:12:03 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:12:54 info: --------------------------------------
+2024-07-17 12:12:54 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:12:54 info: --------------------------------------
+2024-07-17 12:12:57 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:13:11 info: --------------------------------------
+2024-07-17 12:13:11 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:13:11 info: --------------------------------------
+2024-07-17 12:13:13 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:13:26 info: --------------------------------------
+2024-07-17 12:13:26 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:13:26 info: --------------------------------------
+2024-07-17 12:13:28 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:14:24 info: --------------------------------------
+2024-07-17 12:14:24 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:14:24 info: --------------------------------------
+2024-07-17 12:14:26 error: *** Unit Test Error Report ***
+
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:14:58 info: --------------------------------------
+2024-07-17 12:14:58 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:14:58 info: --------------------------------------
+2024-07-17 12:15:00 error: *** Unit Test Error Report ***
+
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:16:23 info: --------------------------------------
+2024-07-17 12:16:23 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:16:23 info: --------------------------------------
+2024-07-17 12:16:25 error: *** Unit Test Error Report ***
+
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:20:03 info: --------------------------------------
+2024-07-17 12:20:03 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:20:03 info: --------------------------------------
+2024-07-17 12:20:05 info: All unit tests passed.
+2024-07-17 12:20:09 info: All steps were completed successfully
+2024-07-17 12:34:02 info: --------------------------------------
+2024-07-17 12:34:02 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:34:02 info: --------------------------------------
+2024-07-17 12:34:05 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 12:48:08 info: --------------------------------------
+2024-07-17 12:48:08 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 12:48:08 info: --------------------------------------
+2024-07-17 12:48:10 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 09:59:21 info: --------------------------------------
+2024-07-17 09:59:21 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 09:59:21 info: --------------------------------------
+2024-07-17 09:59:24 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Jordi\OneDrive\Bureaublad\HYF\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 10:04:17 info: --------------------------------------
+2024-07-17 10:04:17 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 10:04:17 info: --------------------------------------
+2024-07-17 10:04:19 info: All unit tests passed.
+2024-07-17 10:04:23 info: All steps were completed successfully
+2024-07-17 10:06:24 info: --------------------------------------
+2024-07-17 10:06:24 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 10:06:24 info: --------------------------------------
+2024-07-17 10:06:26 info: All unit tests passed.
+2024-07-17 10:06:30 info: All steps were completed successfully
