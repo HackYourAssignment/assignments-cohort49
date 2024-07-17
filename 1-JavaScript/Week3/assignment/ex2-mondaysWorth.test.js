@@ -3,7 +3,7 @@
 const mondayTasks = [
   {
     name: 'Daily standup',
-    duration: 30, // specified in minutes
+    duration: 30,
   },
   {
     name: 'Feature discussion',
@@ -32,11 +32,8 @@ function computeEarnings(tasks, hourlyRate) {
   return `€${totalEarnings.toFixed(2)}`;
 }
 
-// ! Unit tests (using Jest)
 describe('computeEarnings', () => {
   test('should take two parameters', () => {
-    // The `.length` property indicates the number of parameters expected by
-    // the function.
     expect(computeEarnings).toHaveLength(2);
   });
 
