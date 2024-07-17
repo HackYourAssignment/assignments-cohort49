@@ -1,4 +1,5 @@
-// ! Function to be tested
+'use strict';
+
 function doubleEvenNumbers(numbers) {
   const evenNumbers = numbers.filter((number) => number % 2 === 0);
   const doubledEvenNumbers = evenNumbers.map((number) => number * 2);
