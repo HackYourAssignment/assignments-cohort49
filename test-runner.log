@@ -260,3 +260,8 @@ ex3-lemonAllergy.test.js
 2024-07-17 11:12:43 info: -------------------------------------------------
 2024-07-17 11:12:46 info: All unit tests passed.
 2024-07-17 11:12:49 info: All steps were completed successfully
+2024-07-17 11:21:26 info: ------------------------------------------
+2024-07-17 11:21:26 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 11:21:26 info: ------------------------------------------
+2024-07-17 11:21:28 info: All unit tests passed.
+2024-07-17 11:21:32 info: All steps were completed successfully
