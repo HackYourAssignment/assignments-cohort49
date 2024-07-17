@@ -22,14 +22,18 @@ function createWallet(name, cash = 0) {
     return amount;
   }
 
-  function transferInto(wallet, amount) {
+  function transferInto(sender, receiver, amount) {
     console.log(
-      `Transferring ${eurosFormatter.format(amount)} from ${name} to ${
-        wallet.name
-      }`
+      `Transferring ${eurosFormatter.format(
+        amount
+      )} from ${sender.getName()} to ${receiver.getName()}`
     );
-    const withdrawnAmount = withdraw(amount);
-    wallet.deposit(withdrawnAmount);
+    const withdrawnAmount = sender.withdraw(amount);
+    if (withdrawnAmount > 0) {
+      receiver.deposit(withdrawnAmount);
+    } else {
+      console.log(`Transfer failed due to insufficient funds.`);
+    }
   }
 
   function reportBalance() {
@@ -51,11 +55,11 @@ const walletJack = createWallet('Jack', 100);
 const walletJoe = createWallet('Joe', 10);
 const walletJane = createWallet('Jane', 20);
 
-walletJack.transferInto(walletJoe, 50);
-walletJane.transferInto(walletJoe, 25);
+walletJack.transferInto(walletJack, walletJoe, 50);
+walletJane.transferInto(walletJane, walletJoe, 25);
 
 walletJane.deposit(20);
-walletJane.transferInto(walletJoe, 25);
+walletJane.transferInto(walletJane, walletJoe, 25);
 
 walletJack.reportBalance();
 walletJoe.reportBalance();
@@ -77,7 +81,7 @@ const quiz = {
       b: 'cash, name', 
       c: 'amount, this, wallet'
     },
-    answer: undefined,
+    answer: 'b',
   },
   q2: {
     question: 'What is in the Call Stack, from top to bottom?',
@@ -86,7 +90,7 @@ const quiz = {
       b: 'anonymous, transferInto', 
       c: 'transferInto, anonymous' 
     },
-    answer: undefined,
+    answer: 'c',
   },
   q3: {
     question: 'What tooltip appears when hovering over the third debug button?',
@@ -95,7 +99,7 @@ const quiz = {
       b: 'Step out of current function', 
       c: 'Step' 
     },
-    answer: undefined,
+    answer: 'a',
   },
   q4: {
     question: 'What is displayed in the console?',
@@ -104,7 +108,7 @@ const quiz = {
       b: 'Transferring € 50,00 from Jack to undefined', 
       c: 'Transferring € 50,00 from Jack to Jane' 
     },
-    answer: undefined,
+    answer: 'a',
   },
   q5: {
     question: 'The owner of the wallet with insufficient funds is:',
@@ -113,6 +117,6 @@ const quiz = {
       b: 'Joe', 
       c: 'Jane' 
     },
-    answer: undefined,
+    answer: 'c',
   },
 };
