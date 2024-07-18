@@ -39,6 +39,9 @@ function calculateTotalPrice(cart) {
   return `Total: €${total.toFixed(2)}`;
   
 }
+const totalPrice = calculateTotalPrice(cartForParty);
+console.log(totalPrice); 
+
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
