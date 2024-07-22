@@ -22,12 +22,9 @@ const mondayTasks = [
 const hourlyRate = 25;
 
 function computeEarnings(tasks, hourlyRate) {
-  const hoursSpent = tasks.map((task) => task.duration / 60);
-  const earnings = hoursSpent.map((hour) => hour * hourlyRate);
-  let totalEarnings = 0;
-  for (const earning of earnings) {
-    totalEarnings += earning;
-  }
+  const totalEarnings = tasks
+    .map((task) => task.duration / 60)
+    .reduce((total, hoursSpent) => total + hoursSpent * hourlyRate, 0);
 
   return `€${totalEarnings.toFixed(2)}`;
 }

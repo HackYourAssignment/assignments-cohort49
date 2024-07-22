@@ -45,3 +45,8 @@ ex5-wallet/index.js
 2024-07-18 04:22:46 info: --------------------------------------
 2024-07-18 04:22:49 info: All unit tests passed.
 2024-07-18 04:22:53 info: All steps were completed successfully
+2024-07-22 02:43:33 info: -------------------------------------------------
+2024-07-22 02:43:33 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2024-07-22 02:43:33 info: -------------------------------------------------
+2024-07-22 02:43:37 info: All unit tests passed.
+2024-07-22 02:43:43 info: All steps were completed successfully
