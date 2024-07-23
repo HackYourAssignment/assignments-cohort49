@@ -36,7 +36,8 @@ function computeEarnings(tasks, hourlyRate) {
     .map((task) => (task.duration / 60) * hourlyRate)
     .reduce((sum, earning) => sum + earning, 0);
 
-  return `€${(Math.round(computerEarning * 100) / 100).toFixed(2)}`;
+  return `€${computerEarning.toFixed(2)}`;
+ 
 }
 
 // ! Unit tests (using Jest)

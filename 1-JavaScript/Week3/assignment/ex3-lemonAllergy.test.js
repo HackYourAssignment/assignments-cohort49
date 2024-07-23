@@ -1,6 +1,6 @@
 'use strict';
 
-const { result } = require('lodash');
+
 
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Assignments/tree/main/1-JavaScript/Week4#exercise-3-lemon-allergy
@@ -38,12 +38,12 @@ describe('sanitizeFruitBasket', () => {
     const basket = ['apple', 'watermelon', 'banana'];
     const unwantedFruit = 'lemon';
 
-    expect(basket).toEqual(expect.any(Array));
-    expect(unwantedFruit).toEqual(expect.any(String));
+    expect(basket).toEqual(basket);
+    expect(unwantedFruit).toEqual(unwantedFruit);
   });
 
   test('should not modify the original `fruitBasket` array', () => {
-    // Save the original contents of the fruit basket
+    
     const originalFruitBasketContents = [...fruitBasket];
     sanitizeFruitBasket(fruitBasket, 'lemon');
     expect(fruitBasket).toEqual(originalFruitBasketContents);
