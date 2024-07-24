@@ -715,3 +715,86 @@ Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyou
 2024-07-18 10:58:41 info: ------------------------------------------------------
 2024-07-18 10:58:42 info: All unit tests passed.
 2024-07-18 10:58:44 info: All steps were completed successfully
+2024-07-25 12:03:01 info: -------------------------------------------------
+2024-07-25 12:03:01 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-25 12:03:01 info: -------------------------------------------------
+2024-07-25 12:03:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✕ should not modify the original `fruitBasket` array (2 ms)
+    ✓ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: [Function sanitizeFruitBasket]
+    Received: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+
+      42 |     // Save the original contents of the fruit basket
+      43 |     
+    > 44 |     expect(fruitBasket).toEqual(sanitizeFruitBasket);
+         |                         ^
+      45 |   });
+      46 |
+      47 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toEqual (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:44:25)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.553 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-25 12:13:22 info: -------------------------------------------------
+2024-07-25 12:13:22 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-25 12:13:22 info: -------------------------------------------------
+2024-07-25 12:13:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (4 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 0
+
+      Array [
+        "apple",
+    -   "lemon",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+    -   "lemon",
+      ]
+
+      48 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      49 |     const sanitizedBasket = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 50 |     expect(sanitizedBasket).toEqual(fruitBasket);
+         |                             ^
+      51 |   });
+      52 | });
+      53 |
+
+      at Object.toEqual (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:50:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.371 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-25 12:14:54 info: -------------------------------------------------
+2024-07-25 12:14:54 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-25 12:14:54 info: -------------------------------------------------
+2024-07-25 12:14:55 info: All unit tests passed.
+2024-07-25 12:14:57 info: All steps were completed successfully
