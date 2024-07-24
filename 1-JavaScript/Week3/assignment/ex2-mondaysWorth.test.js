@@ -38,13 +38,14 @@ function computeEarnings(tasks, hourlyRate) {
     ({ duration }) => duration && typeof duration === 'number'
   );
 
-  const totalDurationInMinutes = tasksWithValidDuration.reduce(
-    (sum, { duration }) => sum + duration,
-    0
+  const durationsInMinutes = tasksWithValidDuration.map(
+    (task) => task.duration
   );
 
-  const totalHours = totalDurationInMinutes / 60;
-  const earnings = totalHours * hourlyRate;
+  const minuteRate = hourlyRate / 60;
+  const bills = durationsInMinutes.map((duration) => duration * minuteRate);
+
+  const earnings = bills.reduce((sum, bill) => sum + bill, 0);
   const earningsString = `€${earnings.toFixed(2)}`;
 
   return earningsString;
