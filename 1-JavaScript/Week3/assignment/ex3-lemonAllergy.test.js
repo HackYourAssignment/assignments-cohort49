@@ -35,11 +35,10 @@ function sanitizeFruitBasket(basket, unwantedFruit) {
 // ! Unit tests (using Jest)
 describe('sanitizeFruitBasket', () => {
   test('should take two parameters', () => {
-    const basket = ['apple', 'watermelon', 'banana'];
-    const unwantedFruit = 'lemon';
+   
 
-    expect(basket).toEqual(basket);
-    expect(unwantedFruit).toEqual(unwantedFruit);
+    expect(sanitizeFruitBasket.length).toBe(2);
+    
   });
 
   test('should not modify the original `fruitBasket` array', () => {
