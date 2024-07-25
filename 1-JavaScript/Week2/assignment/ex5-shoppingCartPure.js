@@ -2,11 +2,7 @@
 // ! Function under test
 function addToShoppingCart(shoppingCart, item) {
   if (item) {
-    const newCart = [...shoppingCart, item];
-    if (newCart.length > 3) {
-      newCart.shift();
-    }
-    return newCart;
+    return [...shoppingCart, item].slice(-3);
   }
 }
 

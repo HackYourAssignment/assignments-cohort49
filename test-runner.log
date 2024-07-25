@@ -106,3 +106,35 @@ ex6-totalCost.js
 2024-07-11 02:19:07 info: -------------------------------------------
 2024-07-11 02:19:07 warn: A unit test file was not provided.
 2024-07-11 02:19:09 info: All steps were completed successfully
+2024-07-25 11:12:28 info: ------------------------------------------------
+2024-07-25 11:12:28 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:12:28 info: ------------------------------------------------
+2024-07-25 11:12:28 warn: A unit test file was not provided.
+2024-07-25 11:12:29 error: *** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  6:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-25 11:12:45 info: ------------------------------------------------
+2024-07-25 11:12:45 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:12:45 info: ------------------------------------------------
+2024-07-25 11:12:45 warn: A unit test file was not provided.
+2024-07-25 11:12:47 info: All steps were completed successfully
+2024-07-25 11:13:02 info: ------------------------------------------------
+2024-07-25 11:13:02 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:13:02 info: ------------------------------------------------
+2024-07-25 11:13:02 warn: A unit test file was not provided.
+2024-07-25 11:13:04 info: All steps were completed successfully
+2024-07-25 11:13:15 info: ------------------------------------------------
+2024-07-25 11:13:15 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:13:15 info: ------------------------------------------------
+2024-07-25 11:13:15 warn: A unit test file was not provided.
+2024-07-25 11:13:17 info: All steps were completed successfully
+2024-07-25 11:14:39 info: ------------------------------------------------
+2024-07-25 11:14:39 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:14:39 info: ------------------------------------------------
+2024-07-25 11:14:39 warn: A unit test file was not provided.
+2024-07-25 11:14:41 info: All steps were completed successfully

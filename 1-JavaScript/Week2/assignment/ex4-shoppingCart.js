@@ -4,6 +4,7 @@ const shoppingCart = ['bananas', 'milk'];
 function addToShoppingCart(item) {
   if (item) {
     shoppingCart.push(item);
+
     if (shoppingCart.length > 3) {
       shoppingCart.shift();
     }
