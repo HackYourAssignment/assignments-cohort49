@@ -1760,3 +1760,172 @@ ex5-wallet/index.js
 ✖ 5 problems (5 errors, 0 warnings)
 
 
+2024-07-24 03:17:45 info: --------------------------------------
+2024-07-24 03:17:45 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-24 03:17:45 info: --------------------------------------
+2024-07-24 03:17:49 info: All unit tests passed.
+2024-07-24 03:17:56 info: All steps were completed successfully
+2024-07-24 03:43:11 info: -------------------------------------------------
+2024-07-24 03:43:11 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-24 03:43:11 info: -------------------------------------------------
+2024-07-24 03:43:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (6 ms)
+    × should not modify the original `fruitBasket` array (4 ms)
+    √ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 2
+    Received length: 4
+    Received array:  ["apple", "grapefruit", "banana", "watermelon"]
+
+      35 | describe('sanitizeFruitBasket', () => {
+      36 |   test('should take two parameters', () => {
+    > 37 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toHaveLength(2);
+         |                                                       ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:37:55)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 0
+
+      Array [
+        "apple",
+    -   "lemon",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+    -   "lemon",
+      ]
+
+      41 |     // Save the original contents of the fruit basket
+      42 |     const originalFruitBasketContents = [...fruitBasket];
+    > 43 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toEqual(
+         |                                                       ^
+      44 |       originalFruitBasketContents
+      45 |     );
+      46 |   });
+
+      at Object.toEqual (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:43:55)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.995 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-24 03:47:13 info: -------------------------------------------------
+2024-07-24 03:47:13 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-24 03:47:13 info: -------------------------------------------------
+2024-07-24 03:47:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (7 ms)
+    × should not modify the original `fruitBasket` array (6 ms)
+    √ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 2
+    Received length: 4
+    Received array:  ["apple", "grapefruit", "banana", "watermelon"]
+
+      35 | describe('sanitizeFruitBasket', () => {
+      36 |   test('should take two parameters', () => {
+    > 37 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toHaveLength(2);
+         |                                                       ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:37:55)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 0
+
+      Array [
+        "apple",
+    -   "lemon",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+    -   "lemon",
+      ]
+
+      41 |     // Save the original contents of the fruit basket
+      42 |     const originalFruitBasketContents = [...fruitBasket];
+    > 43 |     expect(sanitizeFruitBasket(originalFruitBasketContents, 'lemon')).toEqual(
+         |                                                                       ^
+      44 |       originalFruitBasketContents
+      45 |     );
+      46 |   });
+
+      at Object.toEqual (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:43:71)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.894 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-24 04:02:02 info: -------------------------------------------------
+2024-07-24 04:02:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-24 04:02:02 info: -------------------------------------------------
+2024-07-24 04:02:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (14 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    √ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 2
+    Received length: 4
+    Received array:  ["apple", "grapefruit", "banana", "watermelon"]
+
+      35 | describe('sanitizeFruitBasket', () => {
+      36 |   test('should take two parameters', () => {
+    > 37 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toHaveLength(2);
+         |                                                       ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:37:55)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.991 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-24 04:03:51 info: -------------------------------------------------
+2024-07-24 04:03:51 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-24 04:03:51 info: -------------------------------------------------
+2024-07-24 04:03:55 info: All unit tests passed.
+2024-07-24 04:04:02 info: All steps were completed successfully
