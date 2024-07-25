@@ -31,20 +31,11 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(employees) {
-  const filteredEmployees =[];
-   for(let i = 0; i < employees.length; i++) {
-    const employee = employees[i];
-
-    const{ name, occupation, email } = employee;
-
-    const publicData = {name, occupation, email};
-
-  filteredEmployees.push(publicData);
-    
-   }
-   return filteredEmployees;
-  
+   return emplojees.map(({ name, occupation, email }) => {
+      return { name, occupation, email };
+   });
 }
+      
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
