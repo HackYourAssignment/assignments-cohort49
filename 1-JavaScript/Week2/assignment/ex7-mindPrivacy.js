@@ -30,14 +30,12 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(obj) {
-  const result = [];
-  for (const employee of obj) {
-    const { name, occupation, email } = employee;
-    result.push({ name, occupation, email });
-  }
-
-  return result;
+function filterPrivateData(employeeData) {
+  return employeeData.map(({ name, occupation, email }) => ({
+    name,
+    occupation,
+    email,
+  }));
 }
 
 // ! Test functions (plain vanilla JavaScript)

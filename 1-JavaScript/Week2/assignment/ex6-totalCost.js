@@ -21,7 +21,6 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
   beer: 8.98,
   chips: 2.99,
   bitterballen: 12.81,

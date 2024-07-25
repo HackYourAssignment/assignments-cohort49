@@ -155,3 +155,75 @@ d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex6-totalCost.js:
 2024-07-07 07:14:37 info: -------------------------------------------
 2024-07-07 07:14:37 warn: A unit test file was not provided.
 2024-07-07 07:14:41 info: All steps were completed successfully
+2024-07-25 11:12:53 info: ----------------------------------------------
+2024-07-25 11:12:53 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-25 11:12:53 info: ----------------------------------------------
+2024-07-25 11:13:02 info: All unit tests passed.
+2024-07-25 11:13:12 error: *** Spell Checker Report ***
+
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:41:19 - Unknown word (Sofiia)
+
+2024-07-25 11:17:38 info: -------------------------------------------
+2024-07-25 11:17:38 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-25 11:17:38 info: -------------------------------------------
+2024-07-25 11:17:41 info: All unit tests passed.
+2024-07-25 11:17:44 error: *** Spell Checker Report ***
+
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:54:23 - Unknown word (Sāngli)
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:54:33 - Unknown word (Biên)
+
+2024-07-25 11:24:23 info: ------------------------------------------------
+2024-07-25 11:24:23 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:24:23 info: ------------------------------------------------
+2024-07-25 11:24:23 warn: A unit test file was not provided.
+2024-07-25 11:24:25 error: *** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  20:3  warning  Remove commented-out code  hyf/no-commented-out-code
+  24:5  warning  Remove commented-out code  hyf/no-commented-out-code
+  27:3  warning  Remove commented-out code  hyf/no-commented-out-code
+  31:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 4 problems (0 errors, 4 warnings)
+
+
+2024-07-25 11:25:04 info: ------------------------------------------------
+2024-07-25 11:25:04 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:25:04 info: ------------------------------------------------
+2024-07-25 11:25:04 warn: A unit test file was not provided.
+2024-07-25 11:25:08 info: All steps were completed successfully
+2024-07-25 11:27:16 info: ------------------------------------------------
+2024-07-25 11:27:16 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:27:16 info: ------------------------------------------------
+2024-07-25 11:27:16 warn: A unit test file was not provided.
+2024-07-25 11:27:20 info: All steps were completed successfully
+2024-07-25 11:28:03 info: ------------------------------------------------
+2024-07-25 11:28:03 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:28:03 info: ------------------------------------------------
+2024-07-25 11:28:03 warn: A unit test file was not provided.
+2024-07-25 11:28:06 info: All steps were completed successfully
+2024-07-25 11:28:56 info: ------------------------------------------------
+2024-07-25 11:28:56 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:28:56 info: ------------------------------------------------
+2024-07-25 11:28:56 warn: A unit test file was not provided.
+2024-07-25 11:29:00 info: All steps were completed successfully
+2024-07-25 11:29:23 info: -----------------------------------------
+2024-07-25 11:29:23 info: >>> Running Unit Test `ex6-totalCost` <<<
+2024-07-25 11:29:23 info: -----------------------------------------
+2024-07-25 11:29:23 warn: A unit test file was not provided.
+2024-07-25 11:29:26 error: *** Spell Checker Report ***
+
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex6-totalCost.js:27:3 - Unknown word (bitterballen)
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex6-totalCost.js:28:3 - Unknown word (mosterd)
+d:/Projects/assignments-cohort49/1-JavaScript/Week2/assignment/ex6-totalCost.js:29:3 - Unknown word (frietjes)
+
+2024-07-25 11:33:35 info: ------------------------------------------------
+2024-07-25 11:33:35 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-25 11:33:35 info: ------------------------------------------------
+2024-07-25 11:33:35 warn: A unit test file was not provided.
+2024-07-25 11:33:38 info: All steps were completed successfully
+2024-07-25 11:45:07 info: -------------------------------------------
+2024-07-25 11:45:07 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2024-07-25 11:45:07 info: -------------------------------------------
+2024-07-25 11:45:07 warn: A unit test file was not provided.
+2024-07-25 11:45:10 info: All steps were completed successfully
