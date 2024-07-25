@@ -1,0 +1,1931 @@
+2024-07-16 05:08:37 info: ------------------------------------------------------
+2024-07-16 05:08:37 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2024-07-16 05:08:37 info: ------------------------------------------------------
+2024-07-16 05:08:41 info: All unit tests passed.
+2024-07-16 05:08:48 info: All steps were completed successfully
+2024-07-16 05:55:39 info: -------------------------------------------------
+2024-07-16 05:55:39 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2024-07-16 05:55:39 info: -------------------------------------------------
+2024-07-16 05:55:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (4 ms)
+    × should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      50 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      51 |     const expected = '€187.50';
+    > 52 |     expect(result).toBe(expected);
+         |                    ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week3/assignment/ex2-mondaysWorth.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.881 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2024-07-16 06:00:06 info: -------------------------------------------------
+2024-07-16 06:00:06 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2024-07-16 06:00:06 info: -------------------------------------------------
+2024-07-16 06:00:09 info: All unit tests passed.
+2024-07-16 06:00:16 info: All steps were completed successfully
+2024-07-16 06:07:58 info: -------------------------------------------------
+2024-07-16 06:07:58 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2024-07-16 06:07:58 info: -------------------------------------------------
+2024-07-16 06:08:01 info: All unit tests passed.
+2024-07-16 06:08:08 info: All steps were completed successfully
+2024-07-16 06:45:36 info: -------------------------------------------------
+2024-07-16 06:45:36 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-16 06:45:36 info: -------------------------------------------------
+2024-07-16 06:45:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array (1 ms)
+    √ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    ReferenceError: basket is not defined
+
+      41 |     // Save the original contents of the fruit basket
+      42 |     const originalFruitBasketContents = [...fruitBasket];
+    > 43 |     expect(sanitizeFruitBasket(basket)).toEqual(originalFruitBasketContents);
+         |                                ^
+      44 |   });
+      45 |
+      46 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.basket (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:43:32)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.819 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-16 06:45:43 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  43:32  error  'basket' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-07-16 06:47:16 info: -------------------------------------------------
+2024-07-16 06:47:16 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-16 06:47:16 info: -------------------------------------------------
+2024-07-16 06:47:19 info: All unit tests passed.
+2024-07-16 06:47:26 info: All steps were completed successfully
+2024-07-16 07:04:22 info: ------------------------------------------
+2024-07-16 07:04:22 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 07:04:22 info: ------------------------------------------
+2024-07-16 07:04:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (8 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: elem.alert is not a function
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers.forEach((elem) => elem.alert(message));
+         |                                          ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at alert (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:42)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.832 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 07:05:27 info: ------------------------------------------
+2024-07-16 07:05:27 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 07:05:27 info: ------------------------------------------
+2024-07-16 07:05:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: Cannot read properties of undefined (reading 'log')
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers.forEach((elem) => elem.console.log(message));
+         |                                                  ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:50)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.961 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 07:09:38 info: ------------------------------------------
+2024-07-16 07:09:38 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 07:09:38 info: ------------------------------------------
+2024-07-16 07:09:42 error: *** Unit Test Error Report ***
+
+console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:41)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:41)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (24 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.818 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 07:10:21 info: ------------------------------------------
+2024-07-16 07:10:21 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 07:10:21 info: ------------------------------------------
+2024-07-16 07:10:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (4 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: Cannot read properties of undefined (reading 'log')
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers.forEach((sub) => sub.console.log(message));
+         |                                                ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.885 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 07:15:47 info: ------------------------------------------
+2024-07-16 07:15:47 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 07:15:47 info: ------------------------------------------
+2024-07-16 07:15:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: sub.log is not a function
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers.forEach((sub) => sub.log(message));
+         |                                        ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:40)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.804 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 07:17:10 info: ------------------------------------------
+2024-07-16 07:17:10 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 07:17:10 info: ------------------------------------------
+2024-07-16 07:17:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: sub.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach((sub) => {
+    > 24 |         return sub.log(message);
+         |                    ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:20)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.808 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 07:38:31 info: ------------------------------------------
+2024-07-16 07:38:31 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 07:38:31 info: ------------------------------------------
+2024-07-16 07:38:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: sub.notify is not a function
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers.forEach((sub) => sub.notify(message));
+         |                                        ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:40)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.823 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 08:24:52 info: ------------------------------------------
+2024-07-16 08:24:52 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 08:24:52 info: ------------------------------------------
+2024-07-16 08:24:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: person.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach(function (person) {
+    > 24 |         person.log(message);
+         |                ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:16)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.896 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 08:25:57 info: ------------------------------------------
+2024-07-16 08:25:57 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 08:25:57 info: ------------------------------------------
+2024-07-16 08:26:01 error: *** Unit Test Error Report ***
+
+console.log
+    [Function: mockConstructor] {
+      _isMockFunction: true,
+      getMockImplementation: [Function (anonymous)],
+      mock: [Getter/Setter],
+      mockClear: [Function (anonymous)],
+      mockReset: [Function (anonymous)],
+      mockRestore: [Function (anonymous)],
+      mockReturnValueOnce: [Function (anonymous)],
+      mockResolvedValueOnce: [Function (anonymous)],
+      mockRejectedValueOnce: [Function (anonymous)],
+      mockReturnValue: [Function (anonymous)],
+      mockResolvedValue: [Function (anonymous)],
+      mockRejectedValue: [Function (anonymous)],
+      mockImplementationOnce: [Function (anonymous)],
+      mockImplementation: [Function (anonymous)],
+      mockReturnThis: [Function (anonymous)],
+      mockName: [Function (anonymous)],
+      getMockName: [Function (anonymous)]
+    } Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    [Function: mockConstructor] {
+      _isMockFunction: true,
+      getMockImplementation: [Function (anonymous)],
+      mock: [Getter/Setter],
+      mockClear: [Function (anonymous)],
+      mockReset: [Function (anonymous)],
+      mockRestore: [Function (anonymous)],
+      mockReturnValueOnce: [Function (anonymous)],
+      mockResolvedValueOnce: [Function (anonymous)],
+      mockRejectedValueOnce: [Function (anonymous)],
+      mockReturnValue: [Function (anonymous)],
+      mockResolvedValue: [Function (anonymous)],
+      mockRejectedValue: [Function (anonymous)],
+      mockImplementationOnce: [Function (anonymous)],
+      mockImplementation: [Function (anonymous)],
+      mockReturnThis: [Function (anonymous)],
+      mockName: [Function (anonymous)],
+      getMockName: [Function (anonymous)]
+    } Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (32 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.88 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 08:26:50 info: ------------------------------------------
+2024-07-16 08:26:50 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 08:26:50 info: ------------------------------------------
+2024-07-16 08:26:53 error: *** Unit Test Error Report ***
+
+console.log
+    undefined
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    undefined
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (26 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.908 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 08:26:56 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  22:23  error  'message' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-07-16 08:27:36 info: ------------------------------------------
+2024-07-16 08:27:36 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 08:27:36 info: ------------------------------------------
+2024-07-16 08:27:40 error: *** Unit Test Error Report ***
+
+console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (4 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (25 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.848 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 08:30:39 info: ------------------------------------------
+2024-07-16 08:30:39 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 08:30:39 info: ------------------------------------------
+2024-07-16 08:30:43 error: *** Unit Test Error Report ***
+
+console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (29 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.741 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 08:32:38 info: ------------------------------------------
+2024-07-16 08:32:38 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 08:32:38 info: ------------------------------------------
+2024-07-16 08:32:42 error: *** Unit Test Error Report ***
+
+console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (24 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.904 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-16 08:32:45 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  22:23  error  'message' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-07-16 08:33:54 info: ------------------------------------------
+2024-07-16 08:33:54 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-16 08:33:54 info: ------------------------------------------
+2024-07-16 08:33:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (4 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: Cannot read properties of undefined (reading 'log')
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach(function (person) {
+    > 24 |         person.console.log(message);
+         |                        ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:24)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.832 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:12:07 info: ------------------------------------------
+2024-07-17 02:12:07 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:12:07 info: ------------------------------------------
+2024-07-17 02:12:12 error: *** Unit Test Error Report ***
+
+console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (5 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (74 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.513 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:12:16 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:12:20 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:13:56 info: ------------------------------------------
+2024-07-17 02:13:56 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:13:56 info: ------------------------------------------
+2024-07-17 02:14:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach(function (subscriber) {
+    > 24 |         subscriber.log(message);
+         |                    ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:20)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.916 s, estimated 2 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:14:03 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:14:07 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:14:35 info: ------------------------------------------
+2024-07-17 02:14:35 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:14:35 info: ------------------------------------------
+2024-07-17 02:14:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach(function (subscriber) {
+    > 24 |         return subscriber.log(message);
+         |                           ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:27)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.826 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:14:42 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:14:46 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:17:38 info: ------------------------------------------
+2024-07-17 02:17:38 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:17:38 info: ------------------------------------------
+2024-07-17 02:17:41 error: *** Unit Test Error Report ***
+
+console.log
+    [Function: mockConstructor] {
+      _isMockFunction: true,
+      getMockImplementation: [Function (anonymous)],
+      mock: [Getter/Setter],
+      mockClear: [Function (anonymous)],
+      mockReset: [Function (anonymous)],
+      mockRestore: [Function (anonymous)],
+      mockReturnValueOnce: [Function (anonymous)],
+      mockResolvedValueOnce: [Function (anonymous)],
+      mockRejectedValueOnce: [Function (anonymous)],
+      mockReturnValue: [Function (anonymous)],
+      mockResolvedValue: [Function (anonymous)],
+      mockRejectedValue: [Function (anonymous)],
+      mockImplementationOnce: [Function (anonymous)],
+      mockImplementation: [Function (anonymous)],
+      mockReturnThis: [Function (anonymous)],
+      mockName: [Function (anonymous)],
+      getMockName: [Function (anonymous)]
+    } Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:24)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    [Function: mockConstructor] {
+      _isMockFunction: true,
+      getMockImplementation: [Function (anonymous)],
+      mock: [Getter/Setter],
+      mockClear: [Function (anonymous)],
+      mockReset: [Function (anonymous)],
+      mockRestore: [Function (anonymous)],
+      mockReturnValueOnce: [Function (anonymous)],
+      mockResolvedValueOnce: [Function (anonymous)],
+      mockRejectedValueOnce: [Function (anonymous)],
+      mockReturnValue: [Function (anonymous)],
+      mockResolvedValue: [Function (anonymous)],
+      mockRejectedValue: [Function (anonymous)],
+      mockImplementationOnce: [Function (anonymous)],
+      mockImplementation: [Function (anonymous)],
+      mockReturnThis: [Function (anonymous)],
+      mockName: [Function (anonymous)],
+      getMockName: [Function (anonymous)]
+    } Hi!
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:24)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (28 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.855 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:17:45 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:17:48 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:20:21 info: ------------------------------------------
+2024-07-17 02:20:21 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:20:21 info: ------------------------------------------
+2024-07-17 02:20:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach(function (subscriber) {
+    > 24 |         return subscriber.log(message);
+         |                           ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:27)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.729 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:20:29 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:20:32 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:20:59 info: ------------------------------------------
+2024-07-17 02:20:59 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:20:59 info: ------------------------------------------
+2024-07-17 02:21:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.notify is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach(function (subscriber) {
+    > 24 |         return subscriber.notify(message);
+         |                           ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:27)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.879 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:21:06 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:21:09 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:22:03 info: ------------------------------------------
+2024-07-17 02:22:03 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:22:03 info: ------------------------------------------
+2024-07-17 02:22:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.alert is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach(function (subscriber) {
+    > 24 |         return subscriber.alert(message);
+         |                           ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at alert (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:27)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.99 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:22:10 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:22:14 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:41:43 info: ------------------------------------------
+2024-07-17 02:41:43 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:41:43 info: ------------------------------------------
+2024-07-17 02:41:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (4 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.map((subscriber) => {
+    > 24 |         subscriber.log(message);
+         |                    ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:20)
+          at Array.map (<anonymous>)
+      at Object.map [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.899 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:41:51 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  23:19  warning  Results from `map` are unused. Replace `map` with `forEach`  no-restricted-syntax
+  23:19  error    Results from `map` are unused. Replace `map` with `forEach`  hyf/use-map-result
+  30:1   warning  Remove commented-out code                                    hyf/no-commented-out-code
+
+✖ 3 problems (1 error, 2 warnings)
+
+
+2024-07-17 02:41:54 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:42:19 info: ------------------------------------------
+2024-07-17 02:42:19 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:42:19 info: ------------------------------------------
+2024-07-17 02:42:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties
+    × should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.map((subscriber) => {
+    > 24 |         return subscriber.log(message);
+         |                           ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:27)
+          at Array.map (<anonymous>)
+      at Object.map [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.814 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:42:26 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  23:19  warning  Results from `map` are unused. Replace `map` with `forEach`  no-restricted-syntax
+  23:19  error    Results from `map` are unused. Replace `map` with `forEach`  hyf/use-map-result
+  30:1   warning  Remove commented-out code                                    hyf/no-commented-out-code
+
+✖ 3 problems (1 error, 2 warnings)
+
+
+2024-07-17 02:42:29 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 02:44:39 info: ------------------------------------------
+2024-07-17 02:44:39 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:44:39 info: ------------------------------------------
+2024-07-17 02:44:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       const notification = subscribers.map((subscriber) => {
+    > 24 |         subscriber.log(message);
+         |                    ^
+      25 |         return notification;
+      26 |       });
+      27 |     },
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:20)
+          at Array.map (<anonymous>)
+      at Object.map [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:40)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.849 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:44:47 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  31:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:44:50 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:31:33 - Unknown word (alia)
+
+2024-07-17 02:45:14 info: ------------------------------------------
+2024-07-17 02:45:14 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:45:14 info: ------------------------------------------
+2024-07-17 02:45:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscriber.log is not a function
+
+      22 |     notify: function (message) {
+      23 |       const notification = subscribers.forEach((subscriber) => {
+    > 24 |         subscriber.log(message);
+         |                    ^
+      25 |         return notification;
+      26 |       });
+      27 |     },
+
+      at log (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:24:20)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:40)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.83 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:45:21 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  31:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:45:25 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:31:33 - Unknown word (alia)
+
+2024-07-17 02:52:39 info: ------------------------------------------
+2024-07-17 02:52:39 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:52:39 info: ------------------------------------------
+2024-07-17 02:52:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (2 ms)
+    √ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    × should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    ReferenceError: Cannot access 'notification' before initialization
+
+      23 |       const notification = subscribers.forEach((subscriber) => {
+      24 |         subscriber(message);
+    > 25 |         return notification;
+         |         ^
+      26 |       });
+      27 |     },
+      28 |   };
+
+      at 1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:25:9
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:23:40)
+      at Object.notify (1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.896 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2024-07-17 02:52:46 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  31:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:52:49 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:31:33 - Unknown word (alia)
+
+2024-07-17 02:53:40 info: ------------------------------------------
+2024-07-17 02:53:40 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 02:53:40 info: ------------------------------------------
+2024-07-17 02:53:44 info: All unit tests passed.
+2024-07-17 02:53:47 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-17 02:53:51 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.js:30:33 - Unknown word (alia)
+
+2024-07-17 03:02:37 info: ------------------------------------------
+2024-07-17 03:02:37 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 03:02:37 info: ------------------------------------------
+2024-07-17 03:02:41 info: All unit tests passed.
+2024-07-17 03:02:49 info: All steps were completed successfully
+2024-07-17 04:59:45 info: --------------------------------------
+2024-07-17 04:59:45 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 04:59:45 info: --------------------------------------
+2024-07-17 04:59:49 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 04:59:52 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 05:02:23 info: --------------------------------------
+2024-07-17 05:02:23 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 05:02:23 info: --------------------------------------
+2024-07-17 05:02:26 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 05:02:30 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'a' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 05:02:47 info: --------------------------------------
+2024-07-17 05:02:47 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 05:02:47 info: --------------------------------------
+2024-07-17 05:02:51 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 05:02:54 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'c' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 05:03:07 info: --------------------------------------
+2024-07-17 05:03:07 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 05:03:07 info: --------------------------------------
+2024-07-17 05:03:11 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 05:03:14 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 05:34:59 info: --------------------------------------
+2024-07-17 05:34:59 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 05:34:59 info: --------------------------------------
+2024-07-17 05:35:03 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-17 05:35:06 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 05:41:26 info: --------------------------------------
+2024-07-17 05:41:26 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 05:41:26 info: --------------------------------------
+2024-07-17 05:41:29 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+2024-07-17 05:41:33 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 05:52:24 info: --------------------------------------
+2024-07-17 05:52:24 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 05:52:24 info: --------------------------------------
+2024-07-17 05:52:28 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+2024-07-17 05:52:31 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 05:58:16 info: --------------------------------------
+2024-07-17 05:58:16 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 05:58:16 info: --------------------------------------
+2024-07-17 05:58:20 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+2024-07-17 05:58:23 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 07:09:59 info: --------------------------------------
+2024-07-17 07:09:59 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 07:09:59 info: --------------------------------------
+2024-07-17 07:10:03 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+2024-07-17 07:10:06 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'b' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 07:10:55 info: --------------------------------------
+2024-07-17 07:10:55 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 07:10:55 info: --------------------------------------
+2024-07-17 07:10:58 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+2024-07-17 07:11:02 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'b' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'a' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 07:28:17 info: ------------------------------------------------------
+2024-07-17 07:28:17 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2024-07-17 07:28:17 info: ------------------------------------------------------
+2024-07-17 07:28:21 info: All unit tests passed.
+2024-07-17 07:28:28 info: All steps were completed successfully
+2024-07-17 08:50:20 info: --------------------------------------
+2024-07-17 08:50:20 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 08:50:20 info: --------------------------------------
+2024-07-17 08:50:24 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+2024-07-17 08:50:28 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'a' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-17 08:52:08 info: ------------------------------------------
+2024-07-17 08:52:08 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 08:52:08 info: ------------------------------------------
+2024-07-17 08:52:12 info: All unit tests passed.
+2024-07-17 08:52:18 info: All steps were completed successfully
+2024-07-17 08:52:41 info: --------------------------------------
+2024-07-17 08:52:41 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-17 08:52:41 info: --------------------------------------
+2024-07-17 08:52:45 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\user1\Desktop\assignments-cohort49\test-runner\CustomReporter.js"
+2024-07-17 08:52:48 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'a' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-24 03:17:45 info: --------------------------------------
+2024-07-24 03:17:45 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-24 03:17:45 info: --------------------------------------
+2024-07-24 03:17:49 info: All unit tests passed.
+2024-07-24 03:17:56 info: All steps were completed successfully
+2024-07-24 03:43:11 info: -------------------------------------------------
+2024-07-24 03:43:11 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-24 03:43:11 info: -------------------------------------------------
+2024-07-24 03:43:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (6 ms)
+    × should not modify the original `fruitBasket` array (4 ms)
+    √ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 2
+    Received length: 4
+    Received array:  ["apple", "grapefruit", "banana", "watermelon"]
+
+      35 | describe('sanitizeFruitBasket', () => {
+      36 |   test('should take two parameters', () => {
+    > 37 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toHaveLength(2);
+         |                                                       ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:37:55)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 0
+
+      Array [
+        "apple",
+    -   "lemon",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+    -   "lemon",
+      ]
+
+      41 |     // Save the original contents of the fruit basket
+      42 |     const originalFruitBasketContents = [...fruitBasket];
+    > 43 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toEqual(
+         |                                                       ^
+      44 |       originalFruitBasketContents
+      45 |     );
+      46 |   });
+
+      at Object.toEqual (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:43:55)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.995 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-24 03:47:13 info: -------------------------------------------------
+2024-07-24 03:47:13 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-24 03:47:13 info: -------------------------------------------------
+2024-07-24 03:47:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (7 ms)
+    × should not modify the original `fruitBasket` array (6 ms)
+    √ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 2
+    Received length: 4
+    Received array:  ["apple", "grapefruit", "banana", "watermelon"]
+
+      35 | describe('sanitizeFruitBasket', () => {
+      36 |   test('should take two parameters', () => {
+    > 37 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toHaveLength(2);
+         |                                                       ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:37:55)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 0
+
+      Array [
+        "apple",
+    -   "lemon",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+    -   "lemon",
+      ]
+
+      41 |     // Save the original contents of the fruit basket
+      42 |     const originalFruitBasketContents = [...fruitBasket];
+    > 43 |     expect(sanitizeFruitBasket(originalFruitBasketContents, 'lemon')).toEqual(
+         |                                                                       ^
+      44 |       originalFruitBasketContents
+      45 |     );
+      46 |   });
+
+      at Object.toEqual (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:43:71)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.894 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-24 04:02:02 info: -------------------------------------------------
+2024-07-24 04:02:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-24 04:02:02 info: -------------------------------------------------
+2024-07-24 04:02:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (14 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    √ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 2
+    Received length: 4
+    Received array:  ["apple", "grapefruit", "banana", "watermelon"]
+
+      35 | describe('sanitizeFruitBasket', () => {
+      36 |   test('should take two parameters', () => {
+    > 37 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toHaveLength(2);
+         |                                                       ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:37:55)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.991 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-24 04:03:51 info: -------------------------------------------------
+2024-07-24 04:03:51 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-24 04:03:51 info: -------------------------------------------------
+2024-07-24 04:03:55 info: All unit tests passed.
+2024-07-24 04:04:02 info: All steps were completed successfully
