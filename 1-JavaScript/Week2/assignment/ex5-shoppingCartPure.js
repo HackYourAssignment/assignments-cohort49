@@ -17,7 +17,7 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(shoppingCart, groceryItem) {
-    return [...shoppingCart, groceryItem].slice(-3);
+ return [...shoppingCart, groceryItem].slice(-3);
 }
 
 // ! Test functions (plain vanilla JavaScript)
