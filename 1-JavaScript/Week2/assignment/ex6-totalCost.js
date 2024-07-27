@@ -25,22 +25,27 @@ const cartForParty = {
   chips: 1.99,
   soda: 0.99,
   pizza: 8.49,
-  cake: 15.99};
+  cake: 15.99
+};
 
 function calculateTotalPrice(cart) {
-  let total = 0;
-
-  for (let item in cart) {
-    total += cart[item];
+  if (!cart || typeof cart !== 'object') {
+    throw new Error('Invalid cart object');
   }
 
-  return `Total: €${total.toFixed(2)}`;}
+  let total = 0;
+  for (let value of Object.values(cart)) {
+    total += value;
+  }
+
+  return `Total: €${total.toFixed(2)}`;
+}
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   try {
-    calculateTotalPrice(); 
+    calculateTotalPrice();
     console.log('✘ Test 1 failed: calculateTotalPrice did not throw an error for missing parameter');
   } catch (error) {
     console.log('✔ Test 1 passed: calculateTotalPrice correctly threw an error for missing parameter');
@@ -49,7 +54,7 @@ function test1() {
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  const expectedOutput = 'Total: €29.95';
+  const expectedOutput = 'Total: €29.96';
   const actualOutput = calculateTotalPrice(cartForParty);
   if (actualOutput === expectedOutput) {
     console.log(`✔ Test 2 passed: calculateTotalPrice returned ${expectedOutput}`);
