@@ -21,22 +21,46 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+  beers: 2.5,
+  chips: 1.99,
+  soda: 0.99,
+  pizza: 8.49,
+  cake: 15.99
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+function calculateTotalPrice(cart) {
+  if (!cart || typeof cart !== 'object') {
+    throw new Error('Invalid cart object');
+  }
+
+  let total = 0;
+  for (let value of Object.values(cart)) {
+    total += value;
+  }
+
+  return `Total: €${total.toFixed(2)}`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+  try {
+    calculateTotalPrice();
+    console.log('✘ Test 1 failed: calculateTotalPrice did not throw an error for missing parameter');
+  } catch (error) {
+    console.log('✔ Test 1 passed: calculateTotalPrice correctly threw an error for missing parameter');
+  }
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+  const expectedOutput = 'Total: €29.96';
+  const actualOutput = calculateTotalPrice(cartForParty);
+  if (actualOutput === expectedOutput) {
+    console.log(`✔ Test 2 passed: calculateTotalPrice returned ${expectedOutput}`);
+  } else {
+    console.log(`✘ Test 2 failed: Expected ${expectedOutput}, but got ${actualOutput}`);
+  }
 }
 
 function test() {
