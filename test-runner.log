@@ -79,3 +79,742 @@ Browserslist: caniuse-lite is outdated. Please run:
 
 c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:26:19 - Unknown word (Nima)
 
+2024-07-08 04:38:49 info: ----------------------------------------------
+2024-07-08 04:38:49 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-08 04:38:49 info: ----------------------------------------------
+2024-07-08 04:38:53 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-08 04:38:59 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:26:19 - Unknown word (Nima)
+
+2024-07-08 04:39:41 info: ----------------------------------------------
+2024-07-08 04:39:41 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-08 04:39:41 info: ----------------------------------------------
+2024-07-08 04:39:41 warn: A unit test file was not provided.
+2024-07-08 04:39:46 error: *** Spell Checker Report ***
+
+
+2024-07-08 04:40:25 info: ----------------------------------------
+2024-07-08 04:40:25 info: >>> Running Unit Test `ex2-dogYears` <<<
+2024-07-08 04:40:25 info: ----------------------------------------
+2024-07-08 04:40:25 warn: A unit test file was not provided.
+2024-07-08 04:40:30 error: *** Spell Checker Report ***
+
+
+2024-07-08 06:37:09 info: -------------------------------------------
+2024-07-08 06:37:09 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-08 06:37:09 info: -------------------------------------------
+2024-07-08 06:37:12 error: *** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Programmer in Amsterdam, married to Alexa with 1 kids.
+  Received: you will be a Programmer in Amsterdam, married to Alexa with 1 childeren 
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-08 06:37:18 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:49:94 - Unknown word (childeren)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:57:26 - Unknown word (Alexa)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:61:45 - Unknown word (Newyork)
+
+2024-07-08 06:40:41 info: -------------------------------------------
+2024-07-08 06:40:41 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-08 06:40:41 info: -------------------------------------------
+2024-07-08 06:40:45 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Programmer in Amsterdam, married to Alexa with 1 kids.
+  Received: you will be a Programmer in Amsterdam, married to Alexa with 1 kids 
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-08 06:40:51 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:26:6 - Unknown word (Alexa)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:30:28 - Unknown word (Newyork)
+
+2024-07-09 08:21:53 info: --------------------------------------------
+2024-07-09 08:21:53 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-09 08:21:53 info: --------------------------------------------
+2024-07-09 08:21:53 warn: A unit test file was not provided.
+2024-07-09 08:21:56 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  33:4  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2024-07-09 08:33:24 info: ------------------------------------------------
+2024-07-09 08:33:24 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-09 08:33:24 info: ------------------------------------------------
+2024-07-09 08:33:24 warn: A unit test file was not provided.
+2024-07-09 08:33:30 info: All steps were completed successfully
+2024-07-10 11:04:54 info: ------------------------------------------------
+2024-07-10 11:04:54 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-10 11:04:54 info: ------------------------------------------------
+2024-07-10 11:04:54 warn: A unit test file was not provided.
+2024-07-10 11:05:00 info: All steps were completed successfully
+2024-07-10 01:03:24 info: -------------------------------------------
+2024-07-10 01:03:24 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2024-07-10 01:03:24 info: -------------------------------------------
+2024-07-10 01:03:24 warn: A unit test file was not provided.
+2024-07-10 01:03:30 info: All steps were completed successfully
+2024-07-10 01:05:31 info: -------------------------------------------
+2024-07-10 01:05:31 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2024-07-10 01:05:31 info: -------------------------------------------
+2024-07-10 01:05:31 warn: A unit test file was not provided.
+2024-07-10 01:05:37 info: All steps were completed successfully
+2024-07-11 11:53:54 info: ----------------------------------------------
+2024-07-11 11:53:54 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-11 11:53:54 info: ----------------------------------------------
+2024-07-11 11:53:57 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-11 11:54:04 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:26:19 - Unknown word (Nima)
+
+2024-07-11 11:56:20 info: ----------------------------------------------
+2024-07-11 11:56:20 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-11 11:56:20 info: ----------------------------------------------
+2024-07-11 11:56:24 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-11 11:56:30 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:26:19 - Unknown word (Nima)
+
+2024-07-11 12:00:09 info: ----------------------------------------------
+2024-07-11 12:00:09 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-11 12:00:09 info: ----------------------------------------------
+2024-07-11 12:00:13 info: All unit tests passed.
+2024-07-11 12:00:19 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:26:19 - Unknown word (Nima)
+
+2024-07-11 12:01:34 info: ----------------------------------------
+2024-07-11 12:01:34 info: >>> Running Unit Test `ex2-dogYears` <<<
+2024-07-11 12:01:34 info: ----------------------------------------
+2024-07-11 12:01:37 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: you puppy's is : 7 years old in dog years.
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: you puppy's is : 14 years old in dog years.
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: you puppy's is : 21 years old in dog years.
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-11 12:03:31 info: ----------------------------------------
+2024-07-11 12:03:31 info: >>> Running Unit Test `ex2-dogYears` <<<
+2024-07-11 12:03:31 info: ----------------------------------------
+2024-07-11 12:03:35 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: you puppy's is : 7 years old in dog years.
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: you puppy's is : 14 years old in dog years.
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: you puppy's is : 21 years old in dog years.
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-11 12:05:14 info: ----------------------------------------
+2024-07-11 12:05:14 info: >>> Running Unit Test `ex2-dogYears` <<<
+2024-07-11 12:05:14 info: ----------------------------------------
+2024-07-11 12:05:18 info: All unit tests passed.
+2024-07-11 12:05:23 info: All steps were completed successfully
+2024-07-11 12:06:25 info: -------------------------------------------
+2024-07-11 12:06:25 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-11 12:06:25 info: -------------------------------------------
+2024-07-11 12:06:28 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Programmer in Amsterdam, married to Alexa with 1 kids.
+  Received: you will be a Programmer in Amsterdam, married to Alexa with 1 kids 
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-11 12:06:34 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:26:6 - Unknown word (Alexa)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:30:28 - Unknown word (Newyork)
+
+2024-07-11 12:09:36 info: -------------------------------------------
+2024-07-11 12:09:36 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-11 12:09:36 info: -------------------------------------------
+2024-07-11 12:09:40 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Programmer in Amsterdam, married to Alexa with 1 kids.
+  Received: You will be a Programmer in Amsterdam, married to Alexa with 1 kids. 
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2024-07-11 12:09:46 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:26:6 - Unknown word (Alexa)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:30:28 - Unknown word (Newyork)
+
+2024-07-11 01:15:39 info: --------------------------------------------
+2024-07-11 01:15:39 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-11 01:15:39 info: --------------------------------------------
+2024-07-11 01:15:39 warn: A unit test file was not provided.
+2024-07-11 01:15:41 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+    3:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+    6:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+    9:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+   11:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+   15:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+   22:10  error    'resetShoppingCart' is defined but never used  no-unused-vars
+   98:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  101:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  105:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  108:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  111:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  114:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  117:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  120:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  123:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  125:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  128:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  131:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  135:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  137:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  140:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  143:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  148:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  150:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  153:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  156:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+  164:1   warning  Remove commented-out code                      hyf/no-commented-out-code
+
+✖ 27 problems (1 error, 26 warnings)
+
+
+2024-07-11 01:18:04 info: --------------------------------------------
+2024-07-11 01:18:04 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-11 01:18:04 info: --------------------------------------------
+2024-07-11 01:18:04 warn: A unit test file was not provided.
+2024-07-11 01:18:07 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  7:10  error  'resetShoppingCart' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-07-11 01:30:05 info: --------------------------------------------
+2024-07-11 01:30:05 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-11 01:30:05 info: --------------------------------------------
+2024-07-11 01:30:05 warn: A unit test file was not provided.
+2024-07-11 01:30:10 info: All steps were completed successfully
+2024-07-11 01:36:20 info: -----------------------------------------
+2024-07-11 01:36:20 info: >>> Running Unit Test `ex6-totalCost` <<<
+2024-07-11 01:36:20 info: -----------------------------------------
+2024-07-11 01:36:20 warn: A unit test file was not provided.
+2024-07-11 01:36:26 info: All steps were completed successfully
+2024-07-11 01:37:22 info: -------------------------------------------
+2024-07-11 01:37:22 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2024-07-11 01:37:22 info: -------------------------------------------
+2024-07-11 01:37:22 warn: A unit test file was not provided.
+2024-07-11 01:37:27 info: All steps were completed successfully
+2024-07-13 04:34:56 info: ----------------------------------------------
+2024-07-13 04:34:56 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-13 04:34:56 info: ----------------------------------------------
+2024-07-13 04:35:00 info: All unit tests passed.
+2024-07-13 04:35:06 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex1-giveCompliment.js:24:19 - Unknown word (Nima)
+
+2024-07-13 04:35:27 info: ----------------------------------------------
+2024-07-13 04:35:27 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-13 04:35:27 info: ----------------------------------------------
+2024-07-13 04:35:31 info: All unit tests passed.
+2024-07-13 04:35:37 info: All steps were completed successfully
+2024-07-13 04:37:00 info: ----------------------------------------
+2024-07-13 04:37:00 info: >>> Running Unit Test `ex2-dogYears` <<<
+2024-07-13 04:37:00 info: ----------------------------------------
+2024-07-13 04:37:03 info: All unit tests passed.
+2024-07-13 04:37:09 info: All steps were completed successfully
+2024-07-13 04:38:49 info: -------------------------------------------
+2024-07-13 04:38:49 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-13 04:38:49 info: -------------------------------------------
+2024-07-13 04:38:52 info: All unit tests passed.
+2024-07-13 04:38:58 error: *** Spell Checker Report ***
+
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:23:6 - Unknown word (Alexa)
+c:/Users/nimas/Desktop/assignment/assignments-cohort49/1-JavaScript/Week2/assignment/ex3-tellFortune.js:27:28 - Unknown word (Newyork)
+
+2024-07-13 04:40:13 info: -------------------------------------------
+2024-07-13 04:40:13 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-13 04:40:13 info: -------------------------------------------
+2024-07-13 04:40:17 info: All unit tests passed.
+2024-07-13 04:40:22 info: All steps were completed successfully
+2024-07-13 04:42:06 info: --------------------------------------------
+2024-07-13 04:42:06 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-13 04:42:06 info: --------------------------------------------
+2024-07-13 04:42:06 warn: A unit test file was not provided.
+2024-07-13 04:42:12 info: All steps were completed successfully
+2024-07-13 04:46:28 info: --------------------------------------------
+2024-07-13 04:46:28 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-13 04:46:28 info: --------------------------------------------
+2024-07-13 04:46:28 warn: A unit test file was not provided.
+2024-07-13 04:46:34 info: All steps were completed successfully
+2024-07-13 05:05:43 info: ------------------------------------------------
+2024-07-13 05:05:43 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-13 05:05:43 info: ------------------------------------------------
+2024-07-13 05:05:43 warn: A unit test file was not provided.
+2024-07-13 05:05:46 error: *** ESLint Report ***
+
+ex5-shoppingCartPure.js
+   4:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  10:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2024-07-13 05:06:42 info: ------------------------------------------------
+2024-07-13 05:06:42 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-13 05:06:42 info: ------------------------------------------------
+2024-07-13 05:06:42 warn: A unit test file was not provided.
+2024-07-13 05:06:48 info: All steps were completed successfully
+2024-07-13 05:09:17 info: -----------------------------------------
+2024-07-13 05:09:17 info: >>> Running Unit Test `ex6-totalCost` <<<
+2024-07-13 05:09:17 info: -----------------------------------------
+2024-07-13 05:09:17 warn: A unit test file was not provided.
+2024-07-13 05:09:23 info: All steps were completed successfully
+2024-07-13 05:13:22 info: -------------------------------------------
+2024-07-13 05:13:22 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2024-07-13 05:13:22 info: -------------------------------------------
+2024-07-13 05:13:22 warn: A unit test file was not provided.
+2024-07-13 05:13:28 info: All steps were completed successfully
+2024-07-14 09:36:18 info: ----------------------------------------------
+2024-07-14 09:36:18 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-14 09:36:18 info: ----------------------------------------------
+2024-07-14 09:36:21 info: All unit tests passed.
+2024-07-14 09:36:27 info: All steps were completed successfully
+2024-07-14 09:37:11 info: ----------------------------------------
+2024-07-14 09:37:11 info: >>> Running Unit Test `ex2-dogYears` <<<
+2024-07-14 09:37:11 info: ----------------------------------------
+2024-07-14 09:37:14 info: All unit tests passed.
+2024-07-14 09:37:21 info: All steps were completed successfully
+2024-07-14 09:38:51 info: -------------------------------------------
+2024-07-14 09:38:51 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-14 09:38:51 info: -------------------------------------------
+2024-07-14 09:38:55 info: All unit tests passed.
+2024-07-14 09:39:01 info: All steps were completed successfully
+2024-07-14 09:39:31 info: --------------------------------------------
+2024-07-14 09:39:31 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-14 09:39:31 info: --------------------------------------------
+2024-07-14 09:39:31 warn: A unit test file was not provided.
+2024-07-14 09:39:37 info: All steps were completed successfully
+2024-07-14 09:40:46 info: ------------------------------------------------
+2024-07-14 09:40:46 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-14 09:40:46 info: ------------------------------------------------
+2024-07-14 09:40:46 warn: A unit test file was not provided.
+2024-07-14 09:40:52 info: All steps were completed successfully
+2024-07-14 09:44:23 info: -----------------------------------------
+2024-07-14 09:44:23 info: >>> Running Unit Test `ex6-totalCost` <<<
+2024-07-14 09:44:23 info: -----------------------------------------
+2024-07-14 09:44:23 warn: A unit test file was not provided.
+2024-07-14 09:44:29 info: All steps were completed successfully
+2024-07-14 09:45:03 info: -------------------------------------------
+2024-07-14 09:45:03 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2024-07-14 09:45:03 info: -------------------------------------------
+2024-07-14 09:45:03 warn: A unit test file was not provided.
+2024-07-14 09:45:10 info: All steps were completed successfully
+2024-07-15 01:07:11 info: -------------------------------------------
+2024-07-15 01:07:11 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2024-07-15 01:07:11 info: -------------------------------------------
+2024-07-15 01:07:11 warn: A unit test file was not provided.
+2024-07-15 01:07:17 info: All steps were completed successfully
+2024-07-15 01:08:13 info: -----------------------------------------
+2024-07-15 01:08:13 info: >>> Running Unit Test `ex6-totalCost` <<<
+2024-07-15 01:08:13 info: -----------------------------------------
+2024-07-15 01:08:13 warn: A unit test file was not provided.
+2024-07-15 01:08:19 info: All steps were completed successfully
+2024-07-15 01:09:08 info: ------------------------------------------------
+2024-07-15 01:09:08 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2024-07-15 01:09:08 info: ------------------------------------------------
+2024-07-15 01:09:08 warn: A unit test file was not provided.
+2024-07-15 01:09:14 info: All steps were completed successfully
+2024-07-15 01:09:49 info: --------------------------------------------
+2024-07-15 01:09:49 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-15 01:09:49 info: --------------------------------------------
+2024-07-15 01:09:49 warn: A unit test file was not provided.
+2024-07-15 01:09:54 info: All steps were completed successfully
+2024-07-15 01:10:44 info: -------------------------------------------
+2024-07-15 01:10:44 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2024-07-15 01:10:44 info: -------------------------------------------
+2024-07-15 01:10:47 info: All unit tests passed.
+2024-07-15 01:10:53 info: All steps were completed successfully
+2024-07-15 01:12:04 info: ----------------------------------------
+2024-07-15 01:12:04 info: >>> Running Unit Test `ex2-dogYears` <<<
+2024-07-15 01:12:04 info: ----------------------------------------
+2024-07-15 01:12:07 info: All unit tests passed.
+2024-07-15 01:12:13 info: All steps were completed successfully
+2024-07-15 01:12:51 info: ----------------------------------------------
+2024-07-15 01:12:51 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2024-07-15 01:12:51 info: ----------------------------------------------
+2024-07-15 01:12:55 info: All unit tests passed.
+2024-07-15 01:13:01 info: All steps were completed successfully
+2024-07-15 01:43:34 info: --------------------------------------------
+2024-07-15 01:43:34 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2024-07-15 01:43:34 info: --------------------------------------------
+2024-07-15 01:43:34 warn: A unit test file was not provided.
+2024-07-15 01:43:41 info: All steps were completed successfully
+2024-07-17 05:29:37 info: ------------------------------------------
+2024-07-17 05:29:37 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-17 05:29:37 info: ------------------------------------------
+2024-07-17 05:29:40 info: All unit tests passed.
+2024-07-17 05:29:46 info: All steps were completed successfully
+2024-07-18 11:15:23 info: ------------------------------------------------------
+2024-07-18 11:15:23 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2024-07-18 11:15:23 info: ------------------------------------------------------
+2024-07-18 11:15:27 info: All unit tests passed.
+2024-07-18 11:15:29 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  14:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-18 11:16:42 info: -------------------------------------------------
+2024-07-18 11:16:42 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2024-07-18 11:16:42 info: -------------------------------------------------
+2024-07-18 11:16:46 info: All unit tests passed.
+2024-07-18 11:16:51 info: All steps were completed successfully
+2024-07-18 11:17:57 info: -------------------------------------------------
+2024-07-18 11:17:57 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-18 11:17:57 info: -------------------------------------------------
+2024-07-18 11:18:00 info: All unit tests passed.
+2024-07-18 11:18:06 info: All steps were completed successfully
+2024-07-18 11:19:20 info: ------------------------------------------
+2024-07-18 11:19:20 info: >>> Running Unit Test `ex4-observable` <<<
+2024-07-18 11:19:20 info: ------------------------------------------
+2024-07-18 11:19:24 info: All unit tests passed.
+2024-07-18 11:19:30 info: All steps were completed successfully
+2024-07-18 11:30:17 info: --------------------------------------
+2024-07-18 11:30:17 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-18 11:30:17 info: --------------------------------------
+2024-07-18 11:30:20 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\nimas\Desktop\assignment\assignments-cohort49\test-runner\CustomReporter.js"
+2024-07-18 11:30:23 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'a' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2024-07-18 11:31:13 info: --------------------------------------
+2024-07-18 11:31:13 info: >>> Running Unit Test `ex5-wallet` <<<
+2024-07-18 11:31:13 info: --------------------------------------
+2024-07-18 11:31:16 info: All unit tests passed.
+2024-07-18 11:31:22 info: All steps were completed successfully
+2024-07-19 01:48:59 info: ------------------------------------------------------
+2024-07-19 01:48:59 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2024-07-19 01:48:59 info: ------------------------------------------------------
+2024-07-19 01:49:03 info: All unit tests passed.
+2024-07-19 01:49:09 info: All steps were completed successfully
+2024-07-19 01:51:10 info: -------------------------------------------------
+2024-07-19 01:51:10 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-19 01:51:10 info: -------------------------------------------------
+2024-07-19 01:51:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (4 ms)
+    √ should not modify the original `fruitBasket` array (2 ms)
+    × should return a new array that does not include the unwanted `lemon` (4 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: ["apple", "grapefruit", "banana", "watermelon"]
+    Received array: ["apple", "grapefruit", "banana", "watermelon"]
+
+      48 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+      49 |     const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 50 |     expect(actual).toContain(expected);
+         |                    ^
+      51 |   });
+      52 | });
+      53 |
+
+      at Object.toContain (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:50:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.825 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-19 01:53:00 info: -------------------------------------------------
+2024-07-19 01:53:00 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-19 01:53:00 info: -------------------------------------------------
+2024-07-19 01:53:03 info: All unit tests passed.
+2024-07-19 01:53:09 info: All steps were completed successfully
+2024-07-19 01:56:26 info: -------------------------------------------------
+2024-07-19 01:56:26 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-19 01:56:26 info: -------------------------------------------------
+2024-07-19 01:56:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (4 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (3 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: "lemon"
+    Received array: ["apple", "grapefruit", "banana", "watermelon"]
+
+      48 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+      49 |     const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 50 |     expect(actual).toContain("lemon");
+         |                    ^
+      51 |   });
+      52 | });
+      53 |
+
+      at Object.toContain (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:50:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.818 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-19 01:56:33 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  48:11  error  'expected' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-07-19 01:56:58 info: -------------------------------------------------
+2024-07-19 01:56:58 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-19 01:56:58 info: -------------------------------------------------
+2024-07-19 01:57:02 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (4 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    ReferenceError: fruitNeedToRemove is not defined
+
+      48 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+      49 |     const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 50 |     expect(actual).toContain(fruitNeedToRemove);
+         |                              ^
+      51 |   });
+      52 | });
+      53 |
+
+      at Object.fruitNeedToRemove (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:50:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.834 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-19 01:57:04 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  48:11  error  'expected' is assigned a value but never used  no-unused-vars
+  50:30  error  'fruitNeedToRemove' is not defined             no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2024-07-19 01:57:37 info: -------------------------------------------------
+2024-07-19 01:57:37 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-19 01:57:37 info: -------------------------------------------------
+2024-07-19 01:57:41 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (4 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (3 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: ["apple", "grapefruit", "banana", "watermelon"]
+    Received array: ["apple", "grapefruit", "banana", "watermelon"]
+
+      48 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+      49 |     const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 50 |     expect(actual).toContain(expected);
+         |                    ^
+      51 |   });
+      52 | });
+      53 |
+
+      at Object.toContain (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:50:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.561 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-19 01:58:02 info: -------------------------------------------------
+2024-07-19 01:58:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-19 01:58:02 info: -------------------------------------------------
+2024-07-19 01:58:06 info: All unit tests passed.
+2024-07-19 01:58:11 info: All steps were completed successfully
+2024-07-20 12:01:47 info: -------------------------------------------------
+2024-07-20 12:01:47 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-20 12:01:47 info: -------------------------------------------------
+2024-07-20 12:01:51 info: All unit tests passed.
+2024-07-20 12:01:53 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  47:11  error  'expected' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-07-20 12:03:51 info: -------------------------------------------------
+2024-07-20 12:03:51 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-20 12:03:51 info: -------------------------------------------------
+2024-07-20 12:03:54 info: All unit tests passed.
+2024-07-20 12:03:57 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  47:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-07-20 12:04:23 info: -------------------------------------------------
+2024-07-20 12:04:23 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-20 12:04:23 info: -------------------------------------------------
+2024-07-20 12:04:27 info: All unit tests passed.
+2024-07-20 12:04:33 info: All steps were completed successfully
+2024-07-20 12:05:34 info: -------------------------------------------------
+2024-07-20 12:05:34 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-20 12:05:34 info: -------------------------------------------------
+2024-07-20 12:05:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (4 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (3 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: "lemon"
+    Received array: ["apple", "grapefruit", "banana", "watermelon"]
+
+      47 |
+      48 |     const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 49 |     expect(actual).toContain('lemon');
+         |                    ^
+      50 |   });
+      51 | });
+      52 |
+
+      at Object.toContain (1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js:49:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.809 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2024-07-20 12:06:00 info: -------------------------------------------------
+2024-07-20 12:06:00 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2024-07-20 12:06:00 info: -------------------------------------------------
+2024-07-20 12:06:03 info: All unit tests passed.
+2024-07-20 12:06:09 info: All steps were completed successfully
