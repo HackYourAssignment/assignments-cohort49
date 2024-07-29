@@ -1,17 +1,5 @@
 'use strict';
-/*------------------------------------------------------------------------------
-Full description at: https://github.com/HackYourFuture/Assignments/tree/main/1-JavaScript/Week3#exercise-7-mind-the-privacy
 
-1. Complete the `filterPrivateData()` function. It should take a single 
-   parameter: the array of employee records.
-2. It should create a _new_ array, containing employee data without the private
-   data.
-3. Use object destructuring to extract the non-private properties from an 
-   employee record (an `object`) and object literal shorthand to create a new 
-   employee record with just the non-private parts (name, occupation and email).
-4. Return the new array as the return value of the function.
-5. Run the exercise and verify that it passes all the unit tests.
-------------------------------------------------------------------------------*/
 const employeeRecords = [
   {
     name: 'John',
@@ -30,8 +18,13 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employeeRecords) {
+
+  return employeeRecords.map (employee => {
+    const {name , occupation , email} = employee;
+
+    return {name, occupation , email};
+  });
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -62,5 +55,4 @@ function test() {
   test1();
   test2();
 }
-
 test();
