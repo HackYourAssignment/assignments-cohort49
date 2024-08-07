@@ -21,5 +21,3 @@ homeTown.textContent = 'Isfahan';
 listItems.forEach((item) => {
   item.className = 'list-item';
 });
-
-console.log(listItems);
