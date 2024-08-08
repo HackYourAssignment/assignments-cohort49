@@ -9,11 +9,11 @@ Command failed: npx jest ex6-gameOfLife.test.js --colors
     ✓ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
     ✕ a living cell with three living neighbors should survive and have its life time incremented by one (3 ms)
     ✓ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
-    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
-    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero (3 ms)
-    ✕ a dead cell with two living neighbors should remain dead and have a life time of zero
-    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
-    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✕ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
 
   ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
 
@@ -52,5 +52,5 @@ Command failed: npx jest ex6-gameOfLife.test.js --colors
 Test Suites: 1 failed, 1 total
 Tests:       2 failed, 9 passed, 11 total
 Snapshots:   0 total
-Time:        0.488 s
+Time:        0.355 s, estimated 1 s
 Ran all test suites matching /ex6-gameOfLife.test.js/i.

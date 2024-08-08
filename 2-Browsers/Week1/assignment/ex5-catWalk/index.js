@@ -28,20 +28,20 @@ cat.style.left = '0px';
 
 let danceTimer = 0;
 let center = false;
+const danceDurationCycles = 5000 / 50; // 5 seconds / 50 ms = 100 cycles
 
 const setImg = (url) => {
   cat.src = url;
 };
 
 const nextMove = (position) => {
-  if (danceTimer === 0 || danceTimer > 100) {
+  if (danceTimer === 0) {
     cat.style.left = position + 10 + 'px';
-  } else if (danceTimer > 0 && danceTimer <= 100) {
+  } else if (danceTimer > 0 && danceTimer < danceDurationCycles) {
     danceTimer++;
-    if (danceTimer === 100) {
-      setImg('http://www.anniemation.com/clip_art/images/cat-walk.gif');
-      danceTimer = 0;
-    }
+  } else if (danceTimer === danceDurationCycles) {
+    setImg('http://www.anniemation.com/clip_art/images/cat-walk.gif');
+    danceTimer = 0;
   }
 };
 
