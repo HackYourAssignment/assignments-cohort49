@@ -39,6 +39,7 @@ function createBookList(books) {
 
     pElement.textContent = `${book.title} - ${book.author}`;
     imgElement.src = bookImgName;
+    imgElement.alt = book.title;
 
     if (book.alreadyRead) {
       liElement.classList.add('read');

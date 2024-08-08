@@ -12,6 +12,7 @@ function hijackGoogleLogo() {
   const hyfLogo = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
 
   logo.src = hyfLogo;
+  logo.srcset = hyfLogo;
 }
 
 hijackGoogleLogo();

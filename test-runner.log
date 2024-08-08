@@ -1,0 +1,240 @@
+2024-08-08 07:02:15 info: ----------------------------------------
+2024-08-08 07:02:15 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-08 07:02:15 info: ----------------------------------------
+2024-08-08 07:02:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+(node:20707) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (94 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:99   error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:291  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:474  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.928 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2024-08-08 07:03:25 info: ----------------------------------------
+2024-08-08 07:03:25 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-08 07:03:25 info: ----------------------------------------
+2024-08-08 07:03:28 info: All unit tests passed.
+2024-08-08 07:03:30 info: All steps were completed successfully
+2024-08-08 07:03:37 info: ---------------------------------------
+2024-08-08 07:03:37 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-08 07:03:37 info: ---------------------------------------
+2024-08-08 07:03:40 info: All unit tests passed.
+2024-08-08 07:03:43 info: All steps were completed successfully
+2024-08-08 07:03:49 info: ------------------------------------------
+2024-08-08 07:03:49 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 07:03:49 info: ------------------------------------------
+2024-08-08 07:03:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (2 ms)
+    ✓ should set the `src` property (1 ms)
+    ✕ should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.403 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2024-08-08 07:04:25 info: ------------------------------------------
+2024-08-08 07:04:25 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 07:04:25 info: ------------------------------------------
+2024-08-08 07:04:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (2 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.242 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2024-08-08 07:04:43 info: ------------------------------------------
+2024-08-08 07:04:43 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 07:04:43 info: ------------------------------------------
+2024-08-08 07:04:44 info: All unit tests passed.
+2024-08-08 07:04:47 info: All steps were completed successfully
+2024-08-08 07:05:20 info: --------------------------------------------
+2024-08-08 07:05:20 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2024-08-08 07:05:20 info: --------------------------------------------
+2024-08-08 07:05:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+(node:24337) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js
+  whatsTheTime
+    ✕ HTML should be syntactically valid (88 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2001 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      9:4  error  <style> element is not permitted as content under <body>  element-permitted-content·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:47:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        4.32 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2024-08-08 07:06:59 info: --------------------------------------------
+2024-08-08 07:06:59 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2024-08-08 07:06:59 info: --------------------------------------------
+2024-08-08 07:07:04 info: All unit tests passed.
+2024-08-08 07:07:06 info: All steps were completed successfully
+2024-08-08 07:07:22 info: ---------------------------------------
+2024-08-08 07:07:22 info: >>> Running Unit Test `ex5-catWalk` <<<
+2024-08-08 07:07:22 info: ---------------------------------------
+2024-08-08 07:07:26 info: All unit tests passed.
+2024-08-08 07:07:28 info: All steps were completed successfully
+2024-08-08 07:07:39 info: ------------------------------------------
+2024-08-08 07:07:39 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-08 07:07:39 info: ------------------------------------------
+2024-08-08 07:07:41 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (2 ms)
+    ✓ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✓ a living cell with one living neighbor should die and have its life time reset to zero
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one (3 ms)
+    ✓ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero (3 ms)
+    ✕ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a dead cell with two living neighbors should remain dead and have a life time of zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      202 |
+      203 |     expect(midCell.alive).toBe(false);
+    > 204 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      205 |   });
+      206 |
+      207 |   test('a dead cell with three living neighbors should come alive and have its lifeTime reset to one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:204:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        0.488 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.

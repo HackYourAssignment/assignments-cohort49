@@ -8,7 +8,7 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  const clock = document.querySelector('#clock');
+  const body = document.body;
   setInterval(() => {
     const time = new Date();
 
@@ -18,11 +18,11 @@ function addCurrentTime() {
 
     const currentTime = `${hours}:${minutes}:${seconds}`;
 
-    clock.textContent = currentTime;
+    body.textContent = currentTime;
 
     console.log(currentTime);
 
-    if (currentTime !== clock.textContent) {
+    if (currentTime !== body.textContent) {
       console.error('not correct');
     }
   }, 1000);
