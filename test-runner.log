@@ -1,0 +1,120 @@
+2024-08-09 01:36:32 info: ----------------------------------------
+2024-08-09 01:36:32 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-09 01:36:32 info: ----------------------------------------
+2024-08-09 01:36:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (16.179 s)
+  Generated HTML
+    × HTML should be syntactically valid (124 ms)
+    √ should have all TODO comments removed
+    √ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    √ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:116  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:260  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:395  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        16.883 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2024-08-09 01:39:05 info: ----------------------------------------
+2024-08-09 01:39:05 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-09 01:39:05 info: ----------------------------------------
+2024-08-09 01:39:09 info: All unit tests passed.
+2024-08-09 01:39:13 info: All steps were completed successfully
+2024-08-09 02:06:33 info: ---------------------------------------
+2024-08-09 02:06:33 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-09 02:06:33 info: ---------------------------------------
+2024-08-09 02:06:38 info: All unit tests passed.
+2024-08-09 02:06:42 info: All steps were completed successfully
+2024-08-09 02:11:48 info: ------------------------------------------
+2024-08-09 02:11:48 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-09 02:11:48 info: ------------------------------------------
+2024-08-09 02:11:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (2 ms)
+    √ should set the `src` property
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.633 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2024-08-09 02:12:18 info: ------------------------------------------
+2024-08-09 02:12:18 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-09 02:12:18 info: ------------------------------------------
+2024-08-09 02:12:20 info: All unit tests passed.
+2024-08-09 02:12:23 info: All steps were completed successfully
+2024-08-09 02:41:21 info: --------------------------------------------
+2024-08-09 02:41:21 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2024-08-09 02:41:21 info: --------------------------------------------
+2024-08-09 02:41:28 info: All unit tests passed.
+2024-08-09 02:41:31 info: All steps were completed successfully
+2024-08-09 05:21:08 info: ---------------------------------------
+2024-08-09 05:21:08 info: >>> Running Unit Test `ex5-catWalk` <<<
+2024-08-09 05:21:08 info: ---------------------------------------
+2024-08-09 05:21:13 info: All unit tests passed.
+2024-08-09 05:21:15 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  40:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-08-09 05:24:04 info: ---------------------------------------
+2024-08-09 05:24:04 info: >>> Running Unit Test `ex5-catWalk` <<<
+2024-08-09 05:24:04 info: ---------------------------------------
+2024-08-09 05:24:09 info: All unit tests passed.
+2024-08-09 05:24:12 info: All steps were completed successfully
