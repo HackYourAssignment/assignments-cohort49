@@ -1,1 +1,17 @@
 /* Write your style here */
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+li {
+  padding: 10px;
+  width: 400px;
+}
+
+p {
+  font-size: 24px;
+}
