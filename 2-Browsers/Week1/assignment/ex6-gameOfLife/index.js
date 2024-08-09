@@ -19,6 +19,7 @@ function createCell(x, y) {
     x,
     y,
     alive,
+    lifeTime: alive ? 1 : 0,
   };
 }
 
@@ -115,6 +116,11 @@ function createGame(context, numRows, numColumns) {
 
     // Apply the newly computed state to the cells
     forEachCell((cell) => {
+      if (cell.nextAlive) {
+        cell.lifeTime = cell.alive ? cell.lifeTime + 1 : 1;
+      } else {
+        cell.lifeTime = 0;
+      }
       cell.alive = cell.nextAlive;
     });
   }
