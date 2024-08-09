@@ -1,0 +1,970 @@
+2024-08-07 09:07:47 info: ----------------------------------------
+2024-08-07 09:07:47 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-07 09:07:47 info: ----------------------------------------
+2024-08-07 09:07:55 info: All unit tests passed.
+2024-08-07 09:08:02 info: All steps were completed successfully
+2024-08-07 09:11:53 info: ----------------------------------------
+2024-08-07 09:11:53 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-07 09:11:53 info: ----------------------------------------
+2024-08-07 09:12:02 info: All unit tests passed.
+2024-08-07 09:12:09 info: All steps were completed successfully
+2024-08-07 09:46:39 info: ---------------------------------------
+2024-08-07 09:46:39 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-07 09:46:39 info: ---------------------------------------
+2024-08-07 09:46:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (165 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ each <li> should have the CSS class `list-item` (2 ms)
+    ✕ each <li> should rendered red (34 ms)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      34 |       (node) => window.getComputedStyle(node).color
+      35 |     );
+    > 36 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      37 |   });
+      38 | });
+      39 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:36:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        4.176 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2024-08-07 09:46:52 error: *** Spell Checker Report ***
+
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:17:25 - Unknown word (Fati)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:18:24 - Unknown word (Lobia)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:19:25 - Unknown word (Bandar)
+
+2024-08-07 09:48:03 info: ---------------------------------------
+2024-08-07 09:48:03 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-07 09:48:03 info: ---------------------------------------
+2024-08-07 09:48:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (183 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (33 ms)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      34 |       (node) => window.getComputedStyle(node).color
+      35 |     );
+    > 36 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      37 |   });
+      38 | });
+      39 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:36:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        4.523 s, estimated 5 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2024-08-07 09:48:15 error: *** Spell Checker Report ***
+
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:17:25 - Unknown word (Fati)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:18:24 - Unknown word (Lobia)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:19:25 - Unknown word (Bandar)
+
+2024-08-07 09:48:30 info: ---------------------------------------
+2024-08-07 09:48:30 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-07 09:48:30 info: ---------------------------------------
+2024-08-07 09:48:35 info: All unit tests passed.
+2024-08-07 09:48:40 error: *** Spell Checker Report ***
+
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:17:25 - Unknown word (Fati)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:18:24 - Unknown word (Lobia)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:19:25 - Unknown word (Bandar)
+
+2024-08-07 09:48:48 info: Disclaimer turned off
+2024-08-07 09:49:01 info: ---------------------------------------
+2024-08-07 09:49:01 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-07 09:49:01 info: ---------------------------------------
+2024-08-07 09:49:06 info: All unit tests passed.
+2024-08-07 09:49:12 error: *** Spell Checker Report ***
+
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:17:25 - Unknown word (Fati)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:18:24 - Unknown word (Lobia)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:19:25 - Unknown word (Bandar)
+
+2024-08-07 09:50:33 info: ---------------------------------------
+2024-08-07 09:50:34 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-07 09:50:34 info: ---------------------------------------
+2024-08-07 09:50:40 info: All unit tests passed.
+2024-08-07 09:50:45 info: All steps were completed successfully
+2024-08-07 09:51:36 info: ---------------------------------------
+2024-08-07 09:51:36 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-07 09:51:36 info: ---------------------------------------
+2024-08-07 09:51:43 info: All unit tests passed.
+2024-08-07 09:51:50 error: *** Spell Checker Report ***
+
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:17:25 - Unknown word (Fateme)
+/Users/fati/Desktop/HYF-assignment/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:19:25 - Unknown word (Bandar)
+
+2024-08-07 09:52:51 info: ---------------------------------------
+2024-08-07 09:52:51 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-07 09:52:51 info: ---------------------------------------
+2024-08-07 09:52:59 info: All unit tests passed.
+2024-08-07 09:53:06 info: All steps were completed successfully
+2024-08-08 10:44:49 info: ------------------------------------------
+2024-08-08 10:44:49 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 10:44:49 info: ------------------------------------------
+2024-08-08 10:44:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ should set the `src` property (1 ms)
+    ✕ should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        1.21 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2024-08-08 10:47:30 info: ------------------------------------------
+2024-08-08 10:47:30 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 10:47:30 info: ------------------------------------------
+2024-08-08 10:47:34 info: All unit tests passed.
+2024-08-08 10:47:39 info: All steps were completed successfully
+2024-08-08 10:50:47 info: ------------------------------------------
+2024-08-08 10:50:47 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 10:50:47 info: ------------------------------------------
+2024-08-08 10:50:50 info: All unit tests passed.
+2024-08-08 10:50:55 info: All steps were completed successfully
+2024-08-08 11:39:05 info: --------------------------------------------
+2024-08-08 11:39:05 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2024-08-08 11:39:05 info: --------------------------------------------
+2024-08-08 11:39:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (6.241 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (137 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `setInterval()` (1 ms)
+    ✓ should not call `setInterval()` more than once (2007 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (2 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        6.363 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2024-08-08 11:42:11 info: --------------------------------------------
+2024-08-08 11:42:11 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2024-08-08 11:42:11 info: --------------------------------------------
+2024-08-08 11:42:24 info: All unit tests passed.
+2024-08-08 11:42:29 info: All steps were completed successfully
+2024-08-08 11:56:58 info: --------------------------------------------
+2024-08-08 11:56:58 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2024-08-08 11:56:58 info: --------------------------------------------
+2024-08-08 11:57:06 info: All unit tests passed.
+2024-08-08 11:57:09 info: All steps were completed successfully
+2024-08-09 10:37:14 info: --------------------------------------------
+2024-08-09 10:37:14 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2024-08-09 10:37:14 info: --------------------------------------------
+2024-08-09 10:37:22 info: All unit tests passed.
+2024-08-09 10:37:27 info: All steps were completed successfully
+2024-08-09 10:42:02 info: ---------------------------------------
+2024-08-09 10:42:02 info: >>> Running Unit Test `ex5-catWalk` <<<
+2024-08-09 10:42:02 info: ---------------------------------------
+2024-08-09 10:42:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    ✓ HTML should be syntactically valid (126 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✕ should use `setInterval()` and/or `setTimeout()` (1 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should use `setInterval()` and/or `setTimeout()`', () => {
+    > 48 |     expect(state.timer).toBeDefined();
+         |                         ^
+      49 |   });
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:48:25)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        3.958 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2024-08-09 10:42:09 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  24:10  error  'catWalk' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-08-09 10:49:50 info: ---------------------------------------
+2024-08-09 10:49:50 info: >>> Running Unit Test `ex5-catWalk` <<<
+2024-08-09 10:49:50 info: ---------------------------------------
+2024-08-09 10:49:56 info: All unit tests passed.
+2024-08-09 10:49:58 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  30:9  warning  'currentLeft' is never reassigned. Use 'const' instead   no-autofix/prefer-const
+  37:9  warning  'middleScreen' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2024-08-09 10:50:21 info: ---------------------------------------
+2024-08-09 10:50:21 info: >>> Running Unit Test `ex5-catWalk` <<<
+2024-08-09 10:50:21 info: ---------------------------------------
+2024-08-09 10:50:25 info: All unit tests passed.
+2024-08-09 10:50:28 info: All steps were completed successfully
+2024-08-09 11:48:08 info: ------------------------------------------
+2024-08-09 11:48:08 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-09 11:48:08 info: ------------------------------------------
+2024-08-09 11:48:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (4 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero (1 ms)
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one (2 ms)
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero (2 ms)
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.912 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2024-08-09 11:48:46 info: ------------------------------------------
+2024-08-09 11:48:46 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-09 11:48:47 info: ------------------------------------------
+2024-08-09 11:48:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (2 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (4 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.716 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2024-08-09 11:59:20 info: ------------------------------------------
+2024-08-09 11:59:20 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-09 11:59:20 info: ------------------------------------------
+2024-08-09 11:59:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (1 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero (1 ms)
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero
+    ✕ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with one living neighbor should remain dead and have a life time of zero (1 ms)
+    ✕ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✕ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    TypeError: createGame is not a function
+
+      43 |     };
+      44 |
+    > 45 |     const game = createGame(context, 3, 3);
+         |                  ^
+      46 |     game.grid.splice(0, 0, ...grid);
+      47 |
+      48 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:45:18)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    TypeError: createGame is not a function
+
+      64 |     };
+      65 |
+    > 66 |     const game = createGame(context, 3, 3);
+         |                  ^
+      67 |     game.grid.splice(0, 0, ...grid);
+      68 |
+      69 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:66:18)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    TypeError: createGame is not a function
+
+      86 |     };
+      87 |
+    > 88 |     const game = createGame(context, 3, 3);
+         |                  ^
+      89 |     game.grid.splice(0, 0, ...grid);
+      90 |
+      91 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:88:18)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    TypeError: createGame is not a function
+
+      109 |     };
+      110 |
+    > 111 |     const game = createGame(context, 3, 3);
+          |                  ^
+      112 |     game.grid.splice(0, 0, ...grid);
+      113 |
+      114 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:111:18)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    TypeError: createGame is not a function
+
+      133 |     };
+      134 |
+    > 135 |     const game = createGame(context, 3, 3);
+          |                  ^
+      136 |     game.grid.splice(0, 0, ...grid);
+      137 |
+      138 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:135:18)
+
+  ● Game Of Life: › a dead cell with zero living neighbors should remain dead and have a life time of zero
+
+    TypeError: createGame is not a function
+
+      153 |     };
+      154 |
+    > 155 |     const game = createGame(context, 3, 3);
+          |                  ^
+      156 |     game.grid.splice(0, 0, ...grid);
+      157 |
+      158 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:155:18)
+
+  ● Game Of Life: › a dead cell with one living neighbor should remain dead and have a life time of zero
+
+    TypeError: createGame is not a function
+
+      174 |     };
+      175 |
+    > 176 |     const game = createGame(context, 3, 3);
+          |                  ^
+      177 |     game.grid.splice(0, 0, ...grid);
+      178 |
+      179 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:176:18)
+
+  ● Game Of Life: › a dead cell with two living neighbors should remain dead and have a life time of zero
+
+    TypeError: createGame is not a function
+
+      196 |     };
+      197 |
+    > 198 |     const game = createGame(context, 3, 3);
+          |                  ^
+      199 |     game.grid.splice(0, 0, ...grid);
+      200 |
+      201 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:198:18)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    TypeError: createGame is not a function
+
+      219 |     };
+      220 |
+    > 221 |     const game = createGame(context, 3, 3);
+          |                  ^
+      222 |     game.grid.splice(0, 0, ...grid);
+      223 |
+      224 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:221:18)
+
+  ● Game Of Life: › a dead cell with four living neighbors should remain dead and have a life time of zero
+
+    TypeError: createGame is not a function
+
+      243 |     };
+      244 |
+    > 245 |     const game = createGame(context, 3, 3);
+          |                  ^
+      246 |     game.grid.splice(0, 0, ...grid);
+      247 |
+      248 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:245:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       10 failed, 1 passed, 11 total
+Snapshots:   0 total
+Time:        0.753 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2024-08-09 12:01:17 info: ------------------------------------------
+2024-08-09 12:01:17 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-09 12:01:17 info: ------------------------------------------
+2024-08-09 12:01:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (2 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (1 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✕ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✕ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✕ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    TypeError: createGame is not a function
+
+      43 |     };
+      44 |
+    > 45 |     const game = createGame(context, 3, 3);
+         |                  ^
+      46 |     game.grid.splice(0, 0, ...grid);
+      47 |
+      48 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:45:18)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    TypeError: createGame is not a function
+
+      64 |     };
+      65 |
+    > 66 |     const game = createGame(context, 3, 3);
+         |                  ^
+      67 |     game.grid.splice(0, 0, ...grid);
+      68 |
+      69 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:66:18)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    TypeError: createGame is not a function
+
+      86 |     };
+      87 |
+    > 88 |     const game = createGame(context, 3, 3);
+         |                  ^
+      89 |     game.grid.splice(0, 0, ...grid);
+      90 |
+      91 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:88:18)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    TypeError: createGame is not a function
+
+      109 |     };
+      110 |
+    > 111 |     const game = createGame(context, 3, 3);
+          |                  ^
+      112 |     game.grid.splice(0, 0, ...grid);
+      113 |
+      114 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:111:18)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    TypeError: createGame is not a function
+
+      133 |     };
+      134 |
+    > 135 |     const game = createGame(context, 3, 3);
+          |                  ^
+      136 |     game.grid.splice(0, 0, ...grid);
+      137 |
+      138 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:135:18)
+
+  ● Game Of Life: › a dead cell with zero living neighbors should remain dead and have a life time of zero
+
+    TypeError: createGame is not a function
+
+      153 |     };
+      154 |
+    > 155 |     const game = createGame(context, 3, 3);
+          |                  ^
+      156 |     game.grid.splice(0, 0, ...grid);
+      157 |
+      158 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:155:18)
+
+  ● Game Of Life: › a dead cell with one living neighbor should remain dead and have a life time of zero
+
+    TypeError: createGame is not a function
+
+      174 |     };
+      175 |
+    > 176 |     const game = createGame(context, 3, 3);
+          |                  ^
+      177 |     game.grid.splice(0, 0, ...grid);
+      178 |
+      179 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:176:18)
+
+  ● Game Of Life: › a dead cell with two living neighbors should remain dead and have a life time of zero
+
+    TypeError: createGame is not a function
+
+      196 |     };
+      197 |
+    > 198 |     const game = createGame(context, 3, 3);
+          |                  ^
+      199 |     game.grid.splice(0, 0, ...grid);
+      200 |
+      201 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:198:18)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    TypeError: createGame is not a function
+
+      219 |     };
+      220 |
+    > 221 |     const game = createGame(context, 3, 3);
+          |                  ^
+      222 |     game.grid.splice(0, 0, ...grid);
+      223 |
+      224 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:221:18)
+
+  ● Game Of Life: › a dead cell with four living neighbors should remain dead and have a life time of zero
+
+    TypeError: createGame is not a function
+
+      243 |     };
+      244 |
+    > 245 |     const game = createGame(context, 3, 3);
+          |                  ^
+      246 |     game.grid.splice(0, 0, ...grid);
+      247 |
+      248 |     game.updateGrid();
+
+      at Object.createGame (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:245:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       10 failed, 1 passed, 11 total
+Snapshots:   0 total
+Time:        0.564 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2024-08-09 09:44:33 info: ------------------------------------------
+2024-08-09 09:44:33 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-09 09:44:33 info: ------------------------------------------
+2024-08-09 09:44:37 info: All unit tests passed.
+2024-08-09 09:44:41 info: All steps were completed successfully
+2024-08-09 09:45:05 info: ------------------------------------------
+2024-08-09 09:45:05 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-09 09:45:05 info: ------------------------------------------
+2024-08-09 09:45:09 info: All unit tests passed.
+2024-08-09 09:45:14 info: All steps were completed successfully
