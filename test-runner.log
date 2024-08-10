@@ -1479,3 +1479,16 @@ Ran all test suites matching /ex5-catWalk.test.js/i.
 2024-08-09 11:49:41 info: ---------------------------------------
 2024-08-09 11:49:44 info: All unit tests passed.
 2024-08-09 11:49:47 info: All steps were completed successfully
+2024-08-10 08:42:25 info: ----------------------------------------
+2024-08-10 08:42:25 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-10 08:42:25 info: ----------------------------------------
+2024-08-10 08:42:30 info: All unit tests passed.
+2024-08-10 08:42:32 info: All steps were completed successfully
+2024-08-10 08:43:03 info: ------------------------------------------
+2024-08-10 08:43:03 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-10 08:43:03 info: ------------------------------------------
+2024-08-10 08:43:04 info: All unit tests passed.
+2024-08-10 08:43:07 error: *** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex3-hijackLogo.js:11:53 - Unknown word (Xdpd)
+
