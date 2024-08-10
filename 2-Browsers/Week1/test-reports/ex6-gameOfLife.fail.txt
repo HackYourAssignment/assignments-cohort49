@@ -1,0 +1,39 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (2 ms)
+    ✓ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✓ a living cell with one living neighbor should die and have its life time reset to zero (1 ms)
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one (2 ms)
+    ✓ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 10 passed, 11 total
+Snapshots:   0 total
+Time:        0.454 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
