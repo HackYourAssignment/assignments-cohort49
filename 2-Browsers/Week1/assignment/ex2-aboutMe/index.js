@@ -10,3 +10,12 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 ------------------------------------------------------------------------------*/
 
 // TODO add your JavaScript code here.
+document.getElementById('nickname').textContent = 'Eli';  // Replace with your nickname
+document.getElementById('fav-food').textContent = 'Food 😝';  // Replace with your favorite food
+document.getElementById('hometown').textContent = 'Damascos';  // Replace with your hometown
+
+// Iterate through each <li> and change the class to list-item
+const listItems = document.querySelectorAll('ul > li');
+listItems.forEach(item => {
+  item.classList.add('list-item');
+});
