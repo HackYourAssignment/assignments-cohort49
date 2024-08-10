@@ -56,7 +56,7 @@ function main() {
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
-      isbn: '978-1617933431',
+      isbn: '9780307476708',
       alreadyRead: true,
     },
     {
