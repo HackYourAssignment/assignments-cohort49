@@ -23,6 +23,20 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 -----------------------------------------------------------------------------*/
 function catWalk() {
   // TODO complete this function
+
+  const cat = document.querySelector('img');
+  let currentLeft = parseInt(cat.style.left, 10);
+
+  currentLeft += 10;
+  cat.style.left = currentLeft + 'px';
+
+  if (currentLeft > window.innerWidth) {
+    cat.style.left = '0px';
+  }
 }
+
+setInterval(catWalk, 50);
+
+
 
 // TODO execute `catWalk` when the browser has completed loading the page
