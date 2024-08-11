@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex3-hijackLogo.js:11:53 - Unknown word (Xdpd)

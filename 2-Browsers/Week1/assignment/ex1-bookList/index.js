@@ -18,7 +18,31 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const bookList = document.getElementById('bookList');
+  const ulElement= document.createElement('ul');
+
+  books.forEach((book) => {
+    const liElement = document.createElement('li');
+    const pElement = document.createElement('p');
+    pElement.textContent = `${book.title} by ${book.author}`;
+
+    const imgElement = document.createElement('img');
+    imgElement.src = `https://covers.openlibrary.org/b/isbn/${book.isbn}-M.jpg`;
+    imgElement.alt = `Cover of ${book.title}`;
+
+    if (book.alreadyRead) {
+      liElement.style.color = 'green';  
+    } else {
+      liElement.style.color = 'red'; 
+    }
+
+    liElement.appendChild(pElement);
+    liElement.appendChild(imgElement);
+    ulElement.appendChild(liElement);
+    bookList.appendChild(ulElement);
+  });
+
+  return ulElement;
 }
 
 function main() {
@@ -32,7 +56,7 @@ function main() {
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
-      isbn: '978-1617933431',
+      isbn: '9780307476708',
       alreadyRead: true,
     },
     {

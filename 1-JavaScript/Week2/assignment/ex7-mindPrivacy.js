@@ -27,11 +27,23 @@ const employeeRecords = [
     email: 'jane.eyre@somewhere.net',
     salary: 60000,
   },
-];
+]
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employees) {
+  const filteredEmployees =[];
+   for(let i = 0; i < employees.length; i++) {
+    const employee = employees[i];
+
+    const{ name, occupation, email } = employee;
+
+    const publicData = {name, occupation, email};
+
+  filteredEmployees.push(publicData);
+    
+   }
+   return filteredEmployees;
+  
 }
 
 // ! Test functions (plain vanilla JavaScript)
