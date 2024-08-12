@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:13:25 - Unknown word (Looshi)

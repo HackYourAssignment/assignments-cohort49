@@ -122,3 +122,13 @@ dist
 .recent.json
 .disclaimer
 @assignment*
+
+
+# prep exercise browsers week 1
+2-Browsers/Week1/assignment/ex6-gameOfLife
+
+# prep exercise browsers week 1 unit test
+2-Browsers/Week1/unit-test/ex6-gameOfLife
+
+# prep exercise browsers week 1
+2-Browsers/Week1/test-report/ex6-gameOfLife.pass

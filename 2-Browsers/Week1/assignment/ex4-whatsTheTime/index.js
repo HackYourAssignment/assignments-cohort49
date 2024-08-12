@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-Browsers/Week1#exercise-4-whats-the-time
 
@@ -8,7 +9,18 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  // TODO complete this function
-}
+  const createDiv = document.createElement('div');
+  document.body.append(createDiv);
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+  const updateTime = () => {
+    const currentDay = new Date();
+    const hours = String(currentDay.getHours()).padStart(2, '0');
+    const minutes = String(currentDay.getMinutes()).padStart(2, '0');
+    const seconds = String(currentDay.getSeconds()).padStart(2, '0');
+    const currentTime = `${hours}:${minutes}:${seconds}`;
+    createDiv.textContent = currentTime;
+  };
+  updateTime();
+  setInterval(updateTime, 1000);
+}
+window.addEventListener('load', addCurrentTime);

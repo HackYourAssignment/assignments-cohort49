@@ -1,0 +1,367 @@
+2024-08-08 09:25:53 info: ------------------------------------------
+2024-08-08 09:25:53 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 09:25:53 info: ------------------------------------------
+2024-08-08 09:25:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (3 ms)
+    × should set the `src` property (2 ms)
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.33 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2024-08-08 09:30:00 info: ------------------------------------------
+2024-08-08 09:30:00 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 09:30:00 info: ------------------------------------------
+2024-08-08 09:30:03 info: All unit tests passed.
+2024-08-08 09:30:10 info: All steps were completed successfully
+2024-08-08 09:45:23 info: ------------------------------------------
+2024-08-08 09:45:23 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2024-08-08 09:45:23 info: ------------------------------------------
+2024-08-08 09:45:27 info: All unit tests passed.
+2024-08-08 09:45:34 info: All steps were completed successfully
+2024-08-09 03:59:12 info: ----------------------------------------
+2024-08-09 03:59:12 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-09 03:59:12 info: ----------------------------------------
+2024-08-09 03:59:21 info: All unit tests passed.
+2024-08-09 03:59:28 info: All steps were completed successfully
+2024-08-09 04:46:40 info: ---------------------------------------
+2024-08-09 04:46:40 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-09 04:46:40 info: ---------------------------------------
+2024-08-09 04:46:48 info: All unit tests passed.
+2024-08-09 04:46:54 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:13:25 - Unknown word (Looshi)
+
+2024-08-09 04:47:34 info: ---------------------------------------
+2024-08-09 04:47:34 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2024-08-09 04:47:34 info: ---------------------------------------
+2024-08-09 04:47:42 info: All unit tests passed.
+2024-08-09 04:47:47 error: *** Spell Checker Report ***
+
+c:/Users/user1/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:13:25 - Unknown word (Looshi)
+
+2024-08-09 08:33:36 info: --------------------------------------------
+2024-08-09 08:33:36 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2024-08-09 08:33:36 info: --------------------------------------------
+2024-08-09 08:33:47 info: All unit tests passed.
+2024-08-09 08:33:54 info: All steps were completed successfully
+2024-08-10 02:05:02 info: ---------------------------------------
+2024-08-10 02:05:02 info: >>> Running Unit Test `ex5-catWalk` <<<
+2024-08-10 02:05:02 info: ---------------------------------------
+2024-08-10 02:05:11 info: All unit tests passed.
+2024-08-10 02:05:19 info: All steps were completed successfully
+2024-08-10 08:40:43 info: ------------------------------------------
+2024-08-10 08:40:43 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-10 08:40:43 info: ------------------------------------------
+2024-08-10 08:40:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    √ should exist and be executable (3 ms)
+    × a living cell with zero living neighbors should die and have its life time reset to zero (6 ms)
+    × a living cell with one living neighbor should die and have its life time reset to zero (1 ms)
+    √ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    √ a living cell with three living neighbors should survive and have its life time incremented by one (1 ms)
+    × a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    √ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    √ a dead cell with one living neighbor should remain dead and have a life time of zero (1 ms)
+    √ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    × a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    √ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 7 passed, 11 total
+Snapshots:   0 total
+Time:        1.688 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2024-08-10 08:43:20 info: ------------------------------------------
+2024-08-10 08:43:20 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-10 08:43:20 info: ------------------------------------------
+2024-08-10 08:43:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    √ should exist and be executable (9 ms)
+    × a living cell with zero living neighbors should die and have its life time reset to zero (11 ms)
+    × a living cell with one living neighbor should die and have its life time reset to zero (16 ms)
+    √ a living cell with two living neighbors should survive and have its life time incremented by one (2 ms)
+    √ a living cell with three living neighbors should survive and have its life time incremented by one (2 ms)
+    × a living cell with four living neighbors should die and have its life time reset to zero (3 ms)
+    √ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    √ a dead cell with one living neighbor should remain dead and have a life time of zero (2 ms)
+    √ a dead cell with two living neighbors should remain dead and have a life time of zero (2 ms)
+    × a dead cell with three living neighbors should come alive and have its lifeTime reset to one (4 ms)
+    √ a dead cell with four living neighbors should remain dead and have a life time of zero (2 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 7 passed, 11 total
+Snapshots:   0 total
+Time:        1.386 s, estimated 2 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2024-08-10 08:53:39 info: ------------------------------------------
+2024-08-10 08:53:39 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-10 08:53:39 info: ------------------------------------------
+2024-08-10 08:53:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    √ should exist and be executable (5 ms)
+    × a living cell with zero living neighbors should die and have its life time reset to zero (10 ms)
+    × a living cell with one living neighbor should die and have its life time reset to zero (2 ms)
+    √ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    √ a living cell with three living neighbors should survive and have its life time incremented by one (1 ms)
+    × a living cell with four living neighbors should die and have its life time reset to zero (2 ms)
+    √ a dead cell with zero living neighbors should remain dead and have a life time of zero (2 ms)
+    √ a dead cell with one living neighbor should remain dead and have a life time of zero (2 ms)
+    √ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    √ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (2 ms)
+    √ a dead cell with four living neighbors should remain dead and have a life time of zero (2 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 8 passed, 11 total
+Snapshots:   0 total
+Time:        1.231 s, estimated 2 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2024-08-10 09:01:04 info: ------------------------------------------
+2024-08-10 09:01:04 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-10 09:01:04 info: ------------------------------------------
+2024-08-10 09:01:08 info: All unit tests passed.
+2024-08-10 09:01:14 info: All steps were completed successfully
+2024-08-10 11:24:23 info: ------------------------------------------
+2024-08-10 11:24:23 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-10 11:24:23 info: ------------------------------------------
+2024-08-10 11:24:27 info: All unit tests passed.
+2024-08-10 11:24:35 info: All steps were completed successfully
+2024-08-11 12:47:00 info: ------------------------------------------
+2024-08-11 12:47:00 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-11 12:47:00 info: ------------------------------------------
+2024-08-11 12:47:06 info: All unit tests passed.
+2024-08-11 12:47:16 info: All steps were completed successfully
