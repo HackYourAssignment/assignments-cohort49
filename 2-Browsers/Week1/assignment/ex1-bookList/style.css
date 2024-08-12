@@ -1,1 +1,25 @@
-/* Write your style here */
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+#bookList {
+  margin: auto;
+}
+ul {
+  list-style: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  padding: 10px;
+  margin: 5px;
+}
+li img {
+  width: 100%;
+}
+p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
