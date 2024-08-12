@@ -19,17 +19,20 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 
 function createBookList(books) {
   const ulElement = document.createElement('ul');
-  
-  books.forEach(book => {
+
+  books.forEach((book) => {
     const liElement = document.createElement('li');
 
     const pElement = document.createElement('p');
     pElement.textContent = `${book.title} by ${book.author}`;
-    
+
+    let bookCoverFile = book.title.toLowerCase();
+    bookCoverFile = bookCoverFile.replace(/ /g, '_');
+
     const imgElement = document.createElement('img');
-    imgElement.src = `https://covers.openlibrary.org/b/isbn/${book.isbn}-L.jpg`;
+    imgElement.src = `./assets/${bookCoverFile}.jpg`;
     imgElement.alt = `${book.title} cover`;
-    
+
     liElement.appendChild(pElement);
     liElement.appendChild(imgElement);
 
