@@ -18,7 +18,44 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const ulElement = document.createElement('ul');
+
+  books.forEach((book) => {
+    const liElement = document.createElement('li');
+
+    const pElement = document.createElement('p');
+    pElement.textContent = `${book.title} by ${book.author}`;
+
+    const imgElement = document.createElement('img');
+    imgElement.alt = `cover of ${book.title}`;
+
+    if (book.title === 'The Design of Everyday Things') {
+      imgElement.src = './assets/the_design_of_everyday_things.jpg';
+    } else if (book.title === 'The Most Human Human') {
+      imgElement.src = './assets/the_most_human_human.jpg';
+    } else if (book.title === 'The Pragmatic Programmer') {
+      imgElement.src = './assets/the_pragmatic_programmer.jpg';
+    }
+    
+    liElement.style.backgroundColor = book.alreadyRead ? 'green' : 'red';
+
+    liElement.appendChild(pElement);
+    liElement.appendChild(imgElement);
+
+    ulElement.appendChild(liElement);
+
+    ulElement.style.listStyleType = 'none';
+    ulElement.style.padding = '0';
+
+    Array.from(ulElement.children).forEach(li => {
+      li.style.display = 'inline-block';
+      li.style.margin = '10px';
+      li.style.padding = '10px';
+      li.style.border = '1px solid #ccc';
+      li.style.width = '400px';
+    })
+  })
+  return ulElement;
 }
 
 function main() {
