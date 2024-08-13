@@ -1,4 +1,4 @@
-/* Write your style here */
+
 #book-list {
     list-style: none;
     padding: 0;
@@ -18,5 +18,5 @@
 }
 
 #book-list img {
-    width: ;
+    width: 50 px;
 }

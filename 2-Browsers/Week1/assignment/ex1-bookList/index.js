@@ -17,11 +17,37 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 -----------------------------------------------------------------------------*/
 //cspell: enable
 
-function createBookList(books) {
-  const ul = document.createElement('ul');
-  books.forEach((book) =>)
-  // TODO your code goes in here, return the ul element
-}
+
+  function createBookList(books) {
+    const ul = document.createElement('ul');
+
+    books.forEach((book) => {
+     const li = document.createElement('li');
+     const title = document.createElement('p');
+     const author = document.createElement('p');
+     const img = document.createElement('img');
+
+     title.textContent = `Tittle : ${book.title}`;
+     author.textContent = `Author : ${book.author}`;
+     img.src = 'https://via.placeholder.com/150';
+
+     if (book.alreadyRead){
+      li.style.backgroundColor = 'green';
+      } else {
+        li.style.background = 'red';
+      }
+
+      li.appendChild(title);
+      li.appendChild(author);
+      li.appendChild(img);
+      li.appendChild(li);
+      });
+     return ul;
+
+  }
+ 
+  
+
 
 function main() {
   const myBooks = [
@@ -29,18 +55,21 @@ function main() {
       title: 'The Design of Everyday Things',
       author: 'Don Norman',
       isbn: '978-0465050659',
+      imageUrl: 'https://m.media-amazon.com/images/I/71gnJ-dXgxL._AC_UF1000,1000_QL80_.jpg',
       alreadyRead: false,
     },
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
       isbn: '978-1617933431',
+      imageUrl: 'https://media.s-bol.com/O5MgYVgzEyvp/86qKV8L/548x840.jpg',
       alreadyRead: true,
     },
     {
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
+      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/41as+WafrFL._SX396_BO1,204,203,200_.jpg',
       alreadyRead: true,
     },
   ];
