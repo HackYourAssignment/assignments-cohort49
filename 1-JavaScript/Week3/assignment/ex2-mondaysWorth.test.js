@@ -31,9 +31,32 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(tasks, hourlyRate) {
+  if (typeof hourlyRate !== 'number') return;
+
+  const tasksWithValidDuration = tasks.filter(
+    ({ duration }) => duration && typeof duration === 'number'
+  );
+
+  const durationsInMinutes = tasksWithValidDuration.map(
+    (task) => task.duration
+  );
+
+  const minuteRate = hourlyRate / 60;
+  const bills = durationsInMinutes.map((duration) => duration * minuteRate);
+
+  const earnings = bills.reduce((sum, bill) => sum + bill, 0);
+  const earningsString = `€${earnings.toFixed(2)}`;
+
+  return earningsString;
 }
+
+// I broke it down too much. I wonder whether it became easier or harder to follow.
+
+// validDurations  durations.filter(x => x)
+
+// Is 'x' ok here? a meaningful name seems redundant to me as the context is short & intuitive.
+// I see it breaks the rule of naming but I think it is similar to using i or j within 'for'
 
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
