@@ -33,29 +33,39 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function selectRandomly(array) {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
 }
 
-function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+function tellFortune(numKids, partnerNames, locations, jobTitles) {
+  // Is not this better in terms of DRY??
+  /* const [kids, name, city, job] = [numKids, partnerNames, locations, jobTitles].map(
+    selectRandomly
+  ); */
+
+  const kids = selectRandomly(numKids);
+  const name = selectRandomly(partnerNames);
+  const city = selectRandomly(locations);
+  const job = selectRandomly(jobTitles);
+
+  const sentence = `You will be a ${job} in ${city}, married to ${name} with ${kids} kids.`;
+  return sentence;
 }
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-  ];
+  const numKids = [2, 3, 1, 4, 0];
 
-  const partnerNames = [
-    // TODO add elements here
-  ];
+  const partnerNames = ['Alex', 'Charlie', 'Jordan', 'Taylor', 'Sam'];
 
-  const locations = [
-    // TODO add elements here
-  ];
+  const locations = ['Amsterdam', 'New York', 'Tokyo', 'Paris', 'Sydney'];
 
   const jobTitles = [
-    // TODO add elements here
+    'Software Engineer',
+    'Graphic Designer',
+    'Architect',
+    'Data Analyst',
+    'Chef',
   ];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
