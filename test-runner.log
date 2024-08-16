@@ -4745,3 +4745,240 @@ Tests:       4 failed, 2 passed, 6 total
 Snapshots:   0 total
 Time:        2.222 s, estimated 3 s
 Ran all test suites matching /ex1-bookList.test.js/i.
+2024-08-16 07:07:17 info: ----------------------------------------
+2024-08-16 07:07:17 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-16 07:07:17 info: ----------------------------------------
+2024-08-16 07:07:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (94 ms)
+    ✓ should have all TODO comments removed
+    ✕ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✕ should contain a <ul> with 3 <li> elements (2 ms)
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    ✕ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    expect(received).toBeTruthy()
+
+    Received: null
+
+      48 |     expect(ul).toBeTruthy();
+      49 |   });
+    > 50 |
+         | ^
+      51 |   test('should contain a <ul> with 3 <li> elements', () => {
+      52 |     const nodeList = document.querySelectorAll('ul > li');
+      53 |     const result = nodeList ? nodeList.length : 0;
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:50:16)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      53 |     const result = nodeList ? nodeList.length : 0;
+      54 |     expect(result).toBe(3);
+    > 55 |   });
+         |      ^
+      56 |
+      57 |   test('should contain an <li> with title and author for each book of the `myBooks` array', () => {
+      58 |     const nodeList = document.querySelectorAll('li');
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:55:20)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: ""
+
+      58 |     const nodeList = document.querySelectorAll('li');
+      59 |     const result = nodeList
+    > 60 |       ? Array.from(nodeList)
+         |                             ^
+      61 |           .map((node) => node.textContent)
+      62 |           .join(' ')
+      63 |       : '';
+
+      at 2-Browsers/Week1/unit-tests/ex1-bookList.test.js:60:61
+          at Array.forEach (<anonymous>)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:60:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                    ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 2 passed, 6 total
+Snapshots:   0 total
+Time:        2.588 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2024-08-16 07:11:51 info: ----------------------------------------
+2024-08-16 07:11:51 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-16 07:11:51 info: ----------------------------------------
+2024-08-16 07:11:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (94 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✕ should contain a <ul> with 3 <li> elements (3 ms)
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    ✕ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    expect(received).toBeTruthy()
+
+    Received: null
+
+      48 |     expect(ul).toBeTruthy();
+      49 |   });
+    > 50 |
+         | ^
+      51 |   test('should contain a <ul> with 3 <li> elements', () => {
+      52 |     const nodeList = document.querySelectorAll('ul > li');
+      53 |     const result = nodeList ? nodeList.length : 0;
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:50:16)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      53 |     const result = nodeList ? nodeList.length : 0;
+      54 |     expect(result).toBe(3);
+    > 55 |   });
+         |      ^
+      56 |
+      57 |   test('should contain an <li> with title and author for each book of the `myBooks` array', () => {
+      58 |     const nodeList = document.querySelectorAll('li');
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:55:20)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    TypeError: Cannot read properties of undefined (reading 'forEach')
+
+      58 |     const nodeList = document.querySelectorAll('li');
+      59 |     const result = nodeList
+    > 60 |       ? Array.from(nodeList)
+         |                            ^
+      61 |           .map((node) => node.textContent)
+      62 |           .join(' ')
+      63 |       : '';
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:60:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                    ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 2 passed, 6 total
+Snapshots:   0 total
+Time:        2.293 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2024-08-16 07:11:56 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  30:31  error  Parsing error: Unexpected character '§'
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-08-16 07:11:57 error: *** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex1-bookList/index.js:30:27 - Unknown word (crea)
+
+2024-08-16 07:14:30 info: ----------------------------------------
+2024-08-16 07:14:30 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-08-16 07:14:30 info: ----------------------------------------
+2024-08-16 07:14:33 info: All unit tests passed.
+2024-08-16 07:14:36 info: All steps were completed successfully
+2024-08-16 09:45:52 info: ------------------------------------------
+2024-08-16 09:45:52 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-16 09:45:52 info: ------------------------------------------
+2024-08-16 09:45:52 warn: A unit test file was not provided.
+2024-08-16 09:45:54 info: All steps were completed successfully
+2024-08-16 09:48:45 info: ------------------------------------------
+2024-08-16 09:48:45 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2024-08-16 09:48:45 info: ------------------------------------------
+2024-08-16 09:48:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (9 ms)
+    ✓ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✓ a living cell with one living neighbor should die and have its life time reset to zero
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one (2 ms)
+    ✓ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 10 passed, 11 total
+Snapshots:   0 total
+Time:        0.482 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.

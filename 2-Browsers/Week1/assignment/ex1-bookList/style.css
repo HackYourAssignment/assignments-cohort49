@@ -1,22 +1,12 @@
 
-#book-list {
-    list-style: none;
+ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-#book-list li {
-    margin-bottom: 10px;
-}
-
-#book-list li.read {
-    color:green;
-}
-
-#book-list li:not(.read) {
-    color:red;
-}
-
-#book-list img {
-    width: 50 px;
-}
+  }
+  li {
+    display: inline-block;
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+  }
