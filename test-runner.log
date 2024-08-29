@@ -1479,3 +1479,8 @@ Ran all test suites matching /ex5-catWalk.test.js/i.
 2024-08-09 11:49:41 info: ---------------------------------------
 2024-08-09 11:49:44 info: All unit tests passed.
 2024-08-09 11:49:47 info: All steps were completed successfully
+2024-08-29 05:58:34 info: -------------------------------------------------
+2024-08-29 05:58:34 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-29 05:58:34 info: -------------------------------------------------
+2024-08-29 05:58:35 info: All unit tests passed.
+2024-08-29 05:58:38 info: All steps were completed successfully
