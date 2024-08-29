@@ -1484,3 +1484,8 @@ Ran all test suites matching /ex5-catWalk.test.js/i.
 2024-08-29 05:58:34 info: -------------------------------------------------
 2024-08-29 05:58:35 info: All unit tests passed.
 2024-08-29 05:58:38 info: All steps were completed successfully
+2024-08-29 06:00:53 info: ---------------------------------------
+2024-08-29 06:00:53 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-08-29 06:00:53 info: ---------------------------------------
+2024-08-29 06:00:55 info: All unit tests passed.
+2024-08-29 06:00:57 info: All steps were completed successfully
