@@ -27,9 +27,10 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const arrayOfPromises = dice.map((die) => rollDie(die));
+
+  return Promise.all(arrayOfPromises);
 }
 
 function main() {
@@ -43,3 +44,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// The settlement of a promise do not stop the execution of the rest of its executerFunction.
+// This is why a fallen off the table die will continue rolling if it still has rolls to do.
