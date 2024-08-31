@@ -8,3 +8,13 @@
 2024-08-31 03:41:11 info: -------------------------------------------------
 2024-08-31 03:41:12 info: All unit tests passed.
 2024-08-31 03:41:13 info: All steps were completed successfully
+2024-08-31 06:22:18 info: -------------------------------------------------
+2024-08-31 06:22:18 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-31 06:22:18 info: -------------------------------------------------
+2024-08-31 06:22:19 info: All unit tests passed.
+2024-08-31 06:22:20 info: All steps were completed successfully
+2024-08-31 06:22:37 info: ---------------------------------------
+2024-08-31 06:22:37 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-08-31 06:22:37 info: ---------------------------------------
+2024-08-31 06:22:38 info: All unit tests passed.
+2024-08-31 06:22:39 info: All steps were completed successfully
