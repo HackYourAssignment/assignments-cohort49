@@ -21,35 +21,60 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-let catImage;
+const cat = document.querySelector('img');
+const windowWidth = window.innerWidth;
+const catWidth = cat.width;
+const danceCatUrl =
+  'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+const originalCatUrl = cat.src;
+const middlePosition = windowWidth / 2 - catWidth / 2;
+
+let currentPosition = 0;
+
+cat.style.position = 'absolute';
+cat.style.left = currentPosition + 'px';
+
+function moveCat(distance, duration) {
+  return new Promise((resolve) => {
+    const startTime = Date.now();
+    const startLeft = currentPosition;
+
+    function animate() {
+      const currentTime = Date.now();
+      const elapsedTime = currentTime - startTime;
+
+      const fractionComplete = Math.min(elapsedTime / duration, 1);
+      const newPosition = startLeft + distance * fractionComplete;
+
+      currentPosition = newPosition;
+      cat.style.left = currentPosition + 'px';
+
+      if (startLeft < middlePosition && newPosition >= middlePosition) {
+        cat.src = danceCatUrl;
+        setTimeout(() => {
+          cat.src = originalCatUrl;
+          resolve();
+        }, 5000);
+      } else if (fractionComplete < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        resolve();
+      }
+    }
+
+    requestAnimationFrame(animate);
+  });
+}
 
 function catWalk() {
-   let left = parseInt(catImage.style.left);
-
-   left += 10;
-
-   if (left > window.innerWidth){
-      left = 0;
-   }
-
-   if (left > window.innerWidth / 2&& !catImage.dancing) {
-      catImage.dancing = true;
-      catImage.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
-      setTimeout(() => {
-         catImage.src = 'https://example.com/cat-image.jgp';
-         catImage.dancing = false;
-      }, 5000);
-   }
-
-   catImage.style.left = left + 'px';
+  moveCat(windowWidth - catWidth - currentPosition, 3000).then(() => {
+    if (currentPosition < windowWidth - catWidth) {
+      return catWalk();
+    } else {
+      currentPosition = 0;
+      return catWalk();
+    }
+  });
 }
 
-setInterval(catWalk, 50);
-
-window.onload = () => {
-   catImage = document.querySelector('img');
-   catImage.style.left = '0px';
-   catWalk();
-}
-
-
+catWalk();
