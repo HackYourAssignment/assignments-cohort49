@@ -22,27 +22,37 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 function catWalk() {
-      const img = document.querySelector('img');
-      let left = 0;
-      const screenWidth = window.innerWidth;
-      const middleScreenWidth = screenWidth / 2;
+  const img = document.querySelector('img');
+  let left = 0;
+  const screenWidth = window.innerWidth;
+  const middleScreenWidth = screenWidth / 2;
 
-      function moveCat () {
-         left += 10;
-         img.style.left = `${left}px`;
+  function moveCat() {
+    left += 10;
+    img.style.left = `${left}px`;
 
-         if (left >= middleScreenWidth - img.width / 2 && left <= middleScreenWidth + img.width / 2) {
-            img.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
-            setTimeout(() => {
-               img.src = 'http://www.animation.com/clip_art/images/cat-walk.gif';
-            }, 5000);
-         }
-         if (left >= screenWidth) {
-            left = 0;
-         }
-      }
-      setInterval(moveCat, 50)
-   }
-window.addEventListener('load', catWalk);
+    if (
+      left >= middleScreenWidth - img.width / 2 &&
+      left <= middleScreenWidth + img.width / 2
+    ) {
+      img.src =
+        "https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif";
+
+      setTimeout(() => {
+        img.src = "http://www.animation.com/clip_art/images/cat-walk.gif";
+      }, 5000);
+    }
+
+    if (left >= screenWidth) {
+      left = 0;
+    }
+  }
+
+  setInterval(moveCat, 50);
+}
+
+// Run the catWalk function when the page loads
+window.addEventListener("load", catWalk);
+
 
 
