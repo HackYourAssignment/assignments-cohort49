@@ -1,12 +1,13 @@
 /* Write your style here */
 #bookList ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style-type: none;
 }
 
 #bookList li {
-  flex: 1;
+  flex: 0 1 400px;
   padding: 1rem;
   text-align: center;
 }
