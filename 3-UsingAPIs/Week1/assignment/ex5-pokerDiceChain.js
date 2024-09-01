@@ -1,3 +1,4 @@
+'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Assignments/tree/main/3-UsingAPIs/Week1#exercise-5-throw-dice-sequentially
 
@@ -17,11 +18,23 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   const results = [];
 
-  // TODO: expand the chain to include five dice
+  // Expand the chain to include five dice
   return rollDie(1)
     .then((value) => {
       results.push(value);
       return rollDie(2);
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDie(3);
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDie(4);
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDie(5);
     })
     .then((value) => {
       results.push(value);
