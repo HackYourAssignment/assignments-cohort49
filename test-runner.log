@@ -18,3 +18,8 @@
 2024-08-31 06:22:37 info: ---------------------------------------
 2024-08-31 06:22:38 info: All unit tests passed.
 2024-08-31 06:22:39 info: All steps were completed successfully
+2024-09-01 08:14:55 info: ---------------------------------------
+2024-09-01 08:14:55 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-01 08:14:55 info: ---------------------------------------
+2024-09-01 08:14:56 info: All unit tests passed.
+2024-09-01 08:14:57 info: All steps were completed successfully

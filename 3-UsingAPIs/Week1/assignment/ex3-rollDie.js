@@ -47,3 +47,8 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+/* If I had done everything precisely according to the instructions, 
+the problem would still exist in this app because ‘catch’ isn’t stopping 
+the running code; it returns a new Promise. 
+That’s why I added ‘return’ after the ‘reject’ part. */
