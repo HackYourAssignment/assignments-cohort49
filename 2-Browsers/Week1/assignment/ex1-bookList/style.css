@@ -1,1 +1,25 @@
 /* Write your style here */
+#bookList ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+#bookList li {
+  flex: 0 1 400px;
+  padding: 1rem;
+  text-align: center;
+}
+
+#bookList li.read {
+  background: #1DBC60;
+}
+
+#bookList li.not-read {
+  background: #F84F50;
+}
+
+#bookList li img {
+  max-width: 100%;
+}
