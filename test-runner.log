@@ -1,0 +1,125 @@
+2024-08-31 03:36:08 info: ---------------------------------------
+2024-08-31 03:36:08 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-08-31 03:36:08 info: ---------------------------------------
+2024-08-31 03:36:08 info: All unit tests passed.
+2024-08-31 03:36:10 info: All steps were completed successfully
+2024-08-31 03:41:11 info: -------------------------------------------------
+2024-08-31 03:41:11 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-31 03:41:11 info: -------------------------------------------------
+2024-08-31 03:41:12 info: All unit tests passed.
+2024-08-31 03:41:13 info: All steps were completed successfully
+2024-08-31 06:22:18 info: -------------------------------------------------
+2024-08-31 06:22:18 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-31 06:22:18 info: -------------------------------------------------
+2024-08-31 06:22:19 info: All unit tests passed.
+2024-08-31 06:22:20 info: All steps were completed successfully
+2024-08-31 06:22:37 info: ---------------------------------------
+2024-08-31 06:22:37 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-08-31 06:22:37 info: ---------------------------------------
+2024-08-31 06:22:38 info: All unit tests passed.
+2024-08-31 06:22:39 info: All steps were completed successfully
+2024-09-01 08:14:55 info: ---------------------------------------
+2024-09-01 08:14:55 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-01 08:14:55 info: ---------------------------------------
+2024-09-01 08:14:56 info: All unit tests passed.
+2024-09-01 08:14:57 info: All steps were completed successfully
+2024-09-02 01:03:37 info: --------------------------------------------
+2024-09-02 01:03:37 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-02 01:03:37 info: --------------------------------------------
+2024-09-02 01:03:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed
+    ✓ `rollDice` should not contain unneeded console.log calls
+    ✓ should use `dice.map()`
+    ✓ should use `Promise.all()`
+    ✓ should resolve when all dice settle successfully
+    ✕ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.221 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+/Users/admin/Projects/assignments-cohort49/3-UsingAPIs/helpers/pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/admin/Projects/assignments-cohort49/3-UsingAPIs/helpers/pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (/Users/admin/Projects/assignments-cohort49/3-UsingAPIs/helpers/pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:581:17)
+    at processTimers (node:internal/timers:519:7)
+
+Node.js v20.16.0
+2024-09-02 01:07:25 info: --------------------------------------------
+2024-09-02 01:07:25 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-02 01:07:25 info: --------------------------------------------
+2024-09-02 01:07:25 info: All unit tests passed.
+2024-09-02 01:07:27 info: All steps were completed successfully
+2024-09-02 01:19:18 info: ----------------------------------------------
+2024-09-02 01:19:18 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-02 01:19:18 info: ----------------------------------------------
+2024-09-02 01:19:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls
+    ✓ should resolve when all dice settle successfully (14 ms)
+    ✓ should reject with an Error when a die rolls off the table (27 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.254 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2024-09-02 01:19:43 info: ----------------------------------------------
+2024-09-02 01:19:43 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-02 01:19:43 info: ----------------------------------------------
+2024-09-02 01:19:44 info: All unit tests passed.
+2024-09-02 01:19:45 info: All steps were completed successfully
