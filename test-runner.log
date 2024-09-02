@@ -96,3 +96,8 @@ ex3-rollDie.js
 ✖ 1 problem (1 error, 0 warnings)
 
 
+2024-09-02 10:14:21 info: --------------------------------------------
+2024-09-02 10:14:21 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-02 10:14:21 info: --------------------------------------------
+2024-09-02 10:14:25 info: All unit tests passed.
+2024-09-02 10:14:29 info: All steps were completed successfully
