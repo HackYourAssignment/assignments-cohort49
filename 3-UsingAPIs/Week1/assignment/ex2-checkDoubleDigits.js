@@ -18,8 +18,9 @@ function checkDoubleDigits(number) {
       resolve('This is a double digit number!');
     } else {
       reject(
-        new Error(`Expected a double digit number but got ${number}, where ${number} is the 
-  number that was passed as an argument`)
+        new Error(
+          `Expected a double digit number but got ${number}, where ${number} is the number that was passed as an argument`
+        )
       );
       return;
     }
