@@ -3,3 +3,8 @@
 2024-09-02 08:51:02 info: ---------------------------------------
 2024-09-02 08:51:05 info: All unit tests passed.
 2024-09-02 08:51:10 info: All steps were completed successfully
+2024-09-02 09:04:56 info: -------------------------------------------------
+2024-09-02 09:04:56 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-09-02 09:04:56 info: -------------------------------------------------
+2024-09-02 09:04:59 info: All unit tests passed.
+2024-09-02 09:05:04 info: All steps were completed successfully
