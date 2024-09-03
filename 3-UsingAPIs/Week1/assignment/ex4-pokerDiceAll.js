@@ -27,9 +27,27 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
-  const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const dice = [1, 2, 3, 4, 5]; // Array representing dice
+  const diePromises = dice.map((dieNumber) => {
+    return rollDie(dieNumber)
+      .then((result) => ({ success: true, result }))
+      .catch((error) => ({ success: false, dieNumber, error }));
+  });
+
+  return Promise.all(diePromises).then((results) => {
+    const successfulRolls = results
+      .filter((r) => r.success)
+      .map((r) => r.result);
+    const failedRolls = results.find((r) => !r.success);
+
+    if (failedRolls) {
+      // If any die failed
+      throw new Error(`Die ${failedRolls.dieNumber} rolled off the table.`);
+    } else {
+      // All dice rolled successfully
+      return successfulRolls;
+    }
+  });
 }
 
 function main() {
@@ -42,4 +60,17 @@ function main() {
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
+
 module.exports = rollDice;
+
+/*
+  When a dice roll fails and a promise is rejected, Promise.all() immediately gives up and stops waiting for the other promises to finish. 
+  But the `rollDie()` calls that were already started keep going in the background. 
+  That’s why you might still see messages for dice that haven't finished rolling, even though one of them has already failed.
+
+  So, when `Promise.all()` detects a failure.
+  It doesn’t actually stop the ongoing dice rolls,
+  it just means we are not longer paying attention to their results. 
+  This is why some dice might still complete their roll and show their results,
+  even after one has already failed.
+*/
