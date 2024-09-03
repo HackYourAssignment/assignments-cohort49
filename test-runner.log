@@ -1,0 +1,2075 @@
+2024-08-28 12:05:43 info: ---------------------------------------
+2024-08-28 12:05:43 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-08-28 12:05:43 info: ---------------------------------------
+2024-08-28 12:05:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (3 ms)
+    × should have all TODO comments removed (2 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    √ should call `new Promise()` (1 ms)
+    √ should take a single argument
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when called with a string argument (3 ms)
+    √ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        1.316 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2024-08-28 12:06:26 info: ---------------------------------------
+2024-08-28 12:06:26 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-08-28 12:06:26 info: ---------------------------------------
+2024-08-28 12:06:30 info: All unit tests passed.
+2024-08-28 12:06:37 info: All steps were completed successfully
+2024-08-28 12:17:12 info: -------------------------------------------------
+2024-08-28 12:17:12 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:17:12 info: -------------------------------------------------
+2024-08-28 12:17:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (2 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!"
+    × (100) should return a rejected promise with an Error object
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:12)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.014 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:18:30 info: -------------------------------------------------
+2024-08-28 12:18:30 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:18:30 info: -------------------------------------------------
+2024-08-28 12:18:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (3 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (4 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    × (100) should return a rejected promise with an Error object (2 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:12)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.081 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:19:18 info: -------------------------------------------------
+2024-08-28 12:19:18 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:19:18 info: -------------------------------------------------
+2024-08-28 12:19:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js (5.98 s)
+  checkDoubleDigits
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (3 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (5008 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    × (100) should return a rejected promise with an Error object (3 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      61 |   });
+      62 |
+    > 63 |   test('(9) should return a rejected promise with an Error object', () => {
+         |   ^
+      64 |     expect.assertions(2);
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:63:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        6.078 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:21:24 info: -------------------------------------------------
+2024-08-28 12:21:24 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:21:24 info: -------------------------------------------------
+2024-08-28 12:21:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js (11.073 s)
+  checkDoubleDigits
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    √ should call new Promise()
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (5004 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    × (100) should return a rejected promise with an Error object (5011 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      61 |   });
+      62 |
+    > 63 |   test('(9) should return a rejected promise with an Error object', () => {
+         |   ^
+      64 |     expect.assertions(2);
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:63:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      87 |   });
+      88 |
+    > 89 |   test('(100) should return a rejected promise with an Error object', () => {
+         |   ^
+      90 |     expect.assertions(2);
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:89:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        11.164 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:31:59 info: -------------------------------------------------
+2024-08-28 12:31:59 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:31:59 info: -------------------------------------------------
+2024-08-28 12:32:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (3 ms)
+    √ should call new Promise()
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (2 ms)
+    × (9) should return a rejected promise with an Error object (5 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    × (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:12)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.071 s, estimated 12 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:32:57 info: -------------------------------------------------
+2024-08-28 12:32:57 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:32:57 info: -------------------------------------------------
+2024-08-28 12:33:02 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    √ should call new Promise()
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (4 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    × (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:12)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.106 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:35:29 info: -------------------------------------------------
+2024-08-28 12:35:29 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:35:29 info: -------------------------------------------------
+2024-08-28 12:35:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (3 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    √ (9) should return a rejected promise with an Error object (1 ms)
+    × (10) should return a promise that resolves to "This is a double digit number!" (4 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    √ (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 10]
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |            ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:12)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 71 |     expect.assertions(3);
+         |            ^
+      72 |     expect(exported).toBeDefined();
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:71:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 10 passed, 11 total
+Snapshots:   0 total
+Time:        1.065 s, estimated 2 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:38:38 info: -------------------------------------------------
+2024-08-28 12:38:38 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:38:38 info: -------------------------------------------------
+2024-08-28 12:38:42 info: All unit tests passed.
+2024-08-28 12:38:49 info: All steps were completed successfully
+2024-08-28 12:40:55 info: -------------------------------------------------
+2024-08-28 12:40:55 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:40:55 info: -------------------------------------------------
+2024-08-28 12:40:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (2 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (3 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    × (100) should return a rejected promise with an Error object (2 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:12)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.117 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:46:35 info: -------------------------------------------------
+2024-08-28 12:46:35 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:46:35 info: -------------------------------------------------
+2024-08-28 12:46:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (3 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    × (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:12)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        0.726 s, estimated 2 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:56:52 info: -------------------------------------------------
+2024-08-28 12:56:52 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:56:52 info: -------------------------------------------------
+2024-08-28 12:57:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js (11.067 s)
+  checkDoubleDigits
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (3 ms)
+    √ should call new Promise()
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (2 ms)
+    × (9) should return a rejected promise with an Error object (5002 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    × (100) should return a rejected promise with an Error object (5003 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      61 |   });
+      62 |
+    > 63 |   test('(9) should return a rejected promise with an Error object', () => {
+         |   ^
+      64 |     expect.assertions(2);
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:63:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      87 |   });
+      88 |
+    > 89 |   test('(100) should return a rejected promise with an Error object', () => {
+         |   ^
+      90 |     expect.assertions(2);
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:89:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        11.161 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:58:33 info: -------------------------------------------------
+2024-08-28 12:58:33 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:58:33 info: -------------------------------------------------
+2024-08-28 12:58:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js (11.032 s)
+  checkDoubleDigits
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (2 ms)
+    √ should call new Promise()
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (5013 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    × (100) should return a rejected promise with an Error object (5001 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      61 |   });
+      62 |
+    > 63 |   test('(9) should return a rejected promise with an Error object', () => {
+         |   ^
+      64 |     expect.assertions(2);
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:63:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      87 |   });
+      88 |
+    > 89 |   test('(100) should return a rejected promise with an Error object', () => {
+         |   ^
+      90 |     expect.assertions(2);
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:89:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        11.125 s, estimated 12 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 12:59:46 info: -------------------------------------------------
+2024-08-28 12:59:46 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 12:59:46 info: -------------------------------------------------
+2024-08-28 12:59:50 info: All unit tests passed.
+2024-08-28 12:59:58 info: All steps were completed successfully
+2024-08-28 01:00:30 info: -------------------------------------------------
+2024-08-28 01:00:30 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 01:00:30 info: -------------------------------------------------
+2024-08-28 01:00:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (6 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (3 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    √ should be a function that takes a single argument (2 ms)
+    × (9) should return a rejected promise with an Error object (4 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    × (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:12)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.053 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 01:12:58 info: ---------------------------------------
+2024-08-28 01:12:58 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-08-28 01:12:58 info: ---------------------------------------
+2024-08-28 01:13:02 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    √ should call `new Promise()` (1 ms)
+    √ should take a single argument
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    √ should resolve when called with a string argument (2 ms)
+    × should reject with an Error object when called without an argument (2 ms)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "undefined Doe"
+
+      90 |     timeoutSpy.mockRestore();
+      91 |     expect(promise).toBeInstanceOf(Promise);
+    > 92 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      93 |   });
+      94 | });
+      95 |
+
+      at expect (node_modules/expect/build/index.js:113:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:92:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+    > 84 |     expect.assertions(3);
+         |            ^
+      85 |     expect(exported).toBeDefined();
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:84:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        0.992 s, estimated 1 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2024-08-28 01:14:53 info: ---------------------------------------
+2024-08-28 01:14:53 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-08-28 01:14:53 info: ---------------------------------------
+2024-08-28 01:14:57 info: All unit tests passed.
+2024-08-28 01:15:04 info: All steps were completed successfully
+2024-08-28 01:51:56 info: ---------------------------------------
+2024-08-28 01:51:56 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-08-28 01:51:56 info: ---------------------------------------
+2024-08-28 01:52:00 info: All unit tests passed.
+2024-08-28 01:52:08 info: All steps were completed successfully
+2024-08-28 01:53:35 info: -------------------------------------------------
+2024-08-28 01:53:35 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 01:53:35 info: -------------------------------------------------
+2024-08-28 01:53:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js (11.029 s)
+  checkDoubleDigits
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    √ should call new Promise()
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (5017 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (4 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    × (100) should return a rejected promise with an Error object (5010 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      61 |   });
+      62 |
+    > 63 |   test('(9) should return a rejected promise with an Error object', () => {
+         |   ^
+      64 |     expect.assertions(2);
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:63:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      87 |   });
+      88 |
+    > 89 |   test('(100) should return a rejected promise with an Error object', () => {
+         |   ^
+      90 |     expect.assertions(2);
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:89:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:10:1)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        11.119 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-08-28 02:07:36 info: -------------------------------------------------
+2024-08-28 02:07:36 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 02:07:36 info: -------------------------------------------------
+2024-08-28 02:07:40 info: All unit tests passed.
+2024-08-28 02:07:47 info: All steps were completed successfully
+2024-08-28 02:09:45 info: -------------------------------------------------
+2024-08-28 02:09:45 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-08-28 02:09:45 info: -------------------------------------------------
+2024-08-28 02:09:49 info: All unit tests passed.
+2024-08-28 02:09:56 info: All steps were completed successfully
+2024-08-28 03:36:54 info: ---------------------------------------
+2024-08-28 03:36:54 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-08-28 03:36:54 info: ---------------------------------------
+2024-08-28 03:36:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    √ should exist and be executable (4 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should call `new Promise()`
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    √ should resolve when the die settles successfully (2 ms)
+    √ should reject with an Error when the die rolls off the table (2 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.463 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2024-08-28 03:37:45 info: ---------------------------------------
+2024-08-28 03:37:45 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-08-28 03:37:45 info: ---------------------------------------
+2024-08-28 03:37:49 info: All unit tests passed.
+2024-08-28 03:37:56 info: All steps were completed successfully
+2024-08-28 03:43:08 info: ---------------------------------------
+2024-08-28 03:43:08 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-08-28 03:43:08 info: ---------------------------------------
+2024-08-28 03:43:12 info: All unit tests passed.
+2024-08-28 03:43:18 info: All steps were completed successfully
+2024-08-28 04:14:42 info: ---------------------------------------
+2024-08-28 04:14:42 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-08-28 04:14:42 info: ---------------------------------------
+2024-08-28 04:14:46 info: All unit tests passed.
+2024-08-28 04:14:49 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  53:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-08-28 04:21:47 info: ---------------------------------------
+2024-08-28 04:21:47 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-08-28 04:21:47 info: ---------------------------------------
+2024-08-28 04:21:51 info: All unit tests passed.
+2024-08-28 04:21:58 info: All steps were completed successfully
+2024-09-03 05:16:26 info: --------------------------------------------
+2024-09-03 05:16:26 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 05:16:26 info: --------------------------------------------
+2024-09-03 05:16:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    × should use `Promise.all()` (2 ms)
+    × should resolve when all dice settle successfully (2 ms)
+    × should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:44:30)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    TypeError: Cannot read properties of undefined (reading 'all')
+
+      29 | function rollDice() {
+      30 |   const dice = [1, 2, 3, 4, 5];
+    > 31 |   const rollAllFive = dice.map((die) => rollDie(die).promise.all([]));
+         |                                                             ^
+      32 |   return rollAllFive;
+      33 | }
+      34 |
+
+      at 3-UsingAPIs/Week1/assignment/ex4-pokerDiceAll.js:31:61
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/assignment/ex4-pokerDiceAll.js:31:28)
+      at Object.rollDice (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:53:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        1.346 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 05:18:03 info: --------------------------------------------
+2024-09-03 05:18:03 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 05:18:03 info: --------------------------------------------
+2024-09-03 05:18:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    √ should use `dice.map()` (1 ms)
+    × should use `Promise.all()` (2 ms)
+    × should resolve when all dice settle successfully (4 ms)
+    √ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:44:30)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.074 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 05:45:58 info: --------------------------------------------
+2024-09-03 05:45:58 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 05:45:58 info: --------------------------------------------
+2024-09-03 05:46:02 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (12 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (5 ms)
+    √ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.046 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 06:06:17 info: --------------------------------------------
+2024-09-03 06:06:17 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 06:06:17 info: --------------------------------------------
+2024-09-03 06:06:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (2 ms)
+    √ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.724 s, estimated 1 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 06:08:15 info: --------------------------------------------
+2024-09-03 06:08:15 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 06:08:15 info: --------------------------------------------
+2024-09-03 06:08:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (2 ms)
+    √ should reject with an Error when a die rolls off the table (3 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 06:13:50 info: --------------------------------------------
+2024-09-03 06:13:50 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 06:13:50 info: --------------------------------------------
+2024-09-03 06:13:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (4 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (5 ms)
+    √ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.292 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 06:14:58 info: --------------------------------------------
+2024-09-03 06:14:58 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 06:14:58 info: --------------------------------------------
+2024-09-03 06:15:02 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (5 ms)
+    √ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.168 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 06:22:29 info: --------------------------------------------
+2024-09-03 06:22:29 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 06:22:29 info: --------------------------------------------
+2024-09-03 06:22:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (4 ms)
+    × should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      57 |     expect(result).toHaveLength(5);
+      58 |
+      59 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:56:35)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.972 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 06:35:13 info: --------------------------------------------
+2024-09-03 06:35:13 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 06:35:13 info: --------------------------------------------
+2024-09-03 06:35:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (2 ms)
+    √ should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: Array
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.696 s, estimated 1 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:74:16)
+    at Timeout._onTimeout (C:\Users\user1\Desktop\assignments-cohort49\3-UsingAPIs\helpers\pokerDiceRoller.js:87:26)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+
+Node.js v20.12.2
+2024-09-03 06:40:59 info: --------------------------------------------
+2024-09-03 06:40:59 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-03 06:40:59 info: --------------------------------------------
+2024-09-03 06:41:03 info: All unit tests passed.
+2024-09-03 06:41:10 info: All steps were completed successfully
+2024-09-03 06:54:41 info: ----------------------------------------------
+2024-09-03 06:54:41 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-03 06:54:41 info: ----------------------------------------------
+2024-09-03 06:54:45 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    √ should resolve when all dice settle successfully (135 ms)
+    √ should reject with an Error when a die rolls off the table (90 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.278 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2024-09-03 06:54:49 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  15:9  error  'values' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-03 06:55:10 info: ----------------------------------------------
+2024-09-03 06:55:10 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-03 06:55:10 info: ----------------------------------------------
+2024-09-03 06:55:14 info: All unit tests passed.
+2024-09-03 06:55:17 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  15:9  error  'values' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-03 06:55:53 info: ----------------------------------------------
+2024-09-03 06:55:53 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-03 06:55:53 info: ----------------------------------------------
+2024-09-03 06:55:57 info: All unit tests passed.
+2024-09-03 06:56:04 info: All steps were completed successfully

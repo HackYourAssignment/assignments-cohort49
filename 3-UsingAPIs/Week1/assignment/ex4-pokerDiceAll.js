@@ -27,9 +27,9 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const rollAllFive = dice.map((die) => rollDie(die));
+  return Promise.all(rollAllFive);
 }
 
 function main() {
@@ -43,3 +43,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// promise.all() do not cancel the execution of the promise even if one reject early
