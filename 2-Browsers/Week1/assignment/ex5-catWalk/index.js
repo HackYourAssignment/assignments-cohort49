@@ -26,6 +26,8 @@ function catWalk() {
   img.style.left = '0px';
   
   const direction = 10;
+  let isCatDancing = false;
+  const originalSrc = img.src;
 
   function moveCat() {
    const currentLeft = parseInt(img.style.left);
@@ -37,7 +39,7 @@ function catWalk() {
       img.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
           
       setTimeout(() => {
-        img.src = 'https://www.example.com/original-cat-image.jpg'; 
+        img.src = originalSrc; 
         isCatDancing = false;
       }, 5000);
     }
