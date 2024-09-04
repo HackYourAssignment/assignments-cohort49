@@ -32,19 +32,22 @@ function catWalk() {
    const screenWidth = window.innerWidth - img.width;
    const middleOfScreen = screenWidth / 2;
 
-   if (currentLeft >= middleOfScreen && currentLeft < middleOfScreen + 10) {
+   if (!isCatDancing && currentLeft >= middleOfScreen && currentLeft < middleOfScreen + direction) {
+      isCatDancing = true;
       img.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+          
       setTimeout(() => {
         img.src = 'https://www.example.com/original-cat-image.jpg'; 
-      }, 5000); 
+        isCatDancing = false;
+      }, 5000);
     }
 
-    if(currentLeft >= screenWidth) {
-      img.style.left = '0px'; 
-   } else {
-     img.style.left = `${currentLeft + direction}px`; 
-   } 
-    }
+    if (currentLeft >= screenWidth) {
+          img.style.left = '0px'; 
+        } else if (!isCatDancing) {
+       img.style.left = `${currentLeft + direction}px`;
+        }
+      }
 
     setInterval(moveCat, 50);
  
