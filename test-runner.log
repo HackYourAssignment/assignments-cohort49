@@ -1492,3 +1492,122 @@ Ran all test suites matching /ex5-catWalk.test.js/i.
 
 /Users/hackyourfuture/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex3-hijackLogo.js:11:53 - Unknown word (Xdpd)
 
+2024-09-05 11:11:42 info: ---------------------------------------------
+2024-09-05 11:11:42 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-05 11:11:42 info: ---------------------------------------------
+2024-09-05 11:11:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✓ HTML should be syntactically valid (101 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should use `fetch()`
+    ✓ should use async/wait
+    ✓ should use try/catch
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.863 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-05 11:11:48 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  57:6  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2024-09-05 11:16:23 info: ---------------------------------------------
+2024-09-05 11:16:23 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-05 11:16:23 info: ---------------------------------------------
+2024-09-05 11:16:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✓ HTML should be syntactically valid (106 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✓ should use async/wait (1 ms)
+    ✓ should use try/catch
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.66 s, estimated 3 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-05 11:16:28 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  61:6  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2024-09-05 11:17:26 info: ---------------------------------------------
+2024-09-05 11:17:26 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-05 11:17:26 info: ---------------------------------------------
+2024-09-05 11:17:29 info: All unit tests passed.
+2024-09-05 11:17:30 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  60:6  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2024-09-05 11:17:59 info: ---------------------------------------------
+2024-09-05 11:17:59 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-05 11:17:59 info: ---------------------------------------------
+2024-09-05 11:18:03 info: All unit tests passed.
+2024-09-05 11:18:04 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  60:6  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2024-09-05 11:18:54 info: ---------------------------------------------
+2024-09-05 11:18:54 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-05 11:18:54 info: ---------------------------------------------
+2024-09-05 11:18:57 info: All unit tests passed.
+2024-09-05 11:19:00 info: All steps were completed successfully
