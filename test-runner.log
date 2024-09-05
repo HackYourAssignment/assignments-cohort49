@@ -1,0 +1,57 @@
+2024-09-05 09:18:30 info: ---------------------------------------------
+2024-09-05 09:18:30 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-05 09:18:30 info: ---------------------------------------------
+2024-09-05 09:18:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✓ HTML should be syntactically valid (88 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()` (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch (1 ms)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.238 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-05 09:18:36 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  50:3  warning  The assignment tests do not support `innerText`. Please replace with `textContent`  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-09-05 09:21:34 info: Disclaimer turned off
+2024-09-05 09:21:44 info: ---------------------------------------------
+2024-09-05 09:21:44 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-05 09:21:44 info: ---------------------------------------------
+2024-09-05 09:21:48 info: All unit tests passed.
+2024-09-05 09:21:50 info: All steps were completed successfully
+2024-09-05 09:22:13 info: ---------------------------------------------
+2024-09-05 09:22:13 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-05 09:22:13 info: ---------------------------------------------
+2024-09-05 09:22:17 info: All unit tests passed.
+2024-09-05 09:22:19 info: All steps were completed successfully
