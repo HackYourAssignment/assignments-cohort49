@@ -1915,3 +1915,8 @@ Ran all test suites matching /ex4-diceRace.test.js/i.
 2024-09-07 01:31:12 info: ----------------------------------------
 2024-09-07 01:31:14 info: All unit tests passed.
 2024-09-07 01:31:16 info: All steps were completed successfully
+2024-09-07 01:36:35 info: ----------------------------------------
+2024-09-07 01:36:35 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-07 01:36:35 info: ----------------------------------------
+2024-09-07 01:36:35 warn: A unit test file was not provided.
+2024-09-07 01:36:38 info: All steps were completed successfully
