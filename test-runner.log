@@ -1611,3 +1611,152 @@ ex1-programmerFun/index.js
 2024-09-05 11:18:54 info: ---------------------------------------------
 2024-09-05 11:18:57 info: All unit tests passed.
 2024-09-05 11:19:00 info: All steps were completed successfully
+2024-09-07 12:10:57 info: -----------------------------------------
+2024-09-07 12:10:57 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-07 12:10:57 info: -----------------------------------------
+2024-09-07 12:10:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✕ should have all TODO comments removed (3 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✕ should not include a recursive call
+    ✕ should use async/wait
+    ✕ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (22 ms)
+    ✓ should reject with an Error when a die rolls off the table (12 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        0.67 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2024-09-07 12:24:33 info: -----------------------------------------
+2024-09-07 12:24:33 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-07 12:24:33 info: -----------------------------------------
+2024-09-07 12:24:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✕ should have all TODO comments removed (3 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✓ should not include a recursive call (1 ms)
+    ✓ should use async/wait (1 ms)
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (23 ms)
+    ✓ should reject with an Error when a die rolls off the table (13 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.479 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2024-09-07 12:24:36 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  16:9  error    Unexpected constant condition  no-constant-condition
+  24:3  warning  Remove commented-out code      hyf/no-commented-out-code
+  40:1  warning  Remove commented-out code      hyf/no-commented-out-code
+
+✖ 3 problems (1 error, 2 warnings)
+
+
+2024-09-07 12:26:24 info: -----------------------------------------
+2024-09-07 12:26:24 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-07 12:26:24 info: -----------------------------------------
+2024-09-07 12:26:25 info: All unit tests passed.
+2024-09-07 12:26:26 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  16:9  error  Unexpected constant condition  no-constant-condition
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-07 12:32:02 info: -----------------------------------------
+2024-09-07 12:32:02 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-07 12:32:02 info: -----------------------------------------
+2024-09-07 12:32:03 info: All unit tests passed.
+2024-09-07 12:32:05 info: All steps were completed successfully
