@@ -29,8 +29,20 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const dicePromise = dice.map(rollDie);
+
+  return Promise.all(dicePromise)
+    .then(results => {
+      console.log('Resolved!', results);
+      return results;
+    })
+
+    .catch(error=>{
+      console.log('Rejected!', error.message);
+      throw error;
+    });
 }
+
 
 function main() {
   rollDice()

@@ -12,7 +12,10 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/3-U
 ------------------------------------------------------------------------------*/
 
 // TODO Remove callback and return a promise
-function rollDie(callback) {
+function rollDie() {
+  return new Promise((resolve, reject) =>{
+
+  
   // Compute a random number of rolls (3-10) that the die MUST complete
   const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
   console.log(`Die scheduled for ${randomRollsToDo} rolls...`);
@@ -25,34 +28,34 @@ function rollDie(callback) {
     // Use callback to notify that the die rolled off the table after 6 rolls
     if (roll > 6) {
       // TODO replace "error" callback
-      callback(new Error('Oops... Die rolled off the table.'));
+      reject (new Error('Oops... Die rolled off the table.'));
+      return;
     }
 
     // Use callback to communicate the final die value once finished rolling
     if (roll === randomRollsToDo) {
       // TODO replace "success" callback
-      callback(null, value);
+      resolve(value);
+      return;
     }
-
+  
     // Schedule the next roll todo until no more rolls to do
     if (roll < randomRollsToDo) {
       setTimeout(() => rollOnce(roll + 1), 500);
-    }
-  };
-
+      }
+    };
+  
   // Start the initial roll
   rollOnce(1);
+  });
+
 }
 
 function main() {
   // TODO Refactor to use promise
-  rollDie((error, value) => {
-    if (error !== null) {
-      console.log(error.message);
-    } else {
-      console.log(`Success! Die settled on ${value}.`);
-    }
-  });
+  rollDie() 
+    .then((value) => console.log(`Final die value is: ${value}`))
+    .catch((error) => console.log(error.message));
 }
 
 // ! Do not change or remove the code below
