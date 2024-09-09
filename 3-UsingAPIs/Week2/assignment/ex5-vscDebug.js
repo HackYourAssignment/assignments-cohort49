@@ -14,7 +14,9 @@ async function getData(url) {
 function renderLaureate({ knownName, birth, death }) {
   console.log(`\nName: ${knownName.en}`);
   console.log(`Birth: ${birth.date}, ${birth.place.locationString}`);
-  console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  if (death) {
+    console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  }
 }
 
 function renderLaureates(laureates) {
