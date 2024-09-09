@@ -59,3 +59,8 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+/*After refactoring, the problem is resolved. The promise-based approach manages success and error states more clearly.
+If `rollDie` correctly returns a promise, the problem with the old callback-based approach is eliminated,
+if `rollDie` does not correctly return a promise, `rollDie` function would need to be restructured.
+*/
