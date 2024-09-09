@@ -14,7 +14,7 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
   const listItems = document.querySelectorAll('li');
 
   listItems.forEach((li, index) => {
-    li.lastChild.replaceWith(aboutMe[index]);
+    li.lastChild.textContent = aboutMe[index];
 
     li.className = 'list-item';
   });
