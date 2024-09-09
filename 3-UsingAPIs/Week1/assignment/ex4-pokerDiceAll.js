@@ -42,10 +42,8 @@ function rollDice() {
 }
 
 function main() {
-  rollDice()
-    .catch((error) => console.log('Rejected!', error.message));
+  rollDice();
 }
-
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
