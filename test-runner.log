@@ -1,0 +1,336 @@
+2024-09-09 10:53:20 info: ---------------------------------------------
+2024-09-09 10:53:20 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-09 10:53:20 info: ---------------------------------------------
+2024-09-09 10:53:23 info: All unit tests passed.
+2024-09-09 10:53:24 info: All steps were completed successfully
+2024-09-09 12:05:28 info: ------------------------------------------
+2024-09-09 12:05:28 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 12:05:28 info: ------------------------------------------
+2024-09-09 12:05:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (69 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()`
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:24  error  <button> is missing required \"type\" attribute  element-required-attributes
+      12:70  error  <img> is missing required \"src\" attribute      element-required-attributes
+      12:70  error  <img> is missing required \"alt\" attribute      wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.802 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2024-09-09 12:06:31 info: ------------------------------------------
+2024-09-09 12:06:31 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 12:06:31 info: ------------------------------------------
+2024-09-09 12:06:33 info: All unit tests passed.
+2024-09-09 12:06:34 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  54:20  error  'img' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-09 12:07:26 info: ------------------------------------------
+2024-09-09 12:07:26 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 12:07:26 info: ------------------------------------------
+2024-09-09 12:07:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (71 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()`
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:84  error  Attribute \"src\" has invalid value \"\"  attribute-allowed-values·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.713 s, estimated 2 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2024-09-09 12:08:34 info: ------------------------------------------
+2024-09-09 12:08:34 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 12:08:34 info: ------------------------------------------
+2024-09-09 12:08:36 info: All unit tests passed.
+2024-09-09 12:08:37 info: All steps were completed successfully
+2024-09-09 02:02:33 info: ------------------------------------------
+2024-09-09 02:02:33 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 02:02:33 info: ------------------------------------------
+2024-09-09 02:02:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (69 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()`
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:6  error  Attribute \"src\" has invalid value \"\"  attribute-allowed-values·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.714 s, estimated 2 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2024-09-09 02:03:22 info: ------------------------------------------
+2024-09-09 02:03:22 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 02:03:22 info: ------------------------------------------
+2024-09-09 02:03:24 info: All unit tests passed.
+2024-09-09 02:03:25 info: All steps were completed successfully
+2024-09-09 02:15:00 info: ------------------------------------------
+2024-09-09 02:15:00 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 02:15:00 info: ------------------------------------------
+2024-09-09 02:15:02 info: All unit tests passed.
+2024-09-09 02:15:03 info: All steps were completed successfully
+2024-09-09 02:38:30 info: -----------------------------------------
+2024-09-09 02:38:30 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-09 02:38:30 info: -----------------------------------------
+2024-09-09 02:38:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (2 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    ✕ should not include a recursive call
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (16 ms)
+    ✓ should reject with an Error when a die rolls off the table (10 ms)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.261 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2024-09-09 02:49:13 info: -----------------------------------------
+2024-09-09 02:49:13 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-09 02:49:13 info: -----------------------------------------
+2024-09-09 02:49:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✓ should not include a recursive call (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✕ should resolve as soon as a die settles on an ACE (8 ms)
+    ✓ should reject with an Error when a die rolls off the table (3 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+
+
+      21 |       return response;
+      22 |     } else {
+    > 23 |       throw new Error(error.status);
+         |             ^
+      24 |     }
+      25 |   }
+      26 | }
+
+      at rollDieUntil (3-UsingAPIs/Week2/assignment/ex3-rollAnAce.js:23:13)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.248 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2024-09-09 02:51:21 info: -----------------------------------------
+2024-09-09 02:51:21 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-09 02:51:21 info: -----------------------------------------
+2024-09-09 02:51:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✓ should not include a recursive call
+    ✓ should use async/wait (1 ms)
+    ✓ should use try/catch
+    ✕ should resolve as soon as a die settles on an ACE (7 ms)
+    ✓ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+
+
+      22 |
+      23 |   if (response !== wantedValue) {
+    > 24 |     throw new Error(error.status);
+         |           ^
+      25 |   }
+      26 |
+      27 |   return;
+
+      at rollDieUntil (3-UsingAPIs/Week2/assignment/ex3-rollAnAce.js:24:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.202 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2024-09-09 02:54:17 info: -----------------------------------------
+2024-09-09 02:54:17 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-09 02:54:17 info: -----------------------------------------
+2024-09-09 02:54:18 info: All unit tests passed.
+2024-09-09 02:54:19 info: All steps were completed successfully
+2024-09-09 03:00:11 info: ----------------------------------------
+2024-09-09 03:00:11 info: >>> Running Unit Test `ex4-diceRace` <<<
+2024-09-09 03:00:11 info: ----------------------------------------
+2024-09-09 03:00:12 info: All unit tests passed.
+2024-09-09 03:00:13 info: All steps were completed successfully
+2024-09-09 03:31:04 info: ----------------------------------------
+2024-09-09 03:31:04 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-09 03:31:04 info: ----------------------------------------
+2024-09-09 03:31:04 warn: A unit test file was not provided.
+2024-09-09 03:31:05 info: All steps were completed successfully
+2024-09-09 03:42:15 info: --------------------------------------------
+2024-09-09 03:42:15 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2024-09-09 03:42:15 info: --------------------------------------------
+2024-09-09 03:42:15 warn: A unit test file was not provided.
+2024-09-09 03:42:16 info: All steps were completed successfully

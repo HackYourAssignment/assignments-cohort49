@@ -1,1 +1,33 @@
-/* add your styling here */
+body {
+  background-color: rgb(152, 152, 152);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 11px 10px 18px -3px rgba(0, 0, 0, 0.75);
+  background-color: rgb(215, 215, 215);
+}
+
+.get-button {
+  height: 40px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.select-pokemon {
+  padding-left: 15px;
+  height: 40px;
+  width: 140px;
+}
+
+.pokemon-img {
+  display: block;
+  margin: 10px auto;
+}
