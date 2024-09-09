@@ -120,3 +120,15 @@ Ran all test suites matching /ex2-pokemonApp.test.js/i.
 2024-09-06 12:49:20 info: ------------------------------------------
 2024-09-06 12:49:24 info: All unit tests passed.
 2024-09-06 12:49:26 info: All steps were completed successfully
+2024-09-09 12:59:55 info: ----------------------------------------
+2024-09-09 12:59:55 info: >>> Running Unit Test `ex4-diceRace` <<<
+2024-09-09 12:59:55 info: ----------------------------------------
+2024-09-09 12:59:57 info: All unit tests passed.
+2024-09-09 12:59:58 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  41:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+

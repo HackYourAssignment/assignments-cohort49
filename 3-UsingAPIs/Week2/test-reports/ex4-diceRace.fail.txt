@@ -1,0 +1,8 @@
+
+*** ESLint Report ***
+
+ex4-diceRace.js
+  41:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
