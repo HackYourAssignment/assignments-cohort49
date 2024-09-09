@@ -22,18 +22,53 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Fetch error:', error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(pokemonSelectElement) {
+  if (!pokemonSelectElement) {
+    console.error('No select element found');
+    return;
+  }
+
+  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+  if (data && data.results) {
+    data.results.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;
+      option.textContent =
+        pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+      pokemonSelectElement.appendChild(option);
+    });
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url, imageElement) {
+  const data = await fetchData(url);
+  if (data && data.sprites && data.sprites.front_default) {
+    imageElement.src = data.sprites.front_default;
+  }
 }
 
 function main() {
-  // TODO complete this function
+  const pokemonSelectElement = document.getElementById('pokemon-select');
+  const pokemonImageElement = document.getElementById('pokemon-image');
+
+  fetchAndPopulatePokemons(pokemonSelectElement);
+
+  pokemonSelectElement.addEventListener('change', (event) => {
+    const pokemonUrl = event.target.value;
+    fetchImage(pokemonUrl, pokemonImageElement);
+  });
 }
+
+window.addEventListener('load', main);

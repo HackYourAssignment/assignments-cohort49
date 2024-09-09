@@ -1,0 +1,55 @@
+2024-09-09 01:17:29 info: ---------------------------------------------
+2024-09-09 01:17:29 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-09 01:17:29 info: ---------------------------------------------
+2024-09-09 01:17:37 info: All unit tests passed.
+2024-09-09 01:17:40 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  21:3  error  Unnecessary try/catch wrapper  no-useless-catch
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-09 01:18:32 info: ---------------------------------------------
+2024-09-09 01:18:32 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-09 01:18:32 info: ---------------------------------------------
+2024-09-09 01:18:39 info: All unit tests passed.
+2024-09-09 01:18:46 info: All steps were completed successfully
+2024-09-09 01:32:53 info: ------------------------------------------
+2024-09-09 01:32:53 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 01:32:53 info: ------------------------------------------
+2024-09-09 01:33:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+
+
+  ● Test suite failed to run
+
+    TypeError: Cannot read properties of null (reading 'appendChild')
+
+      43 |       option.textContent =
+      44 |         pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+    > 45 |       pokemonSelectElement.appendChild(option);
+         |                            ^
+      46 |     });
+      47 |   }
+      48 | }
+
+      at file:/Users/fati/Desktop/HYF-assignment/assignments-cohort49/3-UsingAPIs/Week2/assignment/ex2-pokemonApp/index.js:45:28
+          at Array.forEach (<anonymous>)
+      at fetchAndPopulatePokemons (file:/Users/fati/Desktop/HYF-assignment/assignments-cohort49/3-UsingAPIs/Week2/assignment/ex2-pokemonApp/index.js:40:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        4.647 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2024-09-09 01:35:02 info: ------------------------------------------
+2024-09-09 01:35:02 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-09 01:35:02 info: ------------------------------------------
+2024-09-09 01:35:07 info: All unit tests passed.
+2024-09-09 01:35:12 info: All steps were completed successfully
