@@ -30,19 +30,16 @@ function rollDice() {
 
   const dice = [1, 2, 3, 4, 5];
   const promises = dice.map((dieNumber) => {
-    return rollDie()
-    .then((result) => {
-      return result;
-    })
-    .catch(() => {
-      throw new Error(`Die ${dieNumber} rolled off the table.`)
-    });
+    return rollDie();
   });
   return Promise.all(promises);
 }
 
 function main() {
   rollDice();
+  .then((results) => console.log('Resolved!', results))
+  .catch((error) => console.log('Rejected!', error.message));
+}
 }
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
