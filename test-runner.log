@@ -1,0 +1,168 @@
+2024-09-09 11:25:16 info: ---------------------------------------
+2024-09-09 11:25:16 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-09-09 11:25:16 info: ---------------------------------------
+2024-09-09 11:25:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    × should exist and be executable (1 ms)
+    × should have all TODO comments removed
+    × `getAnonName` should not contain unneeded console.log calls (1 ms)
+    × should call `new Promise()`
+    × should take a single argument
+    × `resolve()` should be called with a one argument (1 ms)
+    × `reject()` should be called with a one argument
+    × should resolve when called with a string argument (1 ms)
+    × should reject with an Error object when called without an argument
+
+  ● getAnonName › should exist and be executable
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › `getAnonName` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should call `new Promise()`
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should take a single argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › `resolve()` should be called with a one argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › `reject()` should be called with a one argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       9 failed, 9 total
+Snapshots:   0 total
+Time:        2.219 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2024-09-09 11:25:37 error: *** Spell Checker Report ***
+
+
