@@ -9,4 +9,13 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 
-// TODO add your JavaScript code here.
+(() => {
+  const aboutMe = ['Asim', 'Mandi', 'Sanaa'];
+  const listItems = document.querySelectorAll('li');
+
+  listItems.forEach((li, index) => {
+    li.lastChild.textContent = aboutMe[index];
+
+    li.className = 'list-item';
+  });
+})();
