@@ -13,8 +13,24 @@ async function getData(url) {
 
 function renderLaureate({ knownName, birth, death }) {
   console.log(`\nName: ${knownName.en}`);
-  console.log(`Birth: ${birth.date}, ${birth.place.locationString}`);
-  console.log(`Death: ${death.date}, ${death.place.locationString}`);
+
+  // Check if birth info is available before accessing properties
+  if (birth) {
+    console.log(
+      `Birth: ${birth.date}, ${birth.place?.locationString || 'Unknown place'}`
+    );
+  } else {
+    console.log('Birth information not available');
+  }
+
+  // Check if death info is available before accessing properties
+  if (death) {
+    console.log(
+      `Death: ${death.date}, ${death.place?.locationString || 'Unknown place'}`
+    );
+  } else {
+    console.log('Still alive or death information not available');
+  }
 }
 
 function renderLaureates(laureates) {
@@ -23,10 +39,17 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    // Await the data from getData
+    const data = await getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
-    renderLaureates(laureates);
+
+    // Render laureates if data is available
+    if (data.laureates) {
+      renderLaureates(data.laureates);
+    } else {
+      console.log('No laureates found.');
+    }
   } catch (err) {
     console.error(`Something went wrong: ${err.message}`);
   }

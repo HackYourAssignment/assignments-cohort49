@@ -15,18 +15,36 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDie()
+
+  // Use .map() to create an array of promises for each die
+  const dicePromises = dice.map(() => rollDie());
+
+  // Return the result of the first resolved promise using Promise.race()
+  return Promise.race(dicePromises);
 }
 
 // Refactor this function to use async/await and try/catch
-function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const result = await rollDice();
+    console.log('Resolved!', result);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
 }
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
+
 module.exports = rollDice;
+
+/*
+Why do some dice continue rolling after Promise.race() resolves?
+
+Promise.race() resolves or rejects as soon as the first promise in the array settles (either resolves or rejects). 
+However, other promises continue to execute because they are independent asynchronous tasks and Promise.race() 
+does not cancel the remaining promises. To stop them, you would need to explicitly handle promise cancellation, 
+which JavaScript's built-in Promises do not support natively.
+*/
