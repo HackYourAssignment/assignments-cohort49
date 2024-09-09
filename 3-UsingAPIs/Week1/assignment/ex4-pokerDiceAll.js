@@ -46,3 +46,9 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*
+ `Promise.all` rejects as soon as any promise fails, but it doesn't cancel ongoing operations.
+ Therefore, dice that are still rolling continue their process even if one die has already caused the promise to reject.
+ */
+
