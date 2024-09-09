@@ -25,7 +25,6 @@ function rollDie() {
     // Use callback to notify that the die rolled off the table after 6 rolls
     if (roll > 6) {
       reject(new Error('Oops... Die rolled off the table.'));
-      return;
     }
 
     // Use callback to communicate the final die value once finished rolling
