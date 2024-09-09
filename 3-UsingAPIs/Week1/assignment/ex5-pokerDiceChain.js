@@ -16,8 +16,7 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const results = [];
-  
-  // TODO: expand the chain to include five dice
+
   return rollDie(1)
     .then((value) => {
       results.push(value);
@@ -50,7 +49,6 @@ function main() {
     .catch((error) => console.log('Rejected!', error.message));
 }
 
-// ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
