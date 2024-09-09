@@ -27,9 +27,11 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+
+  const dicePromises = dice.map((die) => rollDie(die));
+
+  return Promise.all(dicePromises);
 }
 
 function main() {
@@ -43,3 +45,9 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// !Explanation:
+// Even when one promise in Promise.all() rejects, the other dice keep rolling.
+// This is because promises can't cancel ongoing tasks - they only stop waiting
+// for results. The asynchronous die rolls continue independently, even after
+// the overall operation has failed.
