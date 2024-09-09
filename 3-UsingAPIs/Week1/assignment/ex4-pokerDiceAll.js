@@ -43,7 +43,6 @@ function rollDice() {
 
 function main() {
   rollDice()
-    .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
 
