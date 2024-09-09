@@ -6,6 +6,9 @@ Full description at:https://github.com/HackYourFuture/Assignments/blob/main/3-Us
 
 async function getData(url) {
   const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
+  }
   return response.json();
 }
 
@@ -32,8 +35,16 @@ function renderLaureate(ul, { knownName, birth, death }) {
   const li = createAndAppend('li', ul);
   const table = createAndAppend('table', li);
   addTableRow(table, 'Name', knownName.en);
-  addTableRow(table, 'Birth', `${birth.date}, ${birth.place.locationString}`);
-  addTableRow(table, 'Death', `${death.date}, ${death.place.locationString}`);
+  addTableRow(
+    table,
+    'Birth',
+    birth ? `${birth.date}, ${birth.place.locationString}` : 'N/A'
+  );
+  addTableRow(
+    table,
+    'Death',
+    death ? `${death.date}, ${death.place.locationString}` : 'N/A'
+  );
 }
 
 function renderLaureates(laureates) {
@@ -43,10 +54,10 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const data = await getData(
       'https://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
-    renderLaureates(laureates);
+    renderLaureates(data.laureates);
   } catch (err) {
     console.error(`Something went wrong: ${err.message}`);
   }
