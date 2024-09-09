@@ -1,1 +1,30 @@
-/* add your styling here */
+select#pokemon-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  img#pokemon-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
