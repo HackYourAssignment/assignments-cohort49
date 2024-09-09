@@ -12,6 +12,8 @@ to expand the given promise chain to include five dice.
 
 // The line below makes the rollDie() function available to this file.
 // Do not change or remove it.
+
+// eslint-disable-next-line no-unused-vars
 const { values } = require('lodash');
 const rollDie = require('../../helpers/pokerDiceRoller');
 

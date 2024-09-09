@@ -113,3 +113,78 @@ ex5-pokerDiceChain.js
 ✖ 1 problem (1 error, 0 warnings)
 
 
+2024-09-09 10:34:07 info: ----------------------------------------------
+2024-09-09 10:34:07 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 10:34:07 info: ----------------------------------------------
+2024-09-09 10:34:11 info: All unit tests passed.
+2024-09-09 10:34:14 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  17:9  error  'values' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-09 10:34:35 info: ----------------------------------------------
+2024-09-09 10:34:35 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 10:34:35 info: ----------------------------------------------
+2024-09-09 10:34:37 info: All unit tests passed.
+2024-09-09 10:34:38 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  17:9  error  'values' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-09 10:35:45 info: ----------------------------------------------
+2024-09-09 10:35:45 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 10:35:45 info: ----------------------------------------------
+2024-09-09 10:35:48 info: All unit tests passed.
+2024-09-09 10:35:50 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  18:9  error  'values' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-09 10:36:24 info: ----------------------------------------------
+2024-09-09 10:36:24 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 10:36:24 info: ----------------------------------------------
+2024-09-09 10:36:26 info: All unit tests passed.
+2024-09-09 10:36:28 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  18:9  error  'values' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-09 10:49:13 info: ----------------------------------------------
+2024-09-09 10:49:13 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 10:49:13 info: ----------------------------------------------
+2024-09-09 10:49:17 info: All unit tests passed.
+2024-09-09 10:49:22 info: All steps were completed successfully
+2024-09-09 10:49:58 info: ----------------------------------------------
+2024-09-09 10:49:58 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 10:49:58 info: ----------------------------------------------
+2024-09-09 10:50:01 info: All unit tests passed.
+2024-09-09 10:50:04 info: All steps were completed successfully
+2024-09-09 10:50:32 info: ---------------------------------------
+2024-09-09 10:50:32 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-09 10:50:32 info: ---------------------------------------
+2024-09-09 10:50:34 info: All unit tests passed.
+2024-09-09 10:50:35 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  3:9  error  'error' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2024-09-09 10:51:37 info: ---------------------------------------
+2024-09-09 10:51:37 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-09 10:51:37 info: ---------------------------------------
+2024-09-09 10:51:39 info: All unit tests passed.
+2024-09-09 10:51:43 info: All steps were completed successfully
