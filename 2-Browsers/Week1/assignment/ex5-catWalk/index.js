@@ -33,7 +33,7 @@ function catWalk() {
   let catPosition = 0;
   const catWidth = cat.width;
   const totalDistance = window.innerWidth - catWidth;
-  const theMiddle = Math.round(totalDistance / 2);
+  const theMiddle = totalDistance / 2;
   const inTheEnd = () => totalDistance - catPosition < 10;
   const inTheMiddle = () =>
     catPosition + 0.5 * catWidth >= theMiddle &&
@@ -61,7 +61,7 @@ function catWalk() {
   let move = setInterval(update, 50); //update the image every 50 ms
 }
 
-window.addEventListener('DOMContentLoaded', catWalk);
+window.addEventListener('load', catWalk);
 
 function wait(milliseconds) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
