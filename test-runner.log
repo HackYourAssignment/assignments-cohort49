@@ -569,3 +569,139 @@ Waiting for the debugger to disconnect...
 2024-09-09 11:34:22 error: *** Spell Checker Report ***
 
 
+2024-09-09 11:35:51 info: --------------------------------------------
+2024-09-09 11:35:51 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-09 11:35:51 info: --------------------------------------------
+2024-09-09 11:36:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    × should exist and be executable (1 ms)
+    × should have all TODO comments removed
+    × `rollDice` should not contain unneeded console.log calls
+    × should use `dice.map()`
+    × should use `Promise.all()`
+    × should resolve when all dice settle successfully
+    × should reject with an Error when a die rolls off the table
+
+  ● ex4-pokerDiceAll › should exist and be executable
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › `rollDice` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should use `dice.map()`
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       7 failed, 7 total
+Snapshots:   0 total
+Time:        2.223 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2024-09-09 11:36:13 error: *** Spell Checker Report ***
+
+
