@@ -10,7 +10,7 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 function hijackGoogleLogo() {
   const logoLinkHYF = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
 
-  const googleLogo = document.querySelector('#hplogo');
+  const googleLogo = document.querySelector("[alt='Google']");
   googleLogo.src = logoLinkHYF;
   googleLogo.srcset = logoLinkHYF;
 }
