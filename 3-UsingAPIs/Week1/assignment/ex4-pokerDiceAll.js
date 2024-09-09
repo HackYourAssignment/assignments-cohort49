@@ -27,19 +27,28 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
+
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promises = dice.map((dieNumber) => {
+    return rollDie();
+  });
+  return Promise.all(promises);
 }
 
 function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+  rollDice();
+  .then((results) => console.log('Resolved!', results))
+  .catch((error) => console.log('Rejected!', error.message));
 }
-
+}
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*
+ `Promise.all` rejects as soon as any promise fails, but it doesn't cancel ongoing operations.
+ Therefore, dice that are still rolling continue their process even if one die has already caused the promise to reject.
+ */
+

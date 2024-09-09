@@ -1,1 +1,54 @@
 /* Write your style here */
+/* Genel sayfa stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Kitap listesinin stilini belirlemek */
+  #bookList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Kitaplar arasındaki boşluk */
+    justify-content: center; /* Kitapları yatayda ortalar */
+  }
+  
+  
+  #bookList li {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* İçeriği ortalar */
+    width: 200px; /* Her bir kitabın genişliği */
+    text-align: center; /* Metni ortalar */
+  }
+  
+  #bookList li img {
+    max-width: 100px; /* Resmin maksimum genişliği */
+    max-height: 150px; /* Resmin maksimum yüksekliği */
+    margin-bottom: 10px;
+  }
+  
+  /* Okunan kitaplar için yeşil yazı rengi */
+  #bookList li[style*="color: green"] {
+    border-left: 5px solid green;
+  }
+  
+  /* Okunmamış kitaplar için kırmızı yazı rengi */
+  #bookList li[style*="color: red"] {
+    border-left: 5px solid red;
+  }
+  
+  /* Sayfa başlığı için stil */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
