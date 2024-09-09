@@ -54,3 +54,9 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+// !Explanation:
+// No, the problem no longer occurs after refactoring rollDie() to return a promise.
+// With promises, when one die roll fails, the entire promise chain is rejected,
+// stopping the other die rolls from continuing. This centralized control flow
+// is the key difference from the previous callback-based implementation.
