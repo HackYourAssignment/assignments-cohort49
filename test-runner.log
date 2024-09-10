@@ -1086,3 +1086,204 @@ Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
 2024-09-09 03:58:42 error: *** Spell Checker Report ***
 
 
+2024-09-10 10:24:37 info: ---------------------------------------------
+2024-09-10 10:24:37 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-10 10:24:37 info: ---------------------------------------------
+2024-09-10 10:24:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (173 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.93 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-10 10:24:51 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:25:31 info: ---------------------------------------------
+2024-09-10 10:25:31 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-10 10:25:31 info: ---------------------------------------------
+2024-09-10 10:25:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (157 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    √ should use try/catch
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.74 s, estimated 5 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-10 10:25:43 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:26:40 info: ---------------------------------------------
+2024-09-10 10:26:40 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-10 10:26:40 info: ---------------------------------------------
+2024-09-10 10:26:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (156 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.662 s, estimated 4 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-10 10:26:51 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:28:20 info: ---------------------------------------------
+2024-09-10 10:28:20 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-10 10:28:20 info: ---------------------------------------------
+2024-09-10 10:28:26 info: All unit tests passed.
+2024-09-10 10:28:31 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:30:08 info: ------------------------------------------
+2024-09-10 10:30:08 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-10 10:30:08 info: ------------------------------------------
+2024-09-10 10:30:15 info: All unit tests passed.
+2024-09-10 10:30:19 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:30:36 info: -----------------------------------------
+2024-09-10 10:30:36 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-10 10:30:36 info: -----------------------------------------
+2024-09-10 10:30:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    × should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (118 ms)
+    √ should reject with an Error when a die rolls off the table (112 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.255 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2024-09-10 10:30:44 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:31:12 info: ----------------------------------------
+2024-09-10 10:31:12 info: >>> Running Unit Test `ex4-diceRace` <<<
+2024-09-10 10:31:12 info: ----------------------------------------
+2024-09-10 10:31:16 info: All unit tests passed.
+2024-09-10 10:31:20 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:31:37 info: ----------------------------------------
+2024-09-10 10:31:37 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-10 10:31:37 info: ----------------------------------------
+2024-09-10 10:31:37 warn: A unit test file was not provided.
+2024-09-10 10:31:41 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:31:57 info: ----------------------------------------
+2024-09-10 10:31:57 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-10 10:31:57 info: ----------------------------------------
+2024-09-10 10:31:57 warn: A unit test file was not provided.
+2024-09-10 10:32:01 error: *** Spell Checker Report ***
+
+
