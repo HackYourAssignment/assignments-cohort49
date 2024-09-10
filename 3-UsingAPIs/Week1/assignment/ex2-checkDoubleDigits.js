@@ -21,7 +21,6 @@ function checkDoubleDigits(number) {
       reject (new Error(`Expected a double digit number but got ${number}`));
     }
   });
-  // TODO complete this function
 }
 
 function main() {
