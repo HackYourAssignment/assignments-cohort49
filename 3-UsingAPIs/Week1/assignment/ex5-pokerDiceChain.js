@@ -17,7 +17,6 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   const results = [];
 
-  // TODO: expand the chain to include five dice
   return rollDie(1)
     .then((value) => {
       results.push(value);
@@ -25,7 +24,19 @@ function rollDice() {
     })
     .then((value) => {
       results.push(value);
-      return results;
+      return rollDie(3); // Continue the chain for the third die
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDie(4); // Continue the chain for the fourth die
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDie(5); // Continue the chain for the fifth die
+    })
+    .then((value) => {
+      results.push(value);
+      return results; // Return the accumulated results after all rolls are complete
     });
 }
 
@@ -39,4 +50,5 @@ function main() {
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
+
 module.exports = rollDice;

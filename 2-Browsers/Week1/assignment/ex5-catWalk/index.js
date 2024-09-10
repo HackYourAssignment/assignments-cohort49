@@ -21,8 +21,60 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-function catWalk() {
-  // TODO complete this function
+const cat = document.querySelector('img');
+const windowWidth = window.innerWidth;
+const catWidth = cat.width;
+const danceCatUrl =
+  'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+const originalCatUrl = cat.src;
+const middlePosition = windowWidth / 2 - catWidth / 2;
+
+let currentPosition = 0;
+
+cat.style.position = 'absolute';
+cat.style.left = currentPosition + 'px';
+
+function moveCat(distance, duration) {
+  return new Promise((resolve) => {
+    const startTime = Date.now();
+    const startLeft = currentPosition;
+
+    function animate() {
+      const currentTime = Date.now();
+      const elapsedTime = currentTime - startTime;
+
+      const fractionComplete = Math.min(elapsedTime / duration, 1);
+      const newPosition = startLeft + distance * fractionComplete;
+
+      currentPosition = newPosition;
+      cat.style.left = currentPosition + 'px';
+
+      if (startLeft < middlePosition && newPosition >= middlePosition) {
+        cat.src = danceCatUrl;
+        setTimeout(() => {
+          cat.src = originalCatUrl;
+          resolve();
+        }, 5000);
+      } else if (fractionComplete < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        resolve();
+      }
+    }
+
+    requestAnimationFrame(animate);
+  });
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+function catWalk() {
+  moveCat(windowWidth - catWidth - currentPosition, 3000).then(() => {
+    if (currentPosition < windowWidth - catWidth) {
+      return catWalk();
+    } else {
+      currentPosition = 0;
+      return catWalk();
+    }
+  });
+}
+
+catWalk();
