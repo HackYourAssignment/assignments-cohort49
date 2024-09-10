@@ -1287,3 +1287,10 @@ Ran all test suites matching /ex3-rollAnAce.test.js/i.
 2024-09-10 10:32:01 error: *** Spell Checker Report ***
 
 
+2024-09-10 11:52:46 info: --------------------------------------------
+2024-09-10 11:52:46 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2024-09-10 11:52:46 info: --------------------------------------------
+2024-09-10 11:52:46 warn: A unit test file was not provided.
+2024-09-10 11:52:52 error: *** Spell Checker Report ***
+
+
