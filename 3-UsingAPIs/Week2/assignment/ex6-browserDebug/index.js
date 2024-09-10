@@ -2,6 +2,7 @@
 Full description at:https://github.com/HackYourFuture/Assignments/blob/main/3-UsingAPIs/Week2/README.md#exercise-6-using-the-browser-debugger
 */
 
+
 'use strict';
 
 async function getData(url) {
@@ -31,9 +32,11 @@ function addTableRow(table, label, value) {
 function renderLaureate(ul, { knownName, birth, death }) {
   const li = createAndAppend('li', ul);
   const table = createAndAppend('table', li);
-  addTableRow(table, 'Name', knownName.en);
-  addTableRow(table, 'Birth', `${birth.date}, ${birth.place.locationString}`);
-  addTableRow(table, 'Death', `${death.date}, ${death.place.locationString}`);
+  
+  // Handle optional fields
+  addTableRow(table, 'Name', knownName ? knownName.en : 'N/A');
+  addTableRow(table, 'Birth', birth ? `${birth.date || 'N/A'}, ${birth.place ? birth.place.locationString : 'N/A'}` : 'N/A');
+  addTableRow(table, 'Death', death ? `${death.date || 'N/A'}, ${death.place ? death.place.locationString : 'N/A'}` : 'N/A');
 }
 
 function renderLaureates(laureates) {
@@ -43,7 +46,7 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const { laureates } = await getData(
       'https://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
     renderLaureates(laureates);

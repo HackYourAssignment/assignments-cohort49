@@ -22,18 +22,65 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+    // TODO complete this function
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching data: ", error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons() {
+    // TODO complete this function
+
+  const selectElement = document.createElement('select');
+  document.body.appendChild(selectElement);
+
+  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=150');
+  
+  if (data) {
+    data.results.forEach(pokemon => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;  // The URL to fetch individual Pokémon data
+      option.textContent = pokemon.name;
+      selectElement.appendChild(option);
+    });
+  }
+
+  // Add event listener to load image when a Pokemon is selected
+  selectElement.addEventListener('change', (event) => {
+    fetchImage(event.target.value);  // Pass the selected Pokémon's URL
+  });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(pokemonUrl) {
+    // TODO complete this function
+
+  const data = await fetchData(pokemonUrl);
+
+  if (data && data.sprites) {
+    let imgElement = document.querySelector('img');
+    if (!imgElement) {
+      imgElement = document.createElement('img');
+      document.body.appendChild(imgElement);
+    }
+    imgElement.src = data.sprites.front_default; // Display front image
+    imgElement.alt = data.name; // Use Pokémon name as alt text
+  }
 }
 
 function main() {
-  // TODO complete this function
+    // TODO complete this function
+
+  window.addEventListener('DOMContentLoaded', () => {
+    fetchAndPopulatePokemons();
+  });
 }
+
+main();
