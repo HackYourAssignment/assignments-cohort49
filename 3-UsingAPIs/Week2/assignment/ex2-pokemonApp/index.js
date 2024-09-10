@@ -23,10 +23,8 @@ Try and avoid using global variables. As much as possible, try and use function
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 const POKEMON_URL = 'https://pokeapi.co/api/v2/pokemon?limit=151';
-const ABORT_TIMEOUT_MS = 1000;
 
 async function fetchData(url) {
-  // TODO complete this function
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -41,10 +39,11 @@ async function fetchData(url) {
 }
 
 async function fetchAndPopulatePokemons() {
-  // TODO complete this function
   try {
     const data = await fetchData(POKEMON_URL);
+
     const selectElement = document.createElement('select');
+
     selectElement.id = 'pokemon-select';
 
     const initialOption = document.createElement('option');
@@ -69,9 +68,9 @@ async function fetchAndPopulatePokemons() {
 }
 
 async function fetchImage(url) {
-  // TODO complete this function
   try {
     const response = await fetchData(url);
+
     const imageUrl = response.sprites.front_default;
 
     let imgElement = document.querySelector('#pokemon-img');
@@ -88,7 +87,6 @@ async function fetchImage(url) {
 }
 
 function main() {
-  // TODO complete this function
   fetchAndPopulatePokemons();
 
   document.body.addEventListener('change', async (event) => {
