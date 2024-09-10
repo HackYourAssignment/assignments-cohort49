@@ -1,1 +1,14 @@
-/* add your styling here */
+select {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+img {
+  margin-top: 10px;
+}
+div {
+  border: solid black 3px;
+  padding: 20px;
+  color: red;
+  margin: auto;
+  width: 50%;
+}

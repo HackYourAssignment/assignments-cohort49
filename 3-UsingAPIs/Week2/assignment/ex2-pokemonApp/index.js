@@ -24,17 +24,12 @@ Try and avoid using global variables. As much as possible, try and use function
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 async function fetchData(url) {
-  try {
-    const response = await fetch(url);
+  const response = await fetch(url);
 
-    if (!response.ok) {
-      throw new Error(`HTTP Error: ${response.status}`);
-    }
-    return await response.json();
-  } catch (error) {
-    console.log(`Error: ${error.status}`);
-    throw error;
+  if (!response.ok) {
+    throw new Error(`HTTP Error: ${response.status}`);
   }
+  return await response.json();
 }
 
 async function fetchAndPopulatePokemons(url) {
