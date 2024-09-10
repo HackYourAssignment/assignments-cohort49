@@ -1,1 +1,24 @@
-/* add your styling here */
+.fetch-btn {
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.fetch-btn:disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+#pokemon-select {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 140px;
+}

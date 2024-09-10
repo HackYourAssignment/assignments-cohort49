@@ -22,18 +22,102 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+// Fetch data
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return null;
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function applyClickEffect(button) {
+  button.style.transform = 'scale(0.98)';
+  button.style.boxShadow = 'inset 0px 0px 10px rgba(0, 0, 0, 0.2)';
+  setTimeout(() => {
+    button.style.transform = 'scale(1)';
+    button.style.boxShadow = '';
+  }, 150);
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+// Fetch the Pokemon list into placeholder
+async function fetchAndPopulatePokemons(
+  pokemonSelect,
+  fetchButton,
+  pokemonImage
+) {
+  applyClickEffect(fetchButton);
+
+  fetchButton.disabled = true;
+  setTimeout(() => {
+    fetchButton.disabled = false;
+  }, 150);
+
+  pokemonImage.style.display = 'none';
+  pokemonImage.src = '';
+  while (pokemonSelect.firstChild) {
+    pokemonSelect.removeChild(pokemonSelect.firstChild);
+  }
+
+  // Fetch Pokemon list
+  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+
+  if (data && data.results.length > 0) {
+    data.results.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;
+      option.textContent = pokemon.name;
+      pokemonSelect.appendChild(option);
+    });
+
+    pokemonSelect.selectedIndex = 0;
+  } else {
+    const errorOption = document.createElement('option');
+    errorOption.value = '';
+    errorOption.textContent = 'No Pokemon data available';
+    pokemonSelect.appendChild(errorOption);
+  }
+}
+
+// Fetch and display the selected Pokemon's image
+async function fetchImage(pokemonImage, url) {
+  const pokemonData = await fetchData(url);
+
+  if (pokemonData && pokemonData.sprites && pokemonData.sprites.front_default) {
+    pokemonImage.src = pokemonData.sprites.front_default;
+    pokemonImage.style.display = 'block';
+    pokemonImage.alt = pokemonData.name;
+  } else {
+    pokemonImage.src = '';
+    pokemonImage.alt = 'No image available';
+    pokemonImage.style.display = 'none';
+  }
 }
 
 function main() {
-  // TODO complete this function
+  const fetchButton = document.getElementById('fetch-pokemons-btn');
+  const pokemonSelect = document.getElementById('pokemon-select');
+  const pokemonImage = document.getElementById('pokemon-image');
+
+  fetchButton.classList.add('fetch-btn');
+
+  fetchButton.addEventListener('click', async () => {
+    await fetchAndPopulatePokemons(pokemonSelect, fetchButton, pokemonImage);
+    pokemonSelect.style.display = 'block';
+  });
+
+  //  Changing Pokemon selection to display image
+  pokemonSelect.addEventListener('change', () => {
+    const selectedPokemonUrl = pokemonSelect.value;
+    if (selectedPokemonUrl) {
+      fetchImage(pokemonImage, selectedPokemonUrl);
+    }
+  });
 }
+
+window.addEventListener('DOMContentLoaded', main);
