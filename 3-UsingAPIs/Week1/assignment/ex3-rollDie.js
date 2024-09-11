@@ -25,13 +25,11 @@ function rollDie() {
       // Use callback to notify that the die rolled off the table after 6 rolls
       if (roll > 6) {
         reject(new Error('Oops... Die rolled off the table.'));
-        return;
       }
 
       // Use callback to communicate the final die value once finished rolling
       if (roll === randomRollsToDo) {
         resolve(value);
-        return;
       }
 
       // Schedule the next roll todo until no more rolls to do
@@ -55,3 +53,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+// the no longer occurs because the promises are resolved or rejected as soon as the condition is met.
