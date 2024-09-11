@@ -1,8 +1,5 @@
 'use strict';
 
-// eslint-disable-next-line no-unused-vars
-const { error } = require('winston');
-
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Assignments/tree/main/3-UsingAPIs/Week1#exercise-3-roll-a-die
 
