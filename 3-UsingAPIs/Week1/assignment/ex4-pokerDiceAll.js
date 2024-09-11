@@ -30,12 +30,7 @@ function rollDice() {
   const dice = [1, 2, 3, 4, 5];
   const dicePromise = dice.map(rollDie);
 
-  return Promise.all(dicePromise)
-    .then((results) => results)
-
-    .catch((error) => {
-      throw error;
-    });
+  return Promise.all(dicePromise);
 }
 
 function main() {
@@ -48,3 +43,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// when using promise.all the promises continue to be executed until all of them are resolved even if one of them is rejected.
