@@ -43,5 +43,3 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
-
-// promise.all() do not cancel the execution of the promise even if one reject early

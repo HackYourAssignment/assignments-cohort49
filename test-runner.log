@@ -2073,3 +2073,40 @@ ex5-pokerDiceChain.js
 2024-09-03 06:55:53 info: ----------------------------------------------
 2024-09-03 06:55:57 info: All unit tests passed.
 2024-09-03 06:56:04 info: All steps were completed successfully
+2024-09-11 11:51:06 info: --------------------------------------------
+2024-09-11 11:51:06 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-11 11:51:06 info: --------------------------------------------
+2024-09-11 11:51:12 info: All unit tests passed.
+2024-09-11 11:51:20 info: All steps were completed successfully
+2024-09-11 11:52:46 info: ---------------------------------------
+2024-09-11 11:52:46 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-11 11:52:46 info: ---------------------------------------
+2024-09-11 11:52:50 info: All unit tests passed.
+2024-09-11 11:52:56 info: All steps were completed successfully
+2024-09-11 11:53:42 info: ---------------------------------------
+2024-09-11 11:53:42 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-11 11:53:42 info: ---------------------------------------
+2024-09-11 11:53:46 info: All unit tests passed.
+2024-09-11 11:53:49 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  59:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-09-11 11:54:16 info: ---------------------------------------
+2024-09-11 11:54:16 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-11 11:54:16 info: ---------------------------------------
+2024-09-11 11:54:20 info: All unit tests passed.
+2024-09-11 11:54:27 info: All steps were completed successfully
+2024-09-11 11:56:14 info: ---------------------------------------
+2024-09-11 11:56:14 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-11 11:56:14 info: ---------------------------------------
+2024-09-11 11:56:18 info: All unit tests passed.
+2024-09-11 11:56:24 info: All steps were completed successfully
+2024-09-11 11:58:41 info: ---------------------------------------
+2024-09-11 11:58:41 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-11 11:58:41 info: ---------------------------------------
+2024-09-11 11:58:44 info: All unit tests passed.
+2024-09-11 11:58:51 info: All steps were completed successfully

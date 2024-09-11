@@ -56,5 +56,3 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
-
-// return prevent further execution of the function
