@@ -26,9 +26,6 @@ function requestData(url) {
     }
     return response.json();
   })
-  .catch(error => {
-    throw new Error('Network error: ' + error.message)
-  }) 
 } 
 
 
