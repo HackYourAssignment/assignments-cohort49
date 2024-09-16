@@ -34,16 +34,12 @@ function renderImage(data) {
   img.src = data.img;
   img.alt = data.alt;
   document.body.appendChild(img);
-
-  console.log(data);
 }
 
 function renderError(error) {
   const errorMessage = document.createElement('h1');
   errorMessage.textContent = 'Error: ' + error.message;
   document.body.appendChild(errorMessage);
- 
-  console.log(error);
 }
 
 
