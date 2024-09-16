@@ -70,9 +70,10 @@ async function fetchImage(url) {
     
       image = document.createElement('img');
       image.id = 'pokemon-image';
-      image.alt = 'Selected Pokemon';
-      document.body.appendChild(image);
       image.src = imageUrl;
+      image.alt = `Image of ${data.name}`;
+      document.body.appendChild(image);
+      
  } catch(error) {
     console.error('Error fetching image:', error);
   }
