@@ -16,7 +16,7 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
   const promises = dice.map(dieValue => rollDie(dieValue))
-  return Promise.all(promises)
+  return Promise.race(promises)
 }
 
 async function main() {
@@ -33,3 +33,9 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/* 
+  `Promise.race()` returns a promise that resolves or rejects as soon as the first promise in the iterable resolves or rejects.
+  The remaining promises continue to run in the background. This because `Promise.race()` does not cancel or stop the other promises; 
+  it simply returns the result of the first completed promise.
+*/
