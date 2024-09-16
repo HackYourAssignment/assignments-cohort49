@@ -80,13 +80,29 @@ async function fetchImage(url) {
 }
 
 async function main() {
-    await fetchAndPopulatePokemons();
+  const getPokemonsButton = document.createElement('button');
+  getPokemonsButton.textContent = 'Get Pokemons';
+  document.body.appendChild(getPokemonsButton);
 
-    const selectElement = document.querySelector('#pokemon-select');
-    selectElement.addEventListener('change', (event) => {
-      const pokemonUrl = event.target.value;
+  const pokemonSelect = document.createElement('select');
+  pokemonSelect.id = 'pokemon-select';
+  pokemonSelect.disabled = true;
+  document.body.appendChild(pokemonSelect);
+
+  const pokemonImage = document.createElement('img');
+  pokemonImage.id = 'pokemon-image';
+  document.body.appendChild(pokemonImage);
+
+  getPokemonsButton.addEventListener('click', async () => {
+    await fetchAndPopulatePokemons();
+    pokemonSelect.disabled = false; 
+  });
+
+  pokemonSelect.addEventListener('change', (event) => {
+    const pokemonUrl = event.target.value;
+    if (pokemonUrl) {
       fetchImage(pokemonUrl);
-    })
-  }
+    }
+  });
 
 window.addEventListener('load', main);
