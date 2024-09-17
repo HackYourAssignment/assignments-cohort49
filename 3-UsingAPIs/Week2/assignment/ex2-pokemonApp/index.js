@@ -22,18 +22,90 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Fetching data failed:', error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons() {
+  try {
+    const url = 'https://pokeapi.co/api/v2/pokemon?limit=150';
+    const data = await fetchData(url);
+
+    const pokemonSelect = document.querySelector('#pokemon-select');
+    pokemonSelect.textContent = '';
+
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'Select a Pokemon';
+    pokemonSelect.appendChild(defaultOption);
+
+    data.results.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;
+      option.textContent = pokemon.name;
+      pokemonSelect.appendChild(option);
+    });
+  } catch (error) {
+    console.error('Error populating Pokemon select:', error);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url) {
+  try {
+    const data = await fetchData(url);
+    const imageUrl = data.sprites.front_default;
+
+    const image = document.querySelector('#pokemon-image');
+
+    if (imageUrl) {
+      image.src = imageUrl;
+      image.alt = `Image of ${data.name}`;
+    } else {
+      image.src = 'img/pokemon.png';
+      image.alt = 'No image available';
+    }
+  } catch (error) {
+    console.error('Error fetching image:', error);
+  }
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  const getPokemonsButton = document.createElement('button');
+  getPokemonsButton.textContent = 'Get Pokemons';
+  getPokemonsButton.type = 'button';
+  document.body.appendChild(getPokemonsButton);
+
+  const pokemonSelect = document.createElement('select');
+  pokemonSelect.id = 'pokemon-select';
+  pokemonSelect.disabled = true;
+  document.body.appendChild(pokemonSelect);
+
+  const pokemonImage = document.createElement('img');
+  pokemonImage.id = 'pokemon-image';
+  pokemonImage.src = 'img/pokemon.png';
+  pokemonImage.alt = 'No image selected';
+  document.body.appendChild(pokemonImage);
+
+  getPokemonsButton.addEventListener('click', async () => {
+    await fetchAndPopulatePokemons();
+    pokemonSelect.disabled = false;
+  });
+
+  pokemonSelect.addEventListener('change', (event) => {
+    const pokemonUrl = event.target.value;
+    if (pokemonUrl) {
+      fetchImage(pokemonUrl);
+    }
+  });
 }
+
+window.addEventListener('load', main);
