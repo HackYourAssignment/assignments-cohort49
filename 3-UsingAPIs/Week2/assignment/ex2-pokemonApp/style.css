@@ -1,1 +1,19 @@
 /* add your styling here */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+select {
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+}

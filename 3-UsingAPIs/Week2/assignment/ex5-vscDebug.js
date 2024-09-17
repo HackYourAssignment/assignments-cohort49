@@ -13,9 +13,20 @@ async function getData(url) {
 
 function renderLaureate({ knownName, birth, death }) {
   console.log(`\nName: ${knownName.en}`);
-  console.log(`Birth: ${birth.date}, ${birth.place.locationString}`);
-  console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  
+  if (birth && birth.place) {
+    const birthPlace = birth.place.city ? birth.place.city.en : 'Unknown city';
+    const birthCountry = birth.place.country ? birth.place.country.en : 'Unknown country';
+    console.log(`Birth: ${birth.date}, ${birthPlace}, ${birthCountry}`);
+  }
+
+  if (death && death.place) {
+    const deathPlace = death.place.city ? death.place.city.en : 'Unknown city';
+    const deathCountry = death.place.country ? death.place.country.en : 'Unknown country';
+    console.log(`Death: ${death.date}, ${deathPlace}, ${deathCountry}`);
+  }
 }
+
 
 function renderLaureates(laureates) {
   laureates.forEach(renderLaureate);
@@ -23,12 +34,13 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const { laureates } = await getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
     renderLaureates(laureates);
   } catch (err) {
     console.error(`Something went wrong: ${err.message}`);
+    console.log(err.stack); 
   }
 }
 
