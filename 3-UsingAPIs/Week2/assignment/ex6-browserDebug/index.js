@@ -32,12 +32,13 @@ function addTableRow(table, label, value) {
 function renderLaureate(ul, { knownName, birth, death }) {
   const li = createAndAppend('li', ul);
   const table = createAndAppend('table', li);
-  
+
   // Handle optional fields
   addTableRow(table, 'Name', knownName ? knownName.en : 'N/A');
-  addTableRow(table, 'Birth', birth ? `${birth.date || 'N/A'}, ${birth.place ? birth.place.locationString : 'N/A'}` : 'N/A');
-  addTableRow(table, 'Death', death ? `${death.date || 'N/A'}, ${death.place ? death.place.locationString : 'N/A'}` : 'N/A');
+  addTableRow(table, 'Birth', birth ? `${birth.date || 'N/A'}, ${birth.place ? `${birth.place.city ? birth.place.city.en : 'Unknown city'}, ${birth.place.country ? birth.place.country.en : 'Unknown country'}` : 'N/A'}` : 'N/A');
+  addTableRow(table, 'Death', death ? `${death.date || 'N/A'}, ${death.place ? `${death.place.city ? death.place.city.en : 'Unknown city'}, ${death.place.country ? death.place.country.en : 'Unknown country'}` : 'N/A'}` : 'N/A');
 }
+
 
 function renderLaureates(laureates) {
   const ul = createAndAppend('ul', document.body);
@@ -49,10 +50,17 @@ async function fetchAndRender() {
     const { laureates } = await getData(
       'https://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
+
+    laureates.forEach((laureate) => {
+      console.log('Birth place:', laureate.birth ? laureate.birth.place : 'N/A');
+      console.log('Death place:', laureate.death ? laureate.death.place : 'N/A');
+    });
+
     renderLaureates(laureates);
   } catch (err) {
     console.error(`Something went wrong: ${err.message}`);
   }
 }
+
 
 window.addEventListener('load', fetchAndRender);

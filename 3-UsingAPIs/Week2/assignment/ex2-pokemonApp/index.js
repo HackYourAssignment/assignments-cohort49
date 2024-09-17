@@ -23,8 +23,6 @@ Try and avoid using global variables. As much as possible, try and use function
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 async function fetchData(url) {
-    // TODO complete this function
-
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -37,7 +35,6 @@ async function fetchData(url) {
 }
 
 async function fetchAndPopulatePokemons() {
-    // TODO complete this function
 
   const selectElement = document.createElement('select');
   document.body.appendChild(selectElement);
@@ -60,8 +57,6 @@ async function fetchAndPopulatePokemons() {
 }
 
 async function fetchImage(pokemonUrl) {
-    // TODO complete this function
-
   const data = await fetchData(pokemonUrl);
 
   if (data && data.sprites) {
@@ -76,8 +71,6 @@ async function fetchImage(pokemonUrl) {
 }
 
 function main() {
-    // TODO complete this function
-
   window.addEventListener('DOMContentLoaded', () => {
     fetchAndPopulatePokemons();
   });

@@ -13,23 +13,24 @@ Full description at: https://github.com/HackYourFuture/Assignments/blob/main/3-U
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 async function rollDieUntil(wantedValue) {
-  // TODO: rewrite this function using async/await
   let value;
-  
-  // Use a loop to roll the die until we get the wanted value (ACE)
-  while (true) {
+  let keepRolling = true; // Boolean flag to control the loop
+
+  while (keepRolling) {
     try {
-      value = await rollDie(); // Wait for the rollDie promise to resolve
+      value = await rollDie();
       if (value === wantedValue) {
-        return value; // Exit when we get the wanted value
+        keepRolling = false;
       }
     } catch (error) {
-      throw new Error('Die rolled off the table!'); // Handle promise rejection
+      throw new Error('Die rolled off the table!'); 
     }
   }
+  
+  return value;
 }
 
-// TODO refactor this function to use try/catch
+
 async function main() {
   try {
     const result = await rollDieUntil('ACE'); // Await the result from rollDieUntil
