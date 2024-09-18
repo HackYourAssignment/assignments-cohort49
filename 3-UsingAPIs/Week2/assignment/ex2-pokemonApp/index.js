@@ -22,18 +22,75 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+
+async function fetchData(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(response.status);
+  return response.json();
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function renderPokemonCard() {
+  const markup = `<div class="centered">
+      <button type="button" class="get-button">Get Pokemon!</button>
+      <select name="pokemons" id="pokemons" class="select-pokemon">
+      </select>
+    <img src="/" alt="" class="pokemon-img">
+    </div>`;
+
+  document.body.insertAdjacentHTML('afterbegin', markup);
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function renderMenu(dataArray) {
+  return dataArray
+    .map(
+      (pokemon, index) =>
+        `<option value="${index + 1}">${pokemon.name}</option>`
+    )
+    .join('');
+}
+
+async function fetchAndPopulatePokemons() {
+  const getButton = document.querySelector('.get-button');
+  const selectMenu = document.querySelector('#pokemons');
+  try {
+    const response = await fetchData(
+      'https://pokeapi.co/api/v2/pokemon?limit=151'
+    );
+
+    const results = response.results;
+
+    getButton.addEventListener('click', () => {
+      selectMenu.insertAdjacentHTML('afterbegin', renderMenu(results));
+    });
+
+    selectMenu.addEventListener('change', async (evt) => {
+      const selectedPokemonId = evt.currentTarget.value;
+      const pokemonData = await fetchImage(selectedPokemonId);
+      updateImg(pokemonData);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function fetchImage(pokemonId) {
+  const pokemonData = await fetch(
+    `https://pokeapi.co/api/v2/pokemon/${pokemonId}/`
+  );
+
+  if (!pokemonData.ok) throw new Error(pokemonData.status);
+  return pokemonData.json();
+}
+
+function updateImg({ name, sprites }) {
+  const img = document.querySelector('.pokemon-img');
+  img.src = sprites.front_default;
+  img.alt = name;
 }
 
 function main() {
-  // TODO complete this function
+  renderPokemonCard();
+  fetchAndPopulatePokemons();
 }
+
+window.addEventListener('load', main);
