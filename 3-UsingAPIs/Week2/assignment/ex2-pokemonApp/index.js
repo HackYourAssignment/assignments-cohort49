@@ -49,21 +49,28 @@ function renderMenu(dataArray) {
     .join('');
 }
 
-function fetchAndPopulatePokemons(data) {
+async function fetchAndPopulatePokemons() {
   const getButton = document.querySelector('.get-button');
   const selectMenu = document.querySelector('#pokemons');
+  try {
+    const response = await fetchData(
+      'https://pokeapi.co/api/v2/pokemon?limit=151'
+    );
 
-  const results = data.results;
+    const results = response.results;
 
-  getButton.addEventListener('click', () => {
-    selectMenu.insertAdjacentHTML('afterbegin', renderMenu(results));
-  });
+    getButton.addEventListener('click', () => {
+      selectMenu.insertAdjacentHTML('afterbegin', renderMenu(results));
+    });
 
-  selectMenu.addEventListener('change', async (evt) => {
-    const selectedPokemonId = evt.currentTarget.value;
-    const pokemonData = await fetchImage(selectedPokemonId);
-    updateImg(pokemonData);
-  });
+    selectMenu.addEventListener('change', async (evt) => {
+      const selectedPokemonId = evt.currentTarget.value;
+      const pokemonData = await fetchImage(selectedPokemonId);
+      updateImg(pokemonData);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 async function fetchImage(pokemonId) {
@@ -81,14 +88,9 @@ function updateImg({ name, sprites }) {
   img.alt = name;
 }
 
-async function main() {
+function main() {
   renderPokemonCard();
-  try {
-    const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
-    fetchAndPopulatePokemons(data);
-  } catch (error) {
-    console.log(error);
-  }
+  fetchAndPopulatePokemons();
 }
 
 window.addEventListener('load', main);

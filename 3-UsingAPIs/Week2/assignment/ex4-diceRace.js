@@ -20,7 +20,6 @@ function rollDice() {
   return Promise.race(promises);
 }
 
-// Refactor this function to use async/await and try/catch
 async function main() {
   try {
     const results = await rollDice();
@@ -35,3 +34,8 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/* 
+Promise.race() finishes when the first die gives a result, 
+but the other dice still continue roll.Promise.rase() doesn't stop them.
+*/

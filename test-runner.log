@@ -334,3 +334,45 @@ Ran all test suites matching /ex3-rollAnAce.test.js/i.
 2024-09-09 03:42:15 info: --------------------------------------------
 2024-09-09 03:42:15 warn: A unit test file was not provided.
 2024-09-09 03:42:16 info: All steps were completed successfully
+2024-09-18 02:37:58 info: ---------------------------------------------
+2024-09-18 02:37:58 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-18 02:37:58 info: ---------------------------------------------
+2024-09-18 02:38:01 info: All unit tests passed.
+2024-09-18 02:38:02 info: All steps were completed successfully
+2024-09-18 02:38:17 info: ------------------------------------------
+2024-09-18 02:38:17 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-18 02:38:17 info: ------------------------------------------
+2024-09-18 02:38:20 info: All unit tests passed.
+2024-09-18 02:38:21 info: All steps were completed successfully
+2024-09-18 02:38:46 info: -----------------------------------------
+2024-09-18 02:38:46 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-18 02:38:46 info: -----------------------------------------
+2024-09-18 02:38:47 info: All unit tests passed.
+2024-09-18 02:38:48 info: All steps were completed successfully
+2024-09-18 02:38:59 info: ----------------------------------------
+2024-09-18 02:38:59 info: >>> Running Unit Test `ex4-diceRace` <<<
+2024-09-18 02:38:59 info: ----------------------------------------
+2024-09-18 02:39:00 info: All unit tests passed.
+2024-09-18 02:39:00 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  38:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2024-09-18 02:40:19 info: ----------------------------------------
+2024-09-18 02:40:19 info: >>> Running Unit Test `ex4-diceRace` <<<
+2024-09-18 02:40:19 info: ----------------------------------------
+2024-09-18 02:40:20 info: All unit tests passed.
+2024-09-18 02:40:21 info: All steps were completed successfully
+2024-09-18 02:40:35 info: ----------------------------------------
+2024-09-18 02:40:35 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-18 02:40:35 info: ----------------------------------------
+2024-09-18 02:40:35 warn: A unit test file was not provided.
+2024-09-18 02:40:36 info: All steps were completed successfully
+2024-09-18 02:40:48 info: --------------------------------------------
+2024-09-18 02:40:48 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2024-09-18 02:40:48 info: --------------------------------------------
+2024-09-18 02:40:48 warn: A unit test file was not provided.
+2024-09-18 02:40:49 info: All steps were completed successfully
