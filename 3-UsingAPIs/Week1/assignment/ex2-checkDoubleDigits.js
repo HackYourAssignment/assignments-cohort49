@@ -12,12 +12,12 @@ Complete the function called `checkDoubleDigits` such that:
   "Expected a double digit number but got `number`", where `number` is the 
   number that was passed as an argument.
 ------------------------------------------------------------------------------*/
-function checkDoubleDigits(num1) {
+function checkDoubleDigits(number) {
   return new Promise((resolve, reject) => {
-    if (num1 >= 10 && num1 <= 99) {
+    if (number >= 10 && number <= 99) {
       resolve('This is a double digit number!');
     } else {
-      reject(new Error(`Expected a double digit number but got ${num1}`));
+      reject(new Error(`Expected a double digit number but got ${number}`));
     }
   });
 }

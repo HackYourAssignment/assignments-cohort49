@@ -28,14 +28,7 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  const dicePromise = dice.map(rollDie);
-
-  return Promise.all(dicePromise)
-    .then((results) => results)
-
-    .catch((error) => {
-      throw error;
-    });
+  return Promise.all(dice.map(rollDie));
 }
 
 function main() {
@@ -48,3 +41,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// when one die is rejected it will handle the error in .catch() block. however the dice that are still rolling will continue to do so. this is why we see the out put of the dice that are still rolling.
