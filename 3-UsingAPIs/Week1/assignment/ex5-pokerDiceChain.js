@@ -15,31 +15,24 @@ to expand the given promise chain to include five dice.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
+  const diceNumbers = [1, 2, 3, 4, 5]; // Representing the 5 dice
   const results = [];
 
-  return rollDie(1)
-    .then((value) => {
-      results.push(value);
-      return rollDie(2);
-    })
-    .then((value) => {
-      results.push(value);
-      return rollDie(3);
-    })
-    .then((value) => {
-      results.push(value);
-      return rollDie(4);
-    })
-    .then((value) => {
-      results.push(value);
-      return rollDie(5);
-    })
-    .then((value) => {
-      results.push(value);
-      return results;
-    })
+  // Helper function to roll dice sequentially
+  let promiseChain = Promise.resolve(); // Initial empty promise
+
+  diceNumbers.forEach((dieNumber) => {
+    promiseChain = promiseChain
+      .then(() => rollDie(dieNumber))
+      .then((value) => {
+        results.push(value);
+      });
+  });
+
+  return promiseChain
+    .then(() => results) // Return results once all dice have been rolled
     .catch((error) => {
-      throw error;
+      throw error; // Handle errors, e.g., dice rolling off the table
     });
 }
 
@@ -52,4 +45,5 @@ function main() {
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
+
 module.exports = rollDice;

@@ -22,7 +22,12 @@ function requestData(url) {
 }
 
 function renderImage(data) {
-  // TODO render the image to the DOM
+  const news = document.createElement('h1');
+
+  news.src = data;
+  // img.alt = data.alt;
+  document.body.appendChild(news);
+
   console.log(data);
 }
 
@@ -31,15 +36,15 @@ function renderError(error) {
   console.log(error);
 }
 
-// TODO refactor with async/await and try/catch
-function main() {
-  requestData('https://xkcd.now.sh/?comic=latest')
-    .then((data) => {
-      renderImage(data);
-    })
-    .catch((error) => {
-      renderError(error);
-    });
+async function main() {
+  try {
+    const data = await requestData(
+      'https://strangerthings-quotes.vercel.app/api/quotes/8'
+    );
+    renderImage(data);
+  } catch (error) {
+    renderError(error);
+  }
 }
 
 window.addEventListener('load', main);
