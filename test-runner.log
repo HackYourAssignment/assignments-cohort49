@@ -1086,3 +1086,38 @@ Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
 2024-09-09 03:58:42 error: *** Spell Checker Report ***
 
 
+2024-09-19 02:46:35 info: ---------------------------------------
+2024-09-19 02:46:35 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-09-19 02:46:35 info: ---------------------------------------
+2024-09-19 02:46:39 info: All unit tests passed.
+2024-09-19 02:46:45 error: *** Spell Checker Report ***
+
+
+2024-09-19 02:47:24 info: -------------------------------------------------
+2024-09-19 02:47:24 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-09-19 02:47:24 info: -------------------------------------------------
+2024-09-19 02:47:28 info: All unit tests passed.
+2024-09-19 02:47:32 error: *** Spell Checker Report ***
+
+
+2024-09-19 02:47:50 info: ---------------------------------------
+2024-09-19 02:47:50 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-19 02:47:50 info: ---------------------------------------
+2024-09-19 02:47:54 info: All unit tests passed.
+2024-09-19 02:47:58 error: *** Spell Checker Report ***
+
+
+2024-09-19 02:48:16 info: --------------------------------------------
+2024-09-19 02:48:16 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-19 02:48:16 info: --------------------------------------------
+2024-09-19 02:48:20 info: All unit tests passed.
+2024-09-19 02:48:24 error: *** Spell Checker Report ***
+
+
+2024-09-19 02:48:40 info: ----------------------------------------------
+2024-09-19 02:48:40 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-19 02:48:40 info: ----------------------------------------------
+2024-09-19 02:48:44 info: All unit tests passed.
+2024-09-19 02:48:48 error: *** Spell Checker Report ***
+
+
