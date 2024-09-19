@@ -278,3 +278,38 @@ Ran all test suites matching /ex3-rollAnAce.test.js/i.
 2024-09-10 02:22:08 info: --------------------------------------------
 2024-09-10 02:22:08 warn: A unit test file was not provided.
 2024-09-10 02:22:10 info: All steps were completed successfully
+2024-09-19 11:29:20 info: ---------------------------------------------
+2024-09-19 11:29:20 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-19 11:29:20 info: ---------------------------------------------
+2024-09-19 11:29:24 info: All unit tests passed.
+2024-09-19 11:29:26 info: All steps were completed successfully
+2024-09-19 11:29:34 info: ------------------------------------------
+2024-09-19 11:29:34 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-19 11:29:34 info: ------------------------------------------
+2024-09-19 11:29:37 info: All unit tests passed.
+2024-09-19 11:29:39 info: All steps were completed successfully
+2024-09-19 11:29:46 info: -----------------------------------------
+2024-09-19 11:29:46 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-19 11:29:46 info: -----------------------------------------
+2024-09-19 11:29:47 info: All unit tests passed.
+2024-09-19 11:29:49 info: All steps were completed successfully
+2024-09-19 11:29:57 info: ----------------------------------------
+2024-09-19 11:29:57 info: >>> Running Unit Test `ex4-diceRace` <<<
+2024-09-19 11:29:57 info: ----------------------------------------
+2024-09-19 11:29:59 info: All unit tests passed.
+2024-09-19 11:30:01 info: All steps were completed successfully
+2024-09-19 11:30:07 info: ----------------------------------------
+2024-09-19 11:30:07 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-19 11:30:07 info: ----------------------------------------
+2024-09-19 11:30:07 warn: A unit test file was not provided.
+2024-09-19 11:30:09 info: All steps were completed successfully
+2024-09-19 11:30:17 info: --------------------------------------------
+2024-09-19 11:30:17 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2024-09-19 11:30:17 info: --------------------------------------------
+2024-09-19 11:30:17 warn: A unit test file was not provided.
+2024-09-19 11:30:19 info: All steps were completed successfully
+2024-09-19 11:33:07 info: ---------------------------------------------
+2024-09-19 11:33:07 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-19 11:33:07 info: ---------------------------------------------
+2024-09-19 11:33:10 info: All unit tests passed.
+2024-09-19 11:33:12 info: All steps were completed successfully

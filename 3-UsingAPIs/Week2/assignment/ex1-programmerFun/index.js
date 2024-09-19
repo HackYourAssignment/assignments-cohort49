@@ -20,7 +20,7 @@ Full description at: https://github.com/HackYourFuture/Assignments/blob/main/3-U
 async function requestData(url) {
   const response = await fetch(url);
   if (!response.ok) {
-    throw new Error('Something went wrong!');
+    throw new Error('Error: ', response.status, response.statusText);
   }
   return await response.json();
 }
