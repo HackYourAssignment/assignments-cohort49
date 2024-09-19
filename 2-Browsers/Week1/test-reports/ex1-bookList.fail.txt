@@ -1,0 +1,62 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (7.107 s)
+  Generated HTML
+    × HTML should be syntactically valid
+    × should have all TODO comments removed
+    × should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    × should contain a <ul> with 3 <li> elements
+    × should contain an <li> with title and author for each book of the `myBooks` array
+    × should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        7.455 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+*** Spell Checker Report ***
+
