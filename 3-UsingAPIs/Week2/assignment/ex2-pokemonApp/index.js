@@ -22,18 +22,54 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP Error: ${response.status}`);
+  }
+  const data = await response.json();
+  return data;
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons() {
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+  const selectElement = document.querySelector('#pokemon-select');
+
+  try {
+    const data = await fetchData(url);
+    const pokemons = data.results; // get the array of pokemons from api response
+    pokemons.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;
+      option.textContent = pokemon.name;
+
+      selectElement.appendChild(option);
+    });
+  } catch (error) {
+    console.error('Error populating pokemon list:', error);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(pokemonUrl) {
+  const imageElement = document.querySelector('#pokemon-image');
+
+  try {
+    const pokemonData = await fetchData(pokemonUrl);
+    const imageUrl = pokemonData.sprites.front_default; // get pokemon front image url
+    imageElement.src = imageUrl;
+    imageElement.alt = pokemonData.name;
+  } catch (error) {
+    console.error('Error fetching pokemon image:', error);
+  }
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  await fetchAndPopulatePokemons();
+
+  const selectElements = document.querySelector('#pokemon-select');
+  selectElements.addEventListener('change', (event) => {
+    const pokemonUrl = event.target.value;
+    fetchImage(pokemonUrl);
+  });
 }
+window.addEventListener('load', main);

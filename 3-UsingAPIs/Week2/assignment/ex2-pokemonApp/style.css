@@ -1,1 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#pokemon-select {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  appearance: none;
+  text-align: center;
+}
+
+#pokemon-image {
+  margin-top: 20px;
+  width: 300px;
+  height: auto;
+  border: 2px solid #ddd;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
 /* add your styling here */
