@@ -147,3 +147,13 @@ ex4-diceRace.js
 2024-09-09 05:44:16 info: ----------------------------------------
 2024-09-09 05:44:16 warn: A unit test file was not provided.
 2024-09-09 05:44:20 info: All steps were completed successfully
+2024-09-20 06:26:39 info: ------------------------------------------
+2024-09-20 06:26:39 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-20 06:26:39 info: ------------------------------------------
+2024-09-20 06:26:44 info: All unit tests passed.
+2024-09-20 06:26:47 info: All steps were completed successfully
+2024-09-20 06:27:15 info: ---------------------------------------------
+2024-09-20 06:27:15 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-20 06:27:15 info: ---------------------------------------------
+2024-09-20 06:27:19 info: All unit tests passed.
+2024-09-20 06:27:22 info: All steps were completed successfully
