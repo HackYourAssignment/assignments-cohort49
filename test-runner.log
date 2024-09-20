@@ -157,3 +157,8 @@ ex4-diceRace.js
 2024-09-20 06:27:15 info: ---------------------------------------------
 2024-09-20 06:27:19 info: All unit tests passed.
 2024-09-20 06:27:22 info: All steps were completed successfully
+2024-09-20 06:29:47 info: ----------------------------------------
+2024-09-20 06:29:47 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-20 06:29:47 info: ----------------------------------------
+2024-09-20 06:29:47 warn: A unit test file was not provided.
+2024-09-20 06:29:49 info: All steps were completed successfully
