@@ -36,12 +36,12 @@ if (process.env.NODE_ENV !== 'test') {
 }
 module.exports = rollDice;
 
-// ! Explanation
-// Promise.race() finishes when the first die gives a result, but it doesn't
-// stop the other dice from rolling. Each die roll is separate and keeps going
-// on its own. Promises can't cancel tasks that have already started. So, the
-// other dice keep rolling, even though we don't use their results. This shows
-// how async tasks can keep running in the background even after we've gotten
-// the result we needed. It's like a race where one runner crosses the finish
-// line, but the other runners don't immediately stop - they keep running their
-// course even though the race is technically over.
+/*Explanation
+Promise.race() finishes when the first die gives a result, but it doesn't
+stop the other dice from rolling. Each die roll is separate and keeps going
+on its own. Promises can't cancel tasks that have already started. So, the
+other dice keep rolling, even though we don't use their results. This shows
+how async tasks can keep running in the background even after we've gotten
+the result we needed. It's like a race where one runner crosses the finish
+line, but the other runners don't immediately stop - they keep running their
+course even though the race is technically over.*/
