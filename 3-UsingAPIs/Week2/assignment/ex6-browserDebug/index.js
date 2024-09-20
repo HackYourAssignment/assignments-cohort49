@@ -6,9 +6,6 @@ Full description at:https://github.com/HackYourFuture/Assignments/blob/main/3-Us
 
 async function getData(url) {
   const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error('Network response was not ok');
-  }
   return response.json();
 }
 
@@ -38,13 +35,15 @@ function renderLaureate(ul, { knownName, birth, death }) {
   addTableRow(
     table,
     'Birth',
-    birth ? `${birth.date}, ${birth.place.locationString}` : 'N/A'
+    `${birth.date}, ${birth.place.locationString.en}`
   );
-  addTableRow(
-    table,
-    'Death',
-    death ? `${death.date}, ${death.place.locationString}` : 'N/A'
-  );
+  if (death) {
+    addTableRow(
+      table,
+      'Death',
+      `${death.date}, ${death.place.locationString.en}`
+    );
+  }
 }
 
 function renderLaureates(laureates) {
