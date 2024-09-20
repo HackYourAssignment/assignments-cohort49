@@ -977,3 +977,8 @@ Ran all test suites matching /ex4-diceRace.test.js/i.
 2024-09-09 04:45:01 info: ----------------------------------------
 2024-09-09 04:45:01 warn: A unit test file was not provided.
 2024-09-09 04:45:04 info: All steps were completed successfully
+2024-09-20 02:30:57 info: ------------------------------------------
+2024-09-20 02:30:57 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-20 02:30:57 info: ------------------------------------------
+2024-09-20 02:31:05 info: All unit tests passed.
+2024-09-20 02:31:10 info: All steps were completed successfully

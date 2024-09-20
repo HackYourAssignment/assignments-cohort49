@@ -34,41 +34,46 @@ async function fetchData(url) {
   }
 }
 
-async function fetchAndPopulatePokemons(pokemonSelectElement) {
-  if (!pokemonSelectElement) {
-    console.error('No select element found');
-    return;
-  }
+async function fetchAndPopulatePokemons() {
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+  const data = await fetchData(url);
 
-  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
-  if (data && data.results) {
+  if (data) {
+    const selectElement = document.createElement('select');
+    document.body.appendChild(selectElement);
+
     data.results.forEach((pokemon) => {
       const option = document.createElement('option');
-      option.value = pokemon.url;
-      option.textContent =
-        pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-      pokemonSelectElement.appendChild(option);
+      option.value = pokemon.name;
+      option.textContent = pokemon.name;
+      selectElement.appendChild(option);
+    });
+
+    selectElement.addEventListener('change', () => {
+      fetchImage(selectElement.value);
     });
   }
 }
 
-async function fetchImage(url, imageElement) {
+async function fetchImage(pokemonName) {
+  const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
   const data = await fetchData(url);
-  if (data && data.sprites && data.sprites.front_default) {
-    imageElement.src = data.sprites.front_default;
+
+  if (data) {
+    let imgElement = document.querySelector('img');
+
+    if (!imgElement) {
+      imgElement = document.createElement('img');
+      document.body.appendChild(imgElement);
+    }
+
+    imgElement.src = data.sprites.front_default;
+    imgElement.alt = pokemonName;
   }
 }
 
 function main() {
-  const pokemonSelectElement = document.getElementById('pokemon-select');
-  const pokemonImageElement = document.getElementById('pokemon-image');
-
-  fetchAndPopulatePokemons(pokemonSelectElement);
-
-  pokemonSelectElement.addEventListener('change', (event) => {
-    const pokemonUrl = event.target.value;
-    fetchImage(pokemonUrl, pokemonImageElement);
-  });
+  window.addEventListener('load', fetchAndPopulatePokemons);
 }
 
-window.addEventListener('load', main);
+main();
