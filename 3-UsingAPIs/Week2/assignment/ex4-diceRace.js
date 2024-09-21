@@ -11,7 +11,6 @@ Full description at: https://github.com/HackYourFuture/Assignments/blob/main/3-U
    file.
 ------------------------------------------------------------------------------*/
 // ! Do not remove this line
-// eslint-disable-next-line no-unused-vars
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {

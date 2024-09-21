@@ -987,3 +987,8 @@ Ran all test suites matching /ex4-diceRace.test.js/i.
 2024-09-20 10:20:05 info: ----------------------------------------
 2024-09-20 10:20:05 warn: A unit test file was not provided.
 2024-09-20 10:20:10 info: All steps were completed successfully
+2024-09-21 09:57:35 info: ----------------------------------------
+2024-09-21 09:57:35 info: >>> Running Unit Test `ex4-diceRace` <<<
+2024-09-21 09:57:35 info: ----------------------------------------
+2024-09-21 09:57:38 info: All unit tests passed.
+2024-09-21 09:57:42 info: All steps were completed successfully
