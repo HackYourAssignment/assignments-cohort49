@@ -22,18 +22,58 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Fetch error:', error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons() {
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+  const data = await fetchData(url);
+
+  if (data) {
+    const selectElement = document.createElement('select');
+    document.body.appendChild(selectElement);
+
+    data.results.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.name;
+      option.textContent = pokemon.name;
+      selectElement.appendChild(option);
+    });
+
+    selectElement.addEventListener('change', () => {
+      fetchImage(selectElement.value);
+    });
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(pokemonName) {
+  const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
+  const data = await fetchData(url);
+
+  if (data) {
+    let imgElement = document.querySelector('img');
+
+    if (!imgElement) {
+      imgElement = document.createElement('img');
+      document.body.appendChild(imgElement);
+    }
+
+    imgElement.src = data.sprites.front_default;
+    imgElement.alt = pokemonName;
+  }
 }
 
 function main() {
-  // TODO complete this function
+  window.addEventListener('load', fetchAndPopulatePokemons);
 }
+
+main();
