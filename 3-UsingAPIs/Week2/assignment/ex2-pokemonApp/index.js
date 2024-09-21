@@ -82,14 +82,29 @@ async function fetchImage(url) {
   document.querySelector('img').src = imgUrl;
 }
 
-async function main() {
+//create Get Pokemons! button
+const addButton = () => {
+  const buttonElement = document.createElement('button');
+  buttonElement.textContent = 'Get Pokemons!';
+  document.body.appendChild(buttonElement);
+};
+
+//start the application when the button is clicked
+const startTheApp = async () => {
   const API_URL = 'https://pokeapi.co/api/v2/pokemon?limit=151';
 
   await fetchAndPopulatePokemons(API_URL);
 
-  document.querySelector('select').addEventListener('input', function () {
+  document.querySelector('select').addEventListener('change', function () {
     fetchImage(this.value);
   });
+
+  document.querySelector('button').removeEventListener('click', startTheApp);
+};
+
+function main() {
+  addButton();
+  document.querySelector('button').addEventListener('click', startTheApp);
 }
 
 window.addEventListener('load', main);
