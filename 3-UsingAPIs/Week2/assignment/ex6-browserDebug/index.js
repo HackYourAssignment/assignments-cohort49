@@ -24,26 +24,35 @@ function createAndAppend(name, parent, options = {}) {
 
 function addTableRow(table, label, value) {
   const tr = createAndAppend('tr', table);
-  createAndAppend('th', tr, { text: label });
-  createAndAppend('td', tr, { text: value });
+  ['th', 'td'].forEach((tag, index) => {
+    createAndAppend(tag, tr, { text: index === 0 ? label : value });
+  });
 }
 
 function renderLaureate(ul, { knownName, birth, death }) {
   const li = createAndAppend('li', ul);
   const table = createAndAppend('table', li);
   addTableRow(table, 'Name', knownName.en);
-  addTableRow(table, 'Birth', `${birth.date}, ${birth.place.locationString}`);
-  addTableRow(table, 'Death', `${death.date}, ${death.place.locationString}`);
+
+  const birthInfo = `${birth.date}, ${birth.place.locationString.en}`;
+  addTableRow(table, 'Birth', birthInfo);
+
+  if (death) {
+    const deathInfo = `${death.date}, ${death.place.locationString.en}`;
+    addTableRow(table, 'Death', deathInfo);
+  }
 }
 
 function renderLaureates(laureates) {
   const ul = createAndAppend('ul', document.body);
-  laureates.forEach((laureate) => renderLaureate(ul, laureate));
+  for (const laureate of laureates.laureates) {
+    renderLaureate(ul, laureate);
+  }
 }
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const laureates = await getData(
       'https://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
     renderLaureates(laureates);
