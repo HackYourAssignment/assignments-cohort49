@@ -17,12 +17,9 @@ async function rollDice() {
   const dice = [1, 2, 3, 4, 5];
 
   const dicePromises = dice.map(() => rollDie());
-  try {
-    const result = await Promise.race(dicePromises);
-    return result;
-  } catch (error) {
-    throw new Error('Error: ', error);
-  }
+  // return the result of promise.race, let the error be caught.
+
+  return Promise.race(dicePromises);
 }
 
 // Refactor this function to use async/await and try/catch
