@@ -34,7 +34,6 @@ async function fetchData(url) {
     return data;
   } catch (error) {
     console.error(error);
-    throw error;
   }
 }
 
@@ -42,26 +41,20 @@ async function fetchAndPopulatePokemons() {
   try {
     const data = await fetchData(POKEMON_URL);
 
-    const selectElement = document.createElement('select');
+    const pokemonSelect = document.querySelector('#pokemon-select');
+    pokemonSelect.textContent = '';
 
-    selectElement.id = 'pokemon-select';
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
 
-    const initialOption = document.createElement('option');
-    initialOption.textContent = 'Get Pokemon';
-    initialOption.disabled = true;
-    initialOption.selected = true;
-    selectElement.appendChild(initialOption);
-
-    // loop over the pokemon results and create an option element
+    pokemonSelect.appendChild(defaultOption);
 
     data.results.forEach((pokemon) => {
       const option = document.createElement('option');
       option.value = pokemon.url;
       option.textContent = pokemon.name;
-      selectElement.appendChild(option);
+      pokemonSelect.appendChild(option);
     });
-
-    document.body.appendChild(selectElement);
   } catch (error) {
     console.error(error);
   }
@@ -69,9 +62,9 @@ async function fetchAndPopulatePokemons() {
 
 async function fetchImage(url) {
   try {
-    const response = await fetchData(url);
+    const data = await fetchData(url);
 
-    const imageUrl = response.sprites.front_default;
+    const imageUrl = data.sprites.front_default;
 
     let imgElement = document.querySelector('#pokemon-img');
     if (!imgElement) {
@@ -87,14 +80,24 @@ async function fetchImage(url) {
 }
 
 function main() {
-  fetchAndPopulatePokemons();
+  // create 'get pokemon' button
+  const button = document.createElement('button');
+  button.textContent = 'Get Pokemon';
+  button.id = 'get-pokemon-button';
+  document.body.appendChild(button);
 
-  document.body.addEventListener('change', async (event) => {
-    if (event.target.id === 'pokemon-select') {
-      const url = event.target.value;
-      await fetchImage(url);
-    }
+  const pokemonSelect = document.createElement('select');
+  pokemonSelect.id = 'pokemon-select';
+  pokemonSelect.disabled = false;
+  document.body.appendChild(pokemonSelect);
+
+  button.addEventListener('click', fetchAndPopulatePokemons);
+
+  pokemonSelect.addEventListener('change', (event) => {
+    const url = event.target.value;
+    fetchImage(url);
   });
 }
-
+// using async/await code here is not necessary, because no subsequent code depending on the completion of the promise.
+// therefore, i can just call the main function directly.
 window.addEventListener('load', main);

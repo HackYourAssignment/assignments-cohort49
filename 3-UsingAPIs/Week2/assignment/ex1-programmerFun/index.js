@@ -17,17 +17,12 @@ Full description at: https://github.com/HackYourFuture/Assignments/blob/main/3-U
    url with `.shx`. There is no server at the modified url, therefore this 
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
-function requestData(url) {
-  return fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error, status = ${response.status}`);
-      }
-      return response.json();
-    })
-    .catch((error) => {
-      throw new Error(`Network error: ${error.message}`);
-    });
+async function requestData(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return await response.json();
 }
 
 function renderImage(data) {
@@ -36,16 +31,12 @@ function renderImage(data) {
   img.src = data.img;
   img.alt = data.alt;
   document.body.appendChild(img);
-
-  console.log(data);
 }
 
 function renderError(error) {
   const h1 = document.createElement('h1');
   h1.textContent = error;
   document.body.appendChild(h1);
-
-  console.log(error);
 }
 
 async function main() {
