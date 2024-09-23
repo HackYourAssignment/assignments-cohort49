@@ -81,17 +81,18 @@ async function fetchImage(url) {
 
 function main() {
   // create 'get pokemon' button
-  const button = document.createElement('button');
-  button.textContent = 'Get Pokemon';
-  button.id = 'get-pokemon-button';
-  document.body.appendChild(button);
+  const addButton = document.createElement('button');
+  addButton.textContent = 'Get Pokemon';
+  addButton.id = 'get-pokemon-button';
+  addButton.setAttribute('type', 'button');
+  document.body.appendChild(addButton);
 
   const pokemonSelect = document.createElement('select');
   pokemonSelect.id = 'pokemon-select';
   pokemonSelect.disabled = false;
   document.body.appendChild(pokemonSelect);
 
-  button.addEventListener('click', fetchAndPopulatePokemons);
+  addButton.addEventListener('click', fetchAndPopulatePokemons);
 
   pokemonSelect.addEventListener('change', (event) => {
     const url = event.target.value;
