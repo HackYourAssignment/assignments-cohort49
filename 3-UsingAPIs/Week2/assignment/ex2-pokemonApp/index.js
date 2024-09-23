@@ -22,18 +22,83 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+const POKEMON_URL = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons() {
+  try {
+    const data = await fetchData(POKEMON_URL);
+
+    const pokemonSelect = document.querySelector('#pokemon-select');
+    pokemonSelect.textContent = '';
+
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+
+    pokemonSelect.appendChild(defaultOption);
+
+    data.results.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;
+      option.textContent = pokemon.name;
+      pokemonSelect.appendChild(option);
+    });
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url) {
+  try {
+    const data = await fetchData(url);
+
+    const imageUrl = data.sprites.front_default;
+
+    let imgElement = document.querySelector('#pokemon-img');
+    if (!imgElement) {
+      imgElement = document.createElement('img');
+      imgElement.id = 'pokemon-img';
+      document.body.appendChild(imgElement);
+    }
+
+    imgElement.src = imageUrl;
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 function main() {
-  // TODO complete this function
+  // create 'get pokemon' button
+  const addButton = document.createElement('button');
+  addButton.textContent = 'Get Pokemon';
+  addButton.id = 'get-pokemon-button';
+  addButton.setAttribute('type', 'button');
+  document.body.appendChild(addButton);
+
+  const pokemonSelect = document.createElement('select');
+  pokemonSelect.id = 'pokemon-select';
+  pokemonSelect.disabled = false;
+  document.body.appendChild(pokemonSelect);
+
+  addButton.addEventListener('click', fetchAndPopulatePokemons);
+
+  pokemonSelect.addEventListener('change', (event) => {
+    const url = event.target.value;
+    fetchImage(url);
+  });
 }
+// using async/await code here is not necessary, because no subsequent code depending on the completion of the promise.
+// therefore, i can just call the main function directly.
+window.addEventListener('load', main);

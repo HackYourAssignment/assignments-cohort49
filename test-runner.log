@@ -1,0 +1,1296 @@
+2024-09-09 11:25:16 info: ---------------------------------------
+2024-09-09 11:25:16 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-09-09 11:25:16 info: ---------------------------------------
+2024-09-09 11:25:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    × should exist and be executable (1 ms)
+    × should have all TODO comments removed
+    × `getAnonName` should not contain unneeded console.log calls (1 ms)
+    × should call `new Promise()`
+    × should take a single argument
+    × `resolve()` should be called with a one argument (1 ms)
+    × `reject()` should be called with a one argument
+    × should resolve when called with a string argument (1 ms)
+    × should reject with an Error object when called without an argument
+
+  ● getAnonName › should exist and be executable
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › `getAnonName` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should call `new Promise()`
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should take a single argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › `resolve()` should be called with a one argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › `reject()` should be called with a one argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex1-johnWho.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:15:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       9 failed, 9 total
+Snapshots:   0 total
+Time:        2.219 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2024-09-09 11:25:37 error: *** Spell Checker Report ***
+
+
+2024-09-09 11:30:35 info: ----------------------------------------
+2024-09-09 11:30:35 info: >>> Running Unit Test `ex1-bookList` <<<
+2024-09-09 11:30:35 info: ----------------------------------------
+2024-09-09 11:30:51 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (7.107 s)
+  Generated HTML
+    × HTML should be syntactically valid
+    × should have all TODO comments removed
+    × should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    × should contain a <ul> with 3 <li> elements
+    × should contain an <li> with title and author for each book of the `myBooks` array
+    × should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\2-Browsers\Week1\--json\ex1-bookList\index.html'
+
+
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 6 total
+Snapshots:   0 total
+Time:        7.455 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2024-09-09 11:31:05 error: *** Spell Checker Report ***
+
+
+2024-09-09 11:31:11 info: Disclaimer turned off
+2024-09-09 11:31:43 info: -------------------------------------------------
+2024-09-09 11:31:43 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-09-09 11:31:43 info: -------------------------------------------------
+2024-09-09 11:32:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    × should exist and be executable (1 ms)
+    × should have all TODO comments removed
+    × `checkDoubleDigits` should not contain unneeded console.log calls
+    × should call new Promise()
+    × `resolve()` should be called with a one argument
+    × `reject()` should be called with a one argument
+    × should be a function that takes a single argument
+    × (9) should return a rejected promise with an Error object
+    × (10) should return a promise that resolves to "This is a double digit number!"
+    × (99) should return a promise that resolves to "This is a double digit number!"
+    × (100) should return a rejected promise with an Error object
+
+  ● checkDoubleDigits › should exist and be executable
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › `checkDoubleDigits` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › should call new Promise()
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › `resolve()` should be called with a one argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › `reject()` should be called with a one argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › should be a function that takes a single argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex2-checkDoubleDigits.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:15:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       11 failed, 11 total
+Snapshots:   0 total
+Time:        4.938 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2024-09-09 11:32:25 error: *** Spell Checker Report ***
+
+
+2024-09-09 11:33:48 info: ---------------------------------------
+2024-09-09 11:33:48 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-09 11:33:48 info: ---------------------------------------
+2024-09-09 11:34:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    × should exist and be executable (1 ms)
+    × should have all TODO comments removed (1 ms)
+    × should call `new Promise()`
+    × `resolve()` should be called with a one argument
+    × `reject()` should be called with a one argument
+    × should resolve when the die settles successfully
+    × should reject with an Error when the die rolls off the table
+
+  ● rollDie › should exist and be executable
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex3-rollDie.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:13:39)
+
+  ● rollDie › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex3-rollDie.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:13:39)
+
+  ● rollDie › should call `new Promise()`
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex3-rollDie.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:13:39)
+
+  ● rollDie › `resolve()` should be called with a one argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex3-rollDie.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:13:39)
+
+  ● rollDie › `reject()` should be called with a one argument
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex3-rollDie.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:13:39)
+
+  ● rollDie › should resolve when the die settles successfully
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex3-rollDie.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:13:39)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex3-rollDie.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:13:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       7 failed, 7 total
+Snapshots:   0 total
+Time:        3.529 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2024-09-09 11:34:22 error: *** Spell Checker Report ***
+
+
+2024-09-09 11:35:51 info: --------------------------------------------
+2024-09-09 11:35:51 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-09 11:35:51 info: --------------------------------------------
+2024-09-09 11:36:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    × should exist and be executable (1 ms)
+    × should have all TODO comments removed
+    × `rollDice` should not contain unneeded console.log calls
+    × should use `dice.map()`
+    × should use `Promise.all()`
+    × should resolve when all dice settle successfully
+    × should reject with an Error when a die rolls off the table
+
+  ● ex4-pokerDiceAll › should exist and be executable
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › `rollDice` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should use `dice.map()`
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex4-pokerDiceAll.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:14:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       7 failed, 7 total
+Snapshots:   0 total
+Time:        2.223 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2024-09-09 11:36:13 error: *** Spell Checker Report ***
+
+
+2024-09-09 01:59:34 info: ----------------------------------------------
+2024-09-09 01:59:34 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 01:59:34 info: ----------------------------------------------
+2024-09-09 01:59:44 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    × should exist and be executable
+    × should have all TODO comments removed (1 ms)
+    × `rollDice` should not contain unneeded console.log calls
+    × should resolve when all dice settle successfully
+    × should reject with an Error when a die rolls off the table
+
+  ● ex5-pokerDiceChain › should exist and be executable
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+  ● ex5-pokerDiceChain › `rollDice` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    ENOENT: no such file or directory, open 'C:\Users\hp EliteBook\OneDrive\Desktop\assignments-cohort49\3-UsingAPIs\Week1\--json\ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 5 total
+Snapshots:   0 total
+Time:        1.987 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2024-09-09 01:59:56 error: *** Spell Checker Report ***
+
+
+2024-09-09 02:52:51 info: ---------------------------------------
+2024-09-09 02:52:51 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-09-09 02:52:51 info: ---------------------------------------
+2024-09-09 02:53:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (4 ms)
+    × should have all TODO comments removed (7 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (2 ms)
+    √ should call `new Promise()`
+    √ should take a single argument (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when called with a string argument (5 ms)
+    √ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        2.974 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2024-09-09 02:53:08 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:39:34 info: ---------------------------------------
+2024-09-09 03:39:34 info: >>> Running Unit Test `ex1-johnWho` <<<
+2024-09-09 03:39:34 info: ---------------------------------------
+2024-09-09 03:39:41 info: All unit tests passed.
+2024-09-09 03:39:48 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:41:05 info: -------------------------------------------------
+2024-09-09 03:41:05 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-09-09 03:41:05 info: -------------------------------------------------
+2024-09-09 03:41:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (4 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    √ should be a function that takes a single argument (1 ms)
+    √ (9) should return a rejected promise with an Error object (3 ms)
+    × (10) should return a promise that resolves to "This is a double digit number!" (11 ms)
+    × (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    √ (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual(expected) // deep equality
+
+    Expected: StringContaining "This is a double digit number!"
+    Received: "This is a double digit number"
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |                                     ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at Object.toEqual (node_modules/expect/build/index.js:194:22)
+      at Object.toEqual (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:37)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual(expected) // deep equality
+
+    Expected: StringContaining "This is a double digit number!"
+    Received: "This is a double digit number"
+
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+    > 84 |     return expect(promise).resolves.toEqual(
+         |                                     ^
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+      87 |   });
+
+      at Object.toEqual (node_modules/expect/build/index.js:194:22)
+      at Object.toEqual (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:84:37)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        0.888 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2024-09-09 03:41:14 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:44:06 info: -------------------------------------------------
+2024-09-09 03:44:06 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2024-09-09 03:44:06 info: -------------------------------------------------
+2024-09-09 03:44:09 info: All unit tests passed.
+2024-09-09 03:44:14 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:45:35 info: ---------------------------------------
+2024-09-09 03:45:35 info: >>> Running Unit Test `ex3-rollDie` <<<
+2024-09-09 03:45:35 info: ---------------------------------------
+2024-09-09 03:45:38 info: All unit tests passed.
+2024-09-09 03:45:43 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:47:08 info: --------------------------------------------
+2024-09-09 03:47:08 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-09 03:47:08 info: --------------------------------------------
+2024-09-09 03:47:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed
+    × `rollDice` should not contain unneeded console.log calls (3 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()`
+    √ should resolve when all dice settle successfully (16 ms)
+    √ should reject with an Error when a die rolls off the table (95 ms)
+
+  ● ex4-pokerDiceAll › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.023 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2024-09-09 03:47:18 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:52:01 info: ----------------------------------------------
+2024-09-09 03:52:01 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 03:52:01 info: ----------------------------------------------
+2024-09-09 03:52:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    √ should resolve when all dice settle successfully (119 ms)
+    √ should reject with an Error when a die rolls off the table (91 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.092 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2024-09-09 03:52:10 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:53:06 info: Disclaimer turned off
+2024-09-09 03:53:21 info: ----------------------------------------------
+2024-09-09 03:53:21 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2024-09-09 03:53:21 info: ----------------------------------------------
+2024-09-09 03:53:24 info: All unit tests passed.
+2024-09-09 03:53:29 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:53:45 info: --------------------------------------------
+2024-09-09 03:53:45 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-09 03:53:45 info: --------------------------------------------
+2024-09-09 03:53:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    × `rollDice` should not contain unneeded console.log calls (6 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.all()`
+    √ should resolve when all dice settle successfully (14 ms)
+    √ should reject with an Error when a die rolls off the table (95 ms)
+
+  ● ex4-pokerDiceAll › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.889 s, estimated 1 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2024-09-09 03:53:56 error: *** Spell Checker Report ***
+
+
+2024-09-09 03:58:34 info: --------------------------------------------
+2024-09-09 03:58:34 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2024-09-09 03:58:34 info: --------------------------------------------
+2024-09-09 03:58:38 info: All unit tests passed.
+2024-09-09 03:58:42 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:24:37 info: ---------------------------------------------
+2024-09-10 10:24:37 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-10 10:24:37 info: ---------------------------------------------
+2024-09-10 10:24:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (173 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.93 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-10 10:24:51 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:25:31 info: ---------------------------------------------
+2024-09-10 10:25:31 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-10 10:25:31 info: ---------------------------------------------
+2024-09-10 10:25:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (157 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    √ should use try/catch
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.74 s, estimated 5 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-10 10:25:43 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:26:40 info: ---------------------------------------------
+2024-09-10 10:26:40 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-10 10:26:40 info: ---------------------------------------------
+2024-09-10 10:26:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (156 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.662 s, estimated 4 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2024-09-10 10:26:51 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:28:20 info: ---------------------------------------------
+2024-09-10 10:28:20 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2024-09-10 10:28:20 info: ---------------------------------------------
+2024-09-10 10:28:26 info: All unit tests passed.
+2024-09-10 10:28:31 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:30:08 info: ------------------------------------------
+2024-09-10 10:30:08 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2024-09-10 10:30:08 info: ------------------------------------------
+2024-09-10 10:30:15 info: All unit tests passed.
+2024-09-10 10:30:19 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:30:36 info: -----------------------------------------
+2024-09-10 10:30:36 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2024-09-10 10:30:36 info: -----------------------------------------
+2024-09-10 10:30:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    × should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (118 ms)
+    √ should reject with an Error when a die rolls off the table (112 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.255 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2024-09-10 10:30:44 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:31:12 info: ----------------------------------------
+2024-09-10 10:31:12 info: >>> Running Unit Test `ex4-diceRace` <<<
+2024-09-10 10:31:12 info: ----------------------------------------
+2024-09-10 10:31:16 info: All unit tests passed.
+2024-09-10 10:31:20 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:31:37 info: ----------------------------------------
+2024-09-10 10:31:37 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-10 10:31:37 info: ----------------------------------------
+2024-09-10 10:31:37 warn: A unit test file was not provided.
+2024-09-10 10:31:41 error: *** Spell Checker Report ***
+
+
+2024-09-10 10:31:57 info: ----------------------------------------
+2024-09-10 10:31:57 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2024-09-10 10:31:57 info: ----------------------------------------
+2024-09-10 10:31:57 warn: A unit test file was not provided.
+2024-09-10 10:32:01 error: *** Spell Checker Report ***
+
+
+2024-09-10 11:52:46 info: --------------------------------------------
+2024-09-10 11:52:46 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2024-09-10 11:52:46 info: --------------------------------------------
+2024-09-10 11:52:46 warn: A unit test file was not provided.
+2024-09-10 11:52:52 error: *** Spell Checker Report ***
+
+

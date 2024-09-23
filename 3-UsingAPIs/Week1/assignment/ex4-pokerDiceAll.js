@@ -27,9 +27,10 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const dicePromise = dice.map(rollDie);
+
+  return Promise.all(dicePromise);
 }
 
 function main() {
@@ -38,8 +39,9 @@ function main() {
     .catch((error) => console.log('Rejected!', error.message));
 }
 
-// ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// when using promise.all the promises continue to be executed until all of them are resolved even if one of them is rejected.
