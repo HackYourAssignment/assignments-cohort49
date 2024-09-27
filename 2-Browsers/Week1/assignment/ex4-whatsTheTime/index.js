@@ -9,11 +9,13 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
   const addCurrentTimeElement = document.getElementById('current-time');
-  function updateCurrentTime (){
-    const currentTime = new Date ();
+
+  function updateCurrentTime() {
+    const currentTime = new Date();
     const hours = currentTime.getHours().toString().padStart(2, '0');
-    const minutes = currentTime.getMinutes().toString(). padStart(2, '0');
-    addCurrentTimeElement.textContent = `${hours}: ${minutes}:{seconds}`;
+    const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+    const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+    addCurrentTimeElement.textContent = `${hours}:${minutes}:${seconds}`;
   }
 
   updateCurrentTime();
@@ -21,5 +23,3 @@ function addCurrentTime() {
 }
 
 window.onload = addCurrentTime;
-
-
