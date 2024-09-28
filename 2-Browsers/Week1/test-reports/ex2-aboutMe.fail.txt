@@ -1,0 +1,5 @@
+
+*** Spell Checker Report ***
+
+/Users/hackyourfuture/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:13:52 - Unknown word (Dorelys)
+/Users/hackyourfuture/Desktop/assignments-cohort49/2-Browsers/Week1/assignment/ex2-aboutMe/index.js:15:52 - Unknown word (Porlamar)
